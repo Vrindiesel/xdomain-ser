@@ -1,0 +1,31 @@
+{
+  "best_method": "XGB_d3_n100_lr0.1_CW",
+  "config": {
+    "max_depth": 3,
+    "n_estimators": 100,
+    "learning_rate": 0.1,
+    "reg_lambda": 1.0,
+    "reg_alpha": 0.1
+  },
+  "cost_weighted": true,
+  "dev_acc": 0.916010498687664,
+  "test_metrics": {
+    "S_acc": 0.9379,
+    "D_acc": 0.9472,
+    "I_acc": 0.9707,
+    "all_acc": 0.9004,
+    "SER_MAE": 0.0291,
+    "SER_MSE": 0.0148,
+    "count": 4510
+  },
+  "lr_baseline_test_metrics": {
+    "S_acc": 0.9286,
+    "D_acc": 0.9251,
+    "I_acc": 0.9641,
+    "all_acc": 0.8681,
+    "SER_MAE": 0.0363,
+    "SER_MSE": 0.016,
+    "count": 4510
+  },
+  "improvement_over_lr": 0.0324
+}

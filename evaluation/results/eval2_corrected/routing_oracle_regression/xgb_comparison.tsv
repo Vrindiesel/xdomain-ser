@@ -1,0 +1,7 @@
+name	cost_weighted	dev_acc	All_acc	SER_MAE
+XGB_d3_n100_lr0.1	False	0.9676	0.8885	0.0327
+XGB_d3_n100_lr0.1_CW	True	0.9160	0.9004	0.0291
+XGB_d4_n150_lr0.1	False	0.9904	0.8894	0.0324
+XGB_d4_n150_lr0.1_CW	True	0.9414	0.8996	0.0289
+XGB_d3_n200_lr0.05	False	0.9668	0.8902	0.0321
+XGB_d3_n200_lr0.05_CW	True	0.9178	0.9004	0.0291

@@ -1,0 +1,11 @@
+# Optional dependencies for dataset construction -- reproducing the multi-domain
+# training/eval data in data/multi_ser_v9/ from the raw E2E / ViGGO / RNNLG /
+# Taskmaster sources via xdomain_ser.data_prep and scripts/build_dataset.sh.
+#
+# Not needed to USE the released SER metric or run the headline reproductions;
+# only to rebuild the data from scratch. pandas and scikit-learn are already in
+# requirements.txt; the two below are the net-new requirements (Facility-Location
+# example selection). submodlib can be slow to build -- see INSTALL.md.
+
+sentence-transformers
+submodlib

@@ -1,0 +1,21 @@
+{
+  "run": "stage-9 P-oracle regression (pair_selector --protocol oracle)",
+  "command": "python -m xdomain_ser.routing.pair_selector --protocol oracle --eval_file data/ranking_eval/negatives-v6-test.200.pe5.b10.rexp4.ckpt60.scores.json --output_dir evaluation/results/eval2_corrected/routing_oracle_regression --seed 42",
+  "input": {
+    "path": "data/ranking_eval/negatives-v6-test.200.pe5.b10.rexp4.ckpt60.scores.json",
+    "md5": "c731f7df3389f44a19f933eea0d5fc6f"
+  },
+  "wall_clock_seconds": 31.1,
+  "gpu": "RTX 3090 (per-text NLI)",
+  "date": "2026-06-12",
+  "validation": {
+    "regression": "PASS exact",
+    "LoRA": 0.7641,
+    "NLI": 0.8051,
+    "ScoreRouting": 0.8614,
+    "LR-Routing": 0.8681,
+    "Oracle": 0.9073,
+    "best_score_threshold": 2.95,
+    "XGB_informational": 0.9004
+  }
+}

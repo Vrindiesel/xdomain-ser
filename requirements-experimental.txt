@@ -1,0 +1,5 @@
+# Optional dependencies for post-publication phase-0 follow-up experiments
+# (XGBoost routing, value normalization). Not needed for the headline paper
+# pipeline.
+
+xgboost

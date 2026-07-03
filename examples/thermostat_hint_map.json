@@ -1,0 +1,11 @@
+{
+  "hm_thermostat": {
+    "hint_map_id": "hm_thermostat",
+    "hint_map": {
+      "target_temp": "target temperature as a bare integer in Fahrenheit, no units (e.g., '68', '72')",
+      "hvac_mode": "one of: heat, cool, auto, off",
+      "time_of_day": "one of: morning, afternoon, evening, night",
+      "zone": "house zone, e.g., 'living room', 'bedroom', 'basement', 'whole house'"
+    }
+  }
+}

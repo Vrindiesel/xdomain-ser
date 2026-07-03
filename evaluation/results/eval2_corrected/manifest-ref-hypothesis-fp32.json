@@ -1,0 +1,39 @@
+{
+  "run": "ranker ref=hypothesis per-pair (P-deploy), fp32",
+  "command": "python -m xdomain_ser.ranking.score --checkpoint_dir models/ranker --hint_map_path data/multi_ser_v9/hint_maps_v4.json --eval_path data/ranking_eval/negatives-v6-test.200.pe5.b10.rexp4.ckpt60.scores.json --ref_source hypothesis --compute_dtype float32 --output_path evaluation/results/eval2_corrected/ref-hypothesis.per-pair.fp32.scores.json",
+  "input": {
+    "path": "data/ranking_eval/negatives-v6-test.200.pe5.b10.rexp4.ckpt60.scores.json",
+    "md5": "c731f7df3389f44a19f933eea0d5fc6f"
+  },
+  "output": {
+    "path": "evaluation/results/eval2_corrected/ref-hypothesis.per-pair.fp32.scores.json",
+    "md5": "c0c9ee172b0f18ca9e8850e6ea706956",
+    "records": 9042
+  },
+  "params": {
+    "ref_source": "hypothesis",
+    "dtype": "4bit-float32",
+    "batch_size": null,
+    "seed": "n/a (deterministic scoring)"
+  },
+  "wall_clock_seconds": 16160,
+  "peak_rss_kb": 8130260,
+  "gpu": "RTX 3090",
+  "date": "2026-06-11",
+  "validation": {
+    "key_coverage": "9042/9042 (ex_idx, neg_idx)",
+    "all_finite": true,
+    "score_mean": 1.492,
+    "score_std": 0.877,
+    "label4_byte_equal_anchor": {
+      "n": 1696,
+      "top1_flips": 0,
+      "max_abs_diff_vs_cached": 1.3e-05
+    },
+    "label4_reordered_control": {
+      "n": 592,
+      "top1_flips": 524,
+      "max_abs_diff_vs_cached": 2.386
+    }
+  }
+}

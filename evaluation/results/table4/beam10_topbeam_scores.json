@@ -1,0 +1,218 @@
+{
+  "evaluation/results/table4/beam10_scored.json": {
+    "num_examples": 12144,
+    "topics": {
+      "hm_tm1_auto_repair_appt": 188,
+      "hm_tm1_coffee_ordering": 132,
+      "hm_tm1_movie_tickets": 243,
+      "hm_tm1_pizza_ordering": 178,
+      "hm_tm1_restaurant_table": 231,
+      "hm_tm1_uber_lyft": 183,
+      "hm_e2e_nlg": 4693,
+      "hm_viggo": 1026,
+      "hm_rnnlg_hotel": 563,
+      "hm_rnnlg_laptop": 2637,
+      "hm_rnnlg_restaurant": 669,
+      "hm_rnnlg_tv": 1401
+    },
+    "slot_f1": {
+      "tp": 51110,
+      "fp": 6274,
+      "fn": 10596,
+      "precision": 0.890666,
+      "recall": 0.828283,
+      "f1": 0.858342
+    },
+    "ser_score": {
+      "SER": 0.19772793569507016,
+      "D": 5927,
+      "I": 1605,
+      "S": 4669,
+      "N": 61706
+    },
+    "per_topic_f1": {
+      "hm_tm1_auto_repair_appt": {
+        "tp": 439,
+        "fp": 80,
+        "fn": 123,
+        "precision": 0.845857,
+        "recall": 0.781139,
+        "f1": 0.812211
+      },
+      "hm_tm1_coffee_ordering": {
+        "tp": 332,
+        "fp": 78,
+        "fn": 96,
+        "precision": 0.809756,
+        "recall": 0.775701,
+        "f1": 0.792363
+      },
+      "hm_tm1_movie_tickets": {
+        "tp": 551,
+        "fp": 120,
+        "fn": 137,
+        "precision": 0.821162,
+        "recall": 0.800872,
+        "f1": 0.81089
+      },
+      "hm_tm1_pizza_ordering": {
+        "tp": 347,
+        "fp": 155,
+        "fn": 169,
+        "precision": 0.691235,
+        "recall": 0.672481,
+        "f1": 0.681729
+      },
+      "hm_tm1_restaurant_table": {
+        "tp": 445,
+        "fp": 120,
+        "fn": 167,
+        "precision": 0.787611,
+        "recall": 0.727124,
+        "f1": 0.75616
+      },
+      "hm_tm1_uber_lyft": {
+        "tp": 347,
+        "fp": 109,
+        "fn": 111,
+        "precision": 0.760965,
+        "recall": 0.757642,
+        "f1": 0.7593
+      },
+      "hm_e2e_nlg": {
+        "tp": 27247,
+        "fp": 1933,
+        "fn": 5085,
+        "precision": 0.933756,
+        "recall": 0.842725,
+        "f1": 0.885908
+      },
+      "hm_viggo": {
+        "tp": 2674,
+        "fp": 938,
+        "fn": 1301,
+        "precision": 0.74031,
+        "recall": 0.672704,
+        "f1": 0.70489
+      },
+      "hm_rnnlg_hotel": {
+        "tp": 1100,
+        "fp": 280,
+        "fn": 296,
+        "precision": 0.797101,
+        "recall": 0.787966,
+        "f1": 0.792507
+      },
+      "hm_rnnlg_laptop": {
+        "tp": 9658,
+        "fp": 2110,
+        "fn": 2796,
+        "precision": 0.8207,
+        "recall": 0.775494,
+        "f1": 0.797457
+      },
+      "hm_rnnlg_restaurant": {
+        "tp": 1695,
+        "fp": 94,
+        "fn": 101,
+        "precision": 0.947457,
+        "recall": 0.943764,
+        "f1": 0.945607
+      },
+      "hm_rnnlg_tv": {
+        "tp": 6275,
+        "fp": 257,
+        "fn": 214,
+        "precision": 0.960655,
+        "recall": 0.967021,
+        "f1": 0.963828
+      }
+    },
+    "per_topic_ser": {
+      "hm_tm1_auto_repair_appt": {
+        "S": 73,
+        "D": 50,
+        "I": 7,
+        "N_ref": 562,
+        "SER": 0.231317
+      },
+      "hm_tm1_coffee_ordering": {
+        "S": 64,
+        "D": 32,
+        "I": 14,
+        "N_ref": 428,
+        "SER": 0.257009
+      },
+      "hm_tm1_movie_tickets": {
+        "S": 88,
+        "D": 49,
+        "I": 32,
+        "N_ref": 688,
+        "SER": 0.24564
+      },
+      "hm_tm1_pizza_ordering": {
+        "S": 97,
+        "D": 72,
+        "I": 58,
+        "N_ref": 516,
+        "SER": 0.439922
+      },
+      "hm_tm1_restaurant_table": {
+        "S": 89,
+        "D": 78,
+        "I": 31,
+        "N_ref": 612,
+        "SER": 0.323529
+      },
+      "hm_tm1_uber_lyft": {
+        "S": 74,
+        "D": 37,
+        "I": 35,
+        "N_ref": 458,
+        "SER": 0.318777
+      },
+      "hm_e2e_nlg": {
+        "S": 1662,
+        "D": 3423,
+        "I": 271,
+        "N_ref": 32332,
+        "SER": 0.165656
+      },
+      "hm_viggo": {
+        "S": 577,
+        "D": 724,
+        "I": 361,
+        "N_ref": 3975,
+        "SER": 0.418113
+      },
+      "hm_rnnlg_hotel": {
+        "S": 196,
+        "D": 100,
+        "I": 84,
+        "N_ref": 1396,
+        "SER": 0.272206
+      },
+      "hm_rnnlg_laptop": {
+        "S": 1598,
+        "D": 1198,
+        "I": 512,
+        "N_ref": 12454,
+        "SER": 0.265617
+      },
+      "hm_rnnlg_restaurant": {
+        "S": 60,
+        "D": 41,
+        "I": 34,
+        "N_ref": 1796,
+        "SER": 0.075167
+      },
+      "hm_rnnlg_tv": {
+        "S": 91,
+        "D": 123,
+        "I": 166,
+        "N_ref": 6489,
+        "SER": 0.058561
+      }
+    }
+  }
+}

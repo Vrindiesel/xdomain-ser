@@ -1,0 +1,21 @@
+# Mirror of pyproject.toml core dependencies for pip-only users.
+# Optional extras (pbl, experimental, flash, dev) live in pyproject.toml
+# and in requirements-experimental.txt.
+
+torch==2.6.0
+transformers==5.3.0
+peft==0.18.1
+accelerate==1.13.0
+bitsandbytes==0.49.2
+trl
+datasets
+evaluate
+einops==0.8.2
+sentencepiece
+scikit-learn
+pandas
+numpy
+tqdm
+typer>=0.12
+pyyaml
+huggingface-hub

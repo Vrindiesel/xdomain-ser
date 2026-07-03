@@ -1,0 +1,53 @@
+{
+  "run": "stage-9 corrected (P-deploy) routing pipeline + persisted routers",
+  "command": "python -m xdomain_ser.routing.pair_selector --protocol deploy --eval_file data/ranking_eval/negatives-v6-test.200.pe5.b10.rexp4.ckpt60.scores.json --pair_scores evaluation/results/eval2_corrected/ref-hypothesis.per-pair.fp32.scores.json --pair_nli evaluation/results/eval2_corrected/nli.per-pair.results.json --output_dir evaluation/results/eval2_corrected/routing_deploy --persist_dir models/routers --seed 42",
+  "inputs": {
+    "eval": {
+      "path": "data/ranking_eval/negatives-v6-test.200.pe5.b10.rexp4.ckpt60.scores.json",
+      "md5": "c731f7df3389f44a19f933eea0d5fc6f"
+    },
+    "pair_scores": {
+      "path": "evaluation/results/eval2_corrected/ref-hypothesis.per-pair.fp32.scores.json",
+      "md5": "c0c9ee172b0f18ca9e8850e6ea706956"
+    },
+    "pair_nli": {
+      "path": "evaluation/results/eval2_corrected/nli.per-pair.results.json",
+      "md5": "3d3ebd4a6f524867893316ff7d286f40"
+    }
+  },
+  "wall_clock_seconds": 8.3,
+  "gpu": "none (CPU only)",
+  "date": "2026-06-12",
+  "results_test_4510_pairs": {
+    "LoRA": 0.4796,
+    "NLI": 0.2257,
+    "ScoreRouting": 0.3408,
+    "LR-Routing": 0.4929,
+    "XGB-Routing": 0.522,
+    "Oracle": 0.5446
+  },
+  "notes": {
+    "dev_labels": "4244 LoRA-preferred / 288 NLI-preferred",
+    "best_score_threshold": 1.5,
+    "threshold_grid_floor_binds": "1.5 is the grid minimum; always-LoRA is outside the published grid",
+    "per_label_all_acc_LoRA": {
+      "4": 0.71,
+      "3": 0.1021,
+      "2": 0.2862,
+      "1": 0.4533,
+      "0": 0.5904
+    },
+    "per_label_all_acc_NLI": {
+      "4": 0.7948,
+      "3": 0.0696,
+      "2": 0.0674,
+      "1": 0.0014,
+      "0": 0.0035
+    }
+  },
+  "persisted_routers": {
+    "threshold.json": "164ebb164e389267d14d5819eb11f63b",
+    "lr_router.joblib": "6acb2e4f4b369c7675e80014b7325582",
+    "xgb_router.joblib": "9334ba5ac0df94841bedd6ac2d22c5ea"
+  }
+}

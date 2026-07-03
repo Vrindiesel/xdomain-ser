@@ -1,0 +1,29 @@
+{
+  "run": "NLI per-pair (P-deploy hypothesis inventory), full Eval-2",
+  "command": "python planning/run_stage8_nli_pairs.py",
+  "input": {
+    "path": "data/ranking_eval/negatives-v6-test.200.pe5.b10.rexp4.ckpt60.scores.json",
+    "md5": "c731f7df3389f44a19f933eea0d5fc6f"
+  },
+  "output": {
+    "path": "evaluation/results/eval2_corrected/nli.per-pair.results.json",
+    "md5": "3d3ebd4a6f524867893316ff7d286f40",
+    "pair_records": 9037,
+    "nli_pairs": 35224
+  },
+  "params": {
+    "model": "roberta-large-mnli",
+    "batch_size": 32,
+    "protocol": "hypotheses from each negative's modified MR slot-values"
+  },
+  "wall_clock_seconds": 80,
+  "inference_seconds": 73.2,
+  "peak_rss_kb": 2303292,
+  "gpu": "RTX 3090",
+  "date": "2026-06-11",
+  "validation": {
+    "coverage": "9037/9042 negatives have >=1 templatable slot-value (5 without get neutral-0.5 feature defaults downstream)",
+    "prob_mean": 0.595,
+    "prob_std": 0.43
+  }
+}

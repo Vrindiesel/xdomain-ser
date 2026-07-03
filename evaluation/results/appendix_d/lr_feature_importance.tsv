@@ -1,0 +1,16 @@
+feature	coefficient
+nli_coverage	-1.8663
+top_score	1.2391
+slot_ratio	0.9714
+source_llm	0.6770
+score_gap	-0.5005
+min_nli_prob	-0.4410
+n_gold_slots	-0.4366
+mean_nli_prob	-0.4315
+pers_DISAGREEABLE	0.2325
+pers_EXTRAVERT	-0.1965
+pers_AGREEABLE	0.1871
+pers_CONSCIENTIOUSNESS	-0.1865
+score_spread	0.1501
+n_lora_slots	-0.0726
+pers_UNCONSCIENTIOUSNESS	-0.0366

@@ -1,0 +1,28 @@
+{
+  "run": "ranker ref=none per-text (D-3 ablation), fp32",
+  "command": "python -m xdomain_ser.ranking.score --checkpoint_dir models/ranker --hint_map_path data/multi_ser_v9/hint_maps_v4.json --eval_path data/ranking_eval/negatives-v6-test.200.pe5.b10.rexp4.ckpt60.scores.json --ref_source none --compute_dtype float32 --output_path evaluation/results/eval2_corrected/ref-none.per-text.fp32.scores.json",
+  "input": {
+    "path": "data/ranking_eval/negatives-v6-test.200.pe5.b10.rexp4.ckpt60.scores.json",
+    "md5": "c731f7df3389f44a19f933eea0d5fc6f"
+  },
+  "output": {
+    "path": "evaluation/results/eval2_corrected/ref-none.per-text.fp32.scores.json",
+    "md5": "026ac322bded54290c79b6f031038af0",
+    "examples": 2288
+  },
+  "params": {
+    "ref_source": "none",
+    "dtype": "4bit-float32",
+    "batch_size": null
+  },
+  "wall_clock_seconds": 3623,
+  "peak_rss_kb": 8126004,
+  "gpu": "RTX 3090",
+  "date": "2026-06-11",
+  "validation": {
+    "examples": "2288/2288, 10 finite scores each",
+    "score_mean": 0.626,
+    "score_std": 0.406,
+    "note": "OOD-compressed vs cached ref=true (mean 1.872) as probed; top-1 differs on 85.0% of texts"
+  }
+}
