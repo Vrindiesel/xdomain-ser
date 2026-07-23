@@ -620,7 +620,8 @@ def extract_mr(utt: str, mr: List[Tuple[str, str]], verbose: bool = False):
         mr: List of (slot_name, slot_value) tuples (already mapped to internal names).
 
     Returns:
-        (num_errors, missing_slots, duplicate_slots, num_content_slots)
+        (num_errors, missing_slots, duplicate_slots, num_content_slots,
+         slot_vals_found)
     """
     #print("utt:", utt)
     #print("mr:", mr)
