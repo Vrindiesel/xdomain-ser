@@ -12,7 +12,7 @@ paper's table-by-table results, see [REPRODUCE.md](REPRODUCE.md).
 
 ## CLI overview
 
-The `xdomain-ser` console script (installed with `pip install -e .`)
+The CLI — run as `python -m xdomain_ser.cli` from the repo root —
 exposes six subcommands:
 
 | Subcommand | Purpose |
@@ -28,12 +28,12 @@ Every subcommand accepts `--text` / `--gold-mr` / `--domain` for
 single-example mode, plus `--input-file <json>` / `--limit N` for
 batch mode.
 
-Run `xdomain-ser <subcommand> --help` for the full flag set.
+Run `python -m xdomain_ser.cli <subcommand> --help` for the full flag set.
 
 ## Single-example walkthrough
 
 ```bash
-xdomain-ser score \
+python -m xdomain_ser.cli score \
   --text "Cotto is a coffee shop near The Portland Arms that serves English food at a high price with average customer rating." \
   --gold-mr '{
       "name": "Cotto",
@@ -85,7 +85,7 @@ F1 = 1.0. For a less complete gold MR, see the README quickstart.
 For larger evaluations, pass a JSON array of examples:
 
 ```bash
-xdomain-ser score \
+python -m xdomain_ser.cli score \
   --input-file my_outputs.json \
   --output-file /tmp/scores.json \
   --domain e2e \
@@ -193,7 +193,7 @@ time-of-day. We can write the hint map directly:
 Save as `my_hint_maps.json`. Then:
 
 ```bash
-xdomain-ser score \
+python -m xdomain_ser.cli score \
   --text "Set the bedroom to 68 in heat mode at night." \
   --gold-mr '{"target_temp":"68","hvac_mode":"heat","time_of_day":"night","zone":"bedroom"}' \
   --domain hm_thermostat \
@@ -285,7 +285,7 @@ result = ser.compute_ser(
 ### `extract` — extraction only
 
 ```bash
-xdomain-ser extract \
+python -m xdomain_ser.cli extract \
   --text "Cotto is a coffee shop ..." \
   --domain e2e
 ```
@@ -296,7 +296,7 @@ you don't have a gold MR but want to inspect what the metric "sees".
 ### `nli` — NLI slot verification
 
 ```bash
-xdomain-ser nli \
+python -m xdomain_ser.cli nli \
   --text "Cotto is a coffee shop near The Portland Arms ..." \
   --gold-mr '{"name":"Cotto","near":"The Portland Arms"}' \
   --threshold 0.3
@@ -310,7 +310,7 @@ says" each gold slot.
 ### `route` — LoRA + NLI + threshold routing
 
 ```bash
-xdomain-ser route \
+python -m xdomain_ser.cli route \
   --text "Cotto is a coffee shop ..." \
   --gold-mr '{...}' \
   --domain e2e \
@@ -325,13 +325,13 @@ metric is confident vs uncertain.
 ### `rank` — score k candidates
 
 ```bash
-xdomain-ser rank \
+python -m xdomain_ser.cli rank \
   --input-file candidates.json \
   --output-file ranked.json
 ```
 
 Takes a JSON of `{text, mr, hint_map_id, pred_mr: [...]}` rows (the
-output of `xdomain-ser extract --num-beams 10`) and adds a
+output of `python -m xdomain_ser.cli extract --num-beams 10`) and adds a
 `pred_scores` field with the ranker's probability-weighted score for
 each candidate.
 
