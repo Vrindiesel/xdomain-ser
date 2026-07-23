@@ -1,6 +1,6 @@
 {
   "run": "NLI per-pair (P-deploy hypothesis inventory), full Eval-2",
-  "command": "python planning/run_stage8_nli_pairs.py",
+  "command": "internal pre-release per-pair NLI runner (not shipped; protocol in params)",
   "input": {
     "path": "data/ranking_eval/negatives-v6-test.200.pe5.b10.rexp4.ckpt60.scores.json",
     "md5": "c731f7df3389f44a19f933eea0d5fc6f"

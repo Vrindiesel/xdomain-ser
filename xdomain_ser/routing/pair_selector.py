@@ -65,7 +65,7 @@ PUBLISHED_XGB = 0.9004  # phase-0 follow-up; informational (+/-0.01)
 
 
 def load_pair_nli(path):
-    """Load per-pair NLI results (output of planning/run_stage8_nli_pairs.py).
+    """Load per-pair NLI results (provenance: manifest-nli-per-pair.json alongside the file).
 
     Returns dict ``{(ex_idx, neg_idx): [(slot, value, prob), ...]}``;
     pairs with no templatable slot-value are absent (callers default
