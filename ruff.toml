@@ -1,0 +1,13 @@
+target-version = "py311"
+
+[lint]
+select = ["E", "F"]
+# Stylistic rules left to the author's research-code idiom:
+# E501 line length, E701/E702 compound statements, E741 short names,
+# F841 unused locals in analysis scripts.
+ignore = ["E501", "E701", "E702", "E741", "F841"]
+
+[lint.per-file-ignores]
+# Ports / close re-implementations of published rule-based SER tools --
+# kept close to their sources, bugs and all (see module docstrings).
+"xdomain_ser/baselines/*" = ["E", "F"]
