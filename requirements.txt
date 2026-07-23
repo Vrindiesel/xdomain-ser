@@ -1,6 +1,5 @@
-# Mirror of pyproject.toml core dependencies for pip-only users.
-# Optional extras (pbl, experimental, flash, dev) live in pyproject.toml
-# and in requirements-experimental.txt.
+# Core dependencies. Optional sets live in the
+# requirements-{pbl,experimental,dataprep,dev}.txt files; see INSTALL.md.
 
 torch==2.6.0
 transformers==5.3.0
@@ -14,7 +13,7 @@ einops==0.8.2
 sentencepiece
 scikit-learn
 pandas
-numpy
+numpy<2
 tqdm
 typer>=0.12
 pyyaml

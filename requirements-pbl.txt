@@ -1,0 +1,5 @@
+# Optional dependencies for the prompt-based-learning (GPT-4o) extraction path
+# (xdomain_ser.extraction.pbl and scripts/reproduce_table3.sh).
+
+openai
+tenacity

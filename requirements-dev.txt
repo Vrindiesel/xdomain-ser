@@ -1,0 +1,8 @@
+# Development and notebook dependencies: linting, the CPU test subset, and
+# the examples/ notebooks (matplotlib is used by 03_inspect_routing.ipynb).
+
+pytest
+ruff
+ipykernel
+jupyter
+matplotlib
