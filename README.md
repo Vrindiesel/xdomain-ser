@@ -68,6 +68,24 @@ the river" as `area=riverside` rather than `near=river`, and added
 gold. See [USAGE.md](USAGE.md) for full worked examples and instructions
 for writing a hint map for a new domain.
 
+## Results
+
+SER-agreement accuracy (All-acc) on the multi-domain Eval-2 test
+split, published P-oracle protocol:
+
+| Method | All-acc |
+|---|---|
+| LoRA extraction + ranking | 0.764 |
+| NLI baseline | 0.805 |
+| **Per-example routing (LR)** | **0.868** |
+| XGBoost routing (phase-0 follow-up, experimental) | 0.900 |
+
+`reproduce_table5.sh` and `reproduce_phase0.sh` validate the two gated
+headlines against these numbers. The corrected per-pair deploy protocol
+yields lower absolute numbers for every method — see the Eval-2
+conditioning correction in [CHANGELOG.md](CHANGELOG.md) and the
+artifacts under `evaluation/results/eval2_corrected/`.
+
 ## What ships
 
 | Layer | Where |
