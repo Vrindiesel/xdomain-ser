@@ -38,8 +38,8 @@ else
 
 Install with:
   pip install huggingface_hub
-(or run 'pip install -e .' from the repo root, which pulls it in via
-the core dependencies in pyproject.toml).
+(or run 'pip install -r requirements.txt' from the repo root, which
+pulls it in via the core dependencies).
 EOF
   exit 1
 fi

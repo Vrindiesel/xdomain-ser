@@ -16,9 +16,9 @@ LR-Routing (0.8681) and +3.90pp over ScoreRouting (0.8614). See the
 phase-0 sections of RELEASE_NOTES.md for the full numbers. Top features by gain:
 ``top_score`` (0.342), ``min_nli_prob`` (0.192), ``nli_coverage`` (0.092).
 
-Requires the ``experimental`` optional install::
+Requires the optional experimental dependencies::
 
-    pip install xdomain-ser[experimental]
+    pip install -r requirements-experimental.txt
 
 Reuses the same data loading, feature computation, stratified split,
 and evaluation logic as :mod:`xdomain_ser.routing.selector`.

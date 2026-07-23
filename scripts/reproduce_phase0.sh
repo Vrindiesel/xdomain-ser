@@ -10,7 +10,7 @@
 #  * DeBERTa NLI swap (Exp 4.1):     ~10 min (downloads DeBERTa-v3-large)
 #  * Value-normalization features (Exp 2.1+2.2): ~10 min (needs SBERT)
 #
-# Requires the experimental extra: pip install xdomain-ser[experimental]
+# Requires the experimental deps: pip install -r requirements-experimental.txt
 
 set -e
 
@@ -38,7 +38,7 @@ if ! python -c "import torch; assert torch.cuda.is_available()" 2>/dev/null; the
 fi
 
 if ! python -c "import xgboost" 2>/dev/null; then
-  echo "ERROR: xgboost not installed. Run: pip install xdomain-ser[experimental]"
+  echo "ERROR: xgboost not installed. Run: pip install -r requirements-experimental.txt"
   exit 1
 fi
 

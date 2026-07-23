@@ -11,7 +11,7 @@
 # per-topic + overall numbers compared.
 #
 # Requires:
-#   - The PBL optional install:  pip install xdomain-ser[pbl]
+#   - The PBL optional deps:  pip install -r requirements-pbl.txt
 #   - An OPENAI_API_KEY env var (or --openai_conf_path JSON)
 #   - The multi-domain test data at data/multi_ser_v9/test.json
 #     (migrated in Stage 10; flagged in RELEASE_NOTES)
@@ -41,7 +41,7 @@ if ! python -c "import torch; assert torch.cuda.is_available()" 2>/dev/null; the
 fi
 
 if ! python -c "import openai" 2>/dev/null; then
-  echo "ERROR: openai not installed. Run: pip install xdomain-ser[pbl]"
+  echo "ERROR: openai not installed. Run: pip install -r requirements-pbl.txt"
   exit 1
 fi
 

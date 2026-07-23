@@ -12,7 +12,7 @@
 # (dev-repr-120.json is a shipped phase-0 artifact, not rebuilt here -- see Step 3 note.)
 #
 # PREREQUISITES
-#   * The optional dataprep extra:  pip install -e '.[dataprep]'
+#   * The optional dataprep deps:  pip install -r requirements-dataprep.txt
 #   * The four raw datasets downloaded into datasets/ (NOT shipped -- see REPRODUCE.md):
 #       datasets/e2e-dataset/   datasets/viggo-v1/   datasets/RNNLG/   datasets/Taskmaster/
 #   * The per-domain input hint maps shipped in this repo under data/<domain>/hint-map.json.
@@ -47,7 +47,7 @@ if [[ "$PY" != "3.11" ]]; then
 fi
 if [[ "$SELECTION_METHOD" == "fracloc" ]]; then
   python -c "import submodlib, sentence_transformers" 2>/dev/null || {
-    echo "ERROR: --selection_method fracloc needs the dataprep extra: pip install -e '.[dataprep]'"
+    echo "ERROR: --selection_method fracloc needs the dataprep deps: pip install -r requirements-dataprep.txt"
     exit 1; }
 fi
 

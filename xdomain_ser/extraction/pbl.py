@@ -10,9 +10,9 @@ extraction prompts to a configurable OpenAI model, requesting ``n``
 candidates per input with temperature sampling. Concurrent batched dispatch
 via ``ThreadPoolExecutor`` + tenacity retries on rate-limit / API errors.
 
-Requires the ``pbl`` optional install::
+Requires the optional PBL dependencies::
 
-    pip install xdomain-ser[pbl]
+    pip install -r requirements-pbl.txt
 
 API key resolution order:
     1. ``--openai_conf_path`` JSON file (keys ``api_key`` / ``api_key2`` /
@@ -44,8 +44,8 @@ except ImportError:
 def _require_openai():
     if not _HAS_OPENAI:
         raise ImportError(
-            "xdomain_ser.extraction.pbl requires the 'pbl' optional dependencies. "
-            "Install with:  pip install xdomain-ser[pbl]"
+            "xdomain_ser.extraction.pbl requires the optional PBL dependencies. "
+            "Install with:  pip install -r requirements-pbl.txt"
         )
 
 

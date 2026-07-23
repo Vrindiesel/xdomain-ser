@@ -37,10 +37,10 @@ import numpy as np
 # ``sentence-transformers`` and ``submodlib`` are only needed on the
 # Facility-Location selection path; they are imported lazily so the module
 # loads (and ``--selection_method random``, used to build the released v9 data,
-# runs) without the optional ``[datasets]`` extra installed.
+# runs) without the optional dataprep requirements installed.
 _FACLOC_HINT = (
     "Facility-Location selection (--selection_method fracloc) requires the "
-    "dataset-construction extras. Install them with: pip install -e '.[dataprep]'"
+    "dataset-construction deps. Install them with: pip install -r requirements-dataprep.txt"
 )
 
 
