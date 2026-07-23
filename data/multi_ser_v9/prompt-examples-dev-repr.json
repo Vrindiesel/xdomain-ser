@@ -1,0 +1,897 @@
+{
+  "hm_e2e_nlg": [
+    {
+      "mr": {
+        "slots": {
+          "name": "The Wrestlers",
+          "venue_type": "coffee shop",
+          "cuisine_type": "French",
+          "priceRange": "moderate",
+          "area_zone": "riverside",
+          "family_suitability": "family-friendly",
+          "nearby_landmark": "Raja Indian Cuisine"
+        }
+      },
+      "surface_form": "The Wrestlers coffee shop serves food and drinks cheap prices located next to Raja Indian Cuisine.",
+      "topic": "restaurants",
+      "dataset": "e2e_nlg",
+      "hint_map_id": "hm_e2e_nlg"
+    },
+    {
+      "mr": {
+        "slots": {
+          "name": "The Phoenix",
+          "cuisine_type": "Japanese",
+          "customerRating": "high",
+          "area_zone": "riverside"
+        }
+      },
+      "surface_form": "The Phoenix is a Japanese restaurant near the riverside that has high ratings.",
+      "topic": "restaurants",
+      "dataset": "e2e_nlg",
+      "hint_map_id": "hm_e2e_nlg"
+    },
+    {
+      "mr": {
+        "slots": {
+          "name": "The Cambridge Blue",
+          "venue_type": "pub",
+          "cuisine_type": "Fast food",
+          "priceRange": "cheap",
+          "nearby_landmark": "Caf\u00e9 Brazil"
+        }
+      },
+      "surface_form": "The Cambridge Blue is a Fast food pub with a cheap price range. It is located near to the Caf\u00e9 Brazil.",
+      "topic": "restaurants",
+      "dataset": "e2e_nlg",
+      "hint_map_id": "hm_e2e_nlg"
+    },
+    {
+      "mr": {
+        "slots": {
+          "name": "Browns Cambridge",
+          "venue_type": "coffee shop",
+          "cuisine_type": "Indian",
+          "customerRating": "5 out of 5",
+          "area_zone": "riverside",
+          "family_suitability": "family-friendly",
+          "nearby_landmark": "Crowne Plaza Hotel"
+        }
+      },
+      "surface_form": "Browns Cambridge coffee shop has Indian food with customer rating of 5 out of 5 at riverside, is family friendly and is near Crowne Plaza Hotel.",
+      "topic": "restaurants",
+      "dataset": "e2e_nlg",
+      "hint_map_id": "hm_e2e_nlg"
+    },
+    {
+      "mr": {
+        "slots": {
+          "name": "Cotto",
+          "venue_type": "coffee shop",
+          "cuisine_type": "French",
+          "priceRange": "\u00a320-25",
+          "customerRating": "high",
+          "area_zone": "riverside",
+          "nearby_landmark": "The Portland Arms"
+        }
+      },
+      "surface_form": "Cotto is coffee shop that serves French food in the riverside area near The Portland Arms. Prices range from \u00a320-25. It has a high customer rating.",
+      "topic": "restaurants",
+      "dataset": "e2e_nlg",
+      "hint_map_id": "hm_e2e_nlg"
+    }
+  ],
+  "hm_rnnlg_hotel": [
+    {
+      "mr": {
+        "dact": "inform",
+        "slots": {
+          "hotel_name": "red victorian bed breakfast and arts cafe",
+          "hotel_type": "hotel"
+        }
+      },
+      "surface_form": "red victorian bed breakfast and arts cafe is a nice hotel",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_hotel",
+      "topic": "hotel"
+    },
+    {
+      "mr": {
+        "dact": "inform",
+        "slots": {
+          "hotel_name": "parc 55 wyndham san francisco union square",
+          "hotel_has_internet": "has_internet"
+        }
+      },
+      "surface_form": "parc 55 wyndham san francisco union square is a nice place it has internet",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_hotel",
+      "topic": "hotel"
+    },
+    {
+      "mr": {
+        "dact": "inform",
+        "slots": {
+          "hotel_name": "queen anne hotel",
+          "hotel_near": "japantown",
+          "hotel_has_internet": "has_internet"
+        }
+      },
+      "surface_form": "queen anne hotel is in the japantown area and has internet",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_hotel",
+      "topic": "hotel"
+    },
+    {
+      "mr": {
+        "dact": "inform",
+        "slots": {
+          "hotel_name": "red victorian bed breakfast and arts cafe",
+          "hotel_near": "haight",
+          "hotel_has_internet": "has_internet"
+        }
+      },
+      "surface_form": "red victorian bed breakfast and arts cafe near haight has internet",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_hotel",
+      "topic": "hotel"
+    },
+    {
+      "mr": {
+        "dact": "inform_no_match",
+        "slots": {
+          "hotel_pets_allowed": "no_pets_allowed",
+          "hotel_near": "parkside"
+        }
+      },
+      "surface_form": "i am sorry but there are no hotel -s that do not allow dogs near parkside",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_hotel",
+      "topic": "hotel"
+    }
+  ],
+  "hm_rnnlg_laptop": [
+    {
+      "mr": {
+        "dact": "inform",
+        "slots": {
+          "laptop_name": "satellite pollux 92",
+          "laptop_type": "laptop",
+          "laptop_drive_range": "large",
+          "laptop_design": "luxe white glossy finish , white keyboard",
+          "laptop_drive": "1 tb"
+        }
+      },
+      "surface_form": "satellite pollux 92 laptop with 1 tb drive . large drive range . luxe white glossy finish , white keyboard",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_laptop",
+      "topic": "laptop"
+    },
+    {
+      "mr": {
+        "dact": "inform",
+        "slots": {
+          "laptop_name": "satellite tartarus 87",
+          "laptop_type": "laptop",
+          "laptop_drive_range": "medium",
+          "laptop_utility": "touchscreen",
+          "laptop_price_range": "moderate"
+        }
+      },
+      "surface_form": "satellite tartarus 87 is a laptop which is in the medium drive range , is used for touchscreen , and is in the moderate price range",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_laptop",
+      "topic": "laptop"
+    },
+    {
+      "mr": {
+        "dact": "recommend",
+        "slots": {
+          "laptop_name": "satellite heracles 99",
+          "laptop_type": "laptop",
+          "laptop_dimension": "33.35 inch",
+          "laptop_weight_range": "mid weight",
+          "laptop_battery": "4 hour"
+        }
+      },
+      "surface_form": "the 33.35 inch satellite heracles 99 laptop has a great screen size for its mid weight weight class and has a battery which has a life of 4 hour -s",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_laptop",
+      "topic": "laptop"
+    },
+    {
+      "mr": {
+        "dact": "inform_count",
+        "slots": {
+          "laptop_count": "40",
+          "laptop_type": "laptop",
+          "laptop_is_for_business_computing": "not_business_oriented",
+          "laptop_weight_range": "dontcare",
+          "laptop_battery_rating": "dontcare"
+        }
+      },
+      "surface_form": "if you do not care about weight range and battery rating , there are 40 laptop -s that are not for business computing",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_laptop",
+      "topic": "laptop"
+    },
+    {
+      "mr": {
+        "dact": "recommend",
+        "slots": {
+          "laptop_name": "portege thanatos 98",
+          "laptop_type": "laptop",
+          "laptop_battery": "5 hour",
+          "laptop_weight_range": "light weight",
+          "laptop_family": "portege"
+        }
+      },
+      "surface_form": "the nice portege thanatos 98 laptop is from the portege family of product -s and is in the light weight range and has a 5 hour battery life",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_laptop",
+      "topic": "laptop"
+    }
+  ],
+  "hm_rnnlg_restaurant": [
+    {
+      "mr": {
+        "dact": "inform",
+        "slots": {
+          "restaurant_name": "darbar restaurant",
+          "restaurant_phone": "4153591236"
+        }
+      },
+      "surface_form": "darbar restaurant is a nice place their phone number is 4153591236",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_restaurant",
+      "topic": "restaurant"
+    },
+    {
+      "mr": {
+        "dact": "inform_count",
+        "slots": {
+          "restaurant_type": "restaurant",
+          "restaurant_count": "239",
+          "restaurant_area": "dont_care"
+        }
+      },
+      "surface_form": "there are 239 restaurant -s in all parts of town",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_restaurant",
+      "topic": "restaurant"
+    },
+    {
+      "mr": {
+        "dact": "inform",
+        "slots": {
+          "restaurant_name": "fog harbor fish house",
+          "restaurant_area": "hayes valley",
+          "restaurant_price_range": "cheap",
+          "restaurant_food": "sea food"
+        }
+      },
+      "surface_form": "fog harbor fish house is a nice place , it is in the cheap price range , it serves sea food and it is in the area of hayes valley",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_restaurant",
+      "topic": "restaurant"
+    },
+    {
+      "mr": {
+        "dact": "inform",
+        "slots": {
+          "restaurant_name": "sanjalisco",
+          "restaurant_good_for_meal": "breakfast",
+          "restaurant_kidsallowed": "yes",
+          "restaurant_price_range": "cheap"
+        }
+      },
+      "surface_form": "sanjalisco is a nice place , where child -s are allowed , it is in the cheap price range and it is good for breakfast",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_restaurant",
+      "topic": "restaurant"
+    },
+    {
+      "mr": {
+        "dact": "inform_count",
+        "slots": {
+          "restaurant_type": "restaurant",
+          "restaurant_count": "218",
+          "restaurant_food": "dont_care"
+        }
+      },
+      "surface_form": "there are 218 restaurant -s that serve all type of food",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_restaurant",
+      "topic": "restaurant"
+    }
+  ],
+  "hm_rnnlg_tv": [
+    {
+      "mr": {
+        "dact": "recommend",
+        "slots": {
+          "tv_name": "oceanus 80",
+          "tv_type": "television",
+          "tv_family": "l2",
+          "tv_screen_size_range": "medium",
+          "tv_price_range": "cheap"
+        }
+      },
+      "surface_form": "oceanus 80 is a nice television. it is in the L2 product family, it is in the medium screen size range, and it is in the cheap price range.",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_tv",
+      "topic": "tv"
+    },
+    {
+      "mr": {
+        "dact": "recommend",
+        "slots": {
+          "tv_name": "apollo 33",
+          "tv_type": "television",
+          "tv_price_range": "cheap",
+          "tv_screen_size_range": "medium",
+          "tv_resolution": "1080p"
+        }
+      },
+      "surface_form": "apollo 33 is a nice television. it is in the cheap price range, it is in the medium screen size range, and its resolution is 1080p.",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_tv",
+      "topic": "tv"
+    },
+    {
+      "mr": {
+        "dact": "inform_count",
+        "slots": {
+          "tv_count": "59",
+          "tv_type": "television",
+          "tv_has_usb_port": "has_usb_port",
+          "tv_price_range": "dontcare",
+          "tv_eco_rating": "dontcare"
+        }
+      },
+      "surface_form": "there are 59 televisions with a usb port , including all price ranges and all eco ratings .",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_tv",
+      "topic": "tv"
+    },
+    {
+      "mr": {
+        "dact": "inform",
+        "slots": {
+          "tv_name": "pontus 55",
+          "tv_type": "television",
+          "tv_has_usb_port": "no_usb_port",
+          "tv_screen_size_range": "medium",
+          "tv_hdmi_port": "2"
+        }
+      },
+      "surface_form": "pontus 55 is a television which does not have any usb ports, is in the medium screen size range, and has 2 hdmi ports.",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_tv",
+      "topic": "tv"
+    },
+    {
+      "mr": {
+        "dact": "?compare",
+        "slots": {
+          "tv_name": [
+            "dinlas 61",
+            "crios 69"
+          ],
+          "tv_screen_size_range": [
+            "medium",
+            "large"
+          ],
+          "tv_family": [
+            "l1",
+            "t5"
+          ]
+        }
+      },
+      "surface_form": "the dinlas 61 is in the medium screen sizerange and in the l1 family . whereas the crios 69 is in the large screen sizerange and is in the t5 family .",
+      "dataset": "rnnlg",
+      "hint_map_id": "hm_rnnlg_tv",
+      "topic": "tv"
+    }
+  ],
+  "hm_tm1_auto_repair_appt": [
+    {
+      "conversation_id": "dlg-749e90f3-3de6-4680-a277-fc3848315ccc",
+      "surface_form": "Awesome so thats a 2012 Audi r8 thats been pulling to the left correct?",
+      "mr": {
+        "auto_repair.year.vehicle": "2012",
+        "auto_repair.name.vehicle": "Audi r8",
+        "auto_repair.reason.appt": "been pulling to the left"
+      },
+      "topic": "auto_repair_appt",
+      "hint_map_id": "hm_tm1_auto_repair_appt",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-acf16f41-2a7d-4d43-916c-15311269388d",
+      "surface_form": "Alright, you're set for tomorrow at 12 pm, and the charge will be $75 without tax.",
+      "mr": {
+        "auto_repair.date.appt": "tomorrow",
+        "auto_repair.time.appt": "12 pm"
+      },
+      "topic": "auto_repair_appt",
+      "hint_map_id": "hm_tm1_auto_repair_appt",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-c5ab4d0d-9c82-47dc-a730-eebf3fc23f4d",
+      "surface_form": "Let me check the schedule. Ok there is an opening tomorrow at noon. Is that ok?",
+      "mr": {
+        "auto_repair.date.appt": "tomorrow",
+        "auto_repair.time.appt": "noon"
+      },
+      "topic": "auto_repair_appt",
+      "hint_map_id": "hm_tm1_auto_repair_appt",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-863dc8ef-a8ca-450f-af68-e5b9bc235c49",
+      "surface_form": "It looks like tomorrow at 3pm is the next available time",
+      "mr": {
+        "auto_repair.date.appt": "tomorrow",
+        "auto_repair.time.appt": "3pm"
+      },
+      "topic": "auto_repair_appt",
+      "hint_map_id": "hm_tm1_auto_repair_appt",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-e150cac4-0b40-4879-a0d3-6723343a4c09",
+      "surface_form": "They have confirmed your appointment. Tomorrow at 2pm to troubleshoot issues with the car starting.",
+      "mr": {
+        "auto_repair.appointment": "They have confirmed your appointment",
+        "auto_repair.date.appt": "Tomorrow",
+        "auto_repair.time.appt": "2pm",
+        "auto_repair.reason.appt": "starting"
+      },
+      "topic": "auto_repair_appt",
+      "hint_map_id": "hm_tm1_auto_repair_appt",
+      "dataset": "unknown"
+    }
+  ],
+  "hm_tm1_coffee_ordering": [
+    {
+      "conversation_id": "dlg-2799f851-8f7f-495f-93c8-205fd0d557fb",
+      "surface_form": "ok, that was a venti caffe mocha with non fat milk and whipped cream, is that correct?",
+      "mr": {
+        "coffee_ordering.size.drink": "venti",
+        "coffee_ordering.name.drink": "caffe mocha",
+        "coffee_ordering.type.milk": "non fat milk",
+        "coffee_ordering.preference": "whipped cream"
+      },
+      "topic": "coffee_ordering",
+      "hint_map_id": "hm_tm1_coffee_ordering",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-aeeb3c4f-7727-4639-b958-28afed70ce4d",
+      "surface_form": "so medium iced espresso, with whipped cream, coconut milk and honey, is this correct?",
+      "mr": {
+        "coffee_ordering.size.drink": "medium",
+        "coffee_ordering.name.drink": "iced espresso",
+        "coffee_ordering.preference": [
+          "whipped cream",
+          "honey"
+        ],
+        "coffee_ordering.type.milk": "coconut milk"
+      },
+      "topic": "coffee_ordering",
+      "hint_map_id": "hm_tm1_coffee_ordering",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-d6a3ef55-9cf1-4964-97e9-cd37d1616852",
+      "surface_form": "Ok. One Large Caffe Latte, with soy milk. Shall I use your credit card on file?",
+      "mr": {
+        "coffee_ordering.num.drink": "One",
+        "coffee_ordering.size.drink": "Large",
+        "coffee_ordering.name.drink": "Caffe Latte",
+        "coffee_ordering.type.milk": "soy milk"
+      },
+      "topic": "coffee_ordering",
+      "hint_map_id": "hm_tm1_coffee_ordering",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-dd349e18-9130-44a0-96a1-b94f5b3c5ea5",
+      "surface_form": "Okay, the Starbucks on 75th and Jacklope has peppermint cappucinos available with peppermint and 2% milk, but no more Grande cups. Would you like a different size?",
+      "mr": {
+        "coffee_ordering.location.store": "75th and Jacklope",
+        "coffee_ordering.preference": "peppermint",
+        "coffee_ordering.name.drink": "cappucinos",
+        "coffee_ordering.type.milk": "2% milk",
+        "coffee_ordering.size.drink": "Grande"
+      },
+      "topic": "coffee_ordering",
+      "hint_map_id": "hm_tm1_coffee_ordering",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-85dfff7b-2003-44a9-91d9-54ca98eaf828",
+      "surface_form": "So large Havana Cappucino with almond milk, hot and the bacon crustless quiche?",
+      "mr": {
+        "coffee_ordering.size.drink": "large",
+        "coffee_ordering.name.drink": "Havana Cappucino",
+        "coffee_ordering.type.milk": "almond milk",
+        "coffee_ordering.preference": "hot"
+      },
+      "topic": "coffee_ordering",
+      "hint_map_id": "hm_tm1_coffee_ordering",
+      "dataset": "unknown"
+    }
+  ],
+  "hm_tm1_movie_tickets": [
+    {
+      "conversation_id": "dlg-733cf212-b091-48d2-a834-1294710e9ebf",
+      "surface_form": "I'm sorry the 4 pm showing of Us at Cinepolis is not available.",
+      "mr": {
+        "movie_ticket.time.start": "4 pm",
+        "movie_ticket.name.movie": "Us",
+        "movie_ticket.name.theater": "Cinepolis"
+      },
+      "topic": "movie_tickets",
+      "hint_map_id": "hm_tm1_movie_tickets",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-0a4389d7-6626-4929-a407-6a112a9cb919",
+      "surface_form": "ok, i have booked 3 tickets to see alita battle angel at 3:30pm at the amc boston common theater. your tickets and receipt will be texted to you.",
+      "mr": {
+        "movie_ticket.num.tickets": "3 tickets",
+        "movie_ticket.name.movie": "alita battle angel",
+        "movie_ticket.time.start": "3:30pm",
+        "movie_ticket.name.theater": "the amc boston common theater"
+      },
+      "topic": "movie_tickets",
+      "hint_map_id": "hm_tm1_movie_tickets",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-40e668de-30b2-4aa1-b75e-7f8ef7b1c789",
+      "surface_form": "Unfortunately, there isn't a 3D showtime at 6:30 pm for Dumbo in your area",
+      "mr": {
+        "movie_ticket.type.screening": "3D",
+        "movie_ticket.time.start": "6:30 pm",
+        "movie_ticket.name.movie": "Dumbo"
+      },
+      "topic": "movie_tickets",
+      "hint_map_id": "hm_tm1_movie_tickets",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-a982a45e-44d6-4b81-bb0a-2fa4b5b679e9",
+      "surface_form": "Okay, for standard showings, the available times are 5:40 and 8:50pm.",
+      "mr": {
+        "movie_ticket.type.screening": "standard",
+        "movie_ticket.time.start": [
+          "5:40",
+          "8:50pm"
+        ]
+      },
+      "topic": "movie_tickets",
+      "hint_map_id": "hm_tm1_movie_tickets",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-d15329a6-dafa-4586-b872-3f39e37dbb22",
+      "surface_form": "If you'd like to do a 2D showing, then their last showtime is 9pm.",
+      "mr": {
+        "movie_ticket.type.screening": "2D",
+        "movie_ticket.time.start": "9pm"
+      },
+      "topic": "movie_tickets",
+      "hint_map_id": "hm_tm1_movie_tickets",
+      "dataset": "unknown"
+    }
+  ],
+  "hm_tm1_pizza_ordering": [
+    {
+      "conversation_id": "dlg-a253b089-9279-4c44-b537-7c97e0b25efe",
+      "surface_form": "To confirm a large cheese with green pepper and pepperoni?",
+      "mr": {
+        "pizza_ordering.size.pizza": "large",
+        "pizza_ordering.type.topping": [
+          "cheese",
+          "green pepper",
+          "pepperoni"
+        ]
+      },
+      "topic": "pizza_ordering",
+      "hint_map_id": "hm_tm1_pizza_ordering",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-d416729f-c7f6-4680-bed5-225eadbd33bd",
+      "surface_form": "Okay so 1 large buffalo chicken pie with blue cheese double cut.",
+      "mr": {
+        "pizza_ordering.size.pizza": "large",
+        "pizza_ordering.name.pizza": "buffalo chicken pie",
+        "pizza_ordering.type.topping": "blue cheese",
+        "pizza_ordering.preference": [
+          "double cut",
+          "ouble cut."
+        ]
+      },
+      "topic": "pizza_ordering",
+      "hint_map_id": "hm_tm1_pizza_ordering",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-414d531e-485f-4a8c-9cdb-530cb2a25949",
+      "surface_form": "Yes but to confirm you wanted a large, the Works,original crust, well-done crust, and with extra cheese.",
+      "mr": {
+        "pizza_ordering.size.pizza": "large",
+        "pizza_ordering.name.pizza": "the Works",
+        "pizza_ordering.type.crust": [
+          "original crust",
+          "well-done crust"
+        ],
+        "pizza_ordering.preference": "extra cheese"
+      },
+      "topic": "pizza_ordering",
+      "hint_map_id": "hm_tm1_pizza_ordering",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-17d86515-b7b0-465d-9854-7cf389c04272",
+      "surface_form": "got it. your order of 4 medium pizzas, 2 pepperoni, 1 meat lovers, and 1 bbq chicken. all with thick crust comes out to $48.",
+      "mr": {
+        "pizza_ordering.size.pizza": "medium",
+        "pizza_ordering.type.topping": [
+          "pepperoni",
+          "bbq chicken"
+        ],
+        "pizza_ordering.name.pizza": "meat lovers",
+        "pizza_ordering.type.crust": "thick crust"
+      },
+      "topic": "pizza_ordering",
+      "hint_map_id": "hm_tm1_pizza_ordering",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-f16222b9-19a1-443c-9c0b-f353cd4a74f9",
+      "surface_form": "4 large pizzas, 2 meat lovers, 1 pepperoni and 1 veggie lovers with gluten free crust comes out to $40.",
+      "mr": {
+        "pizza_ordering.size.pizza": "large",
+        "pizza_ordering.name.pizza": [
+          "meat lovers",
+          "veggie lovers"
+        ],
+        "pizza_ordering.type.topping": "pepperoni",
+        "pizza_ordering.type.crust": "gluten free"
+      },
+      "topic": "pizza_ordering",
+      "hint_map_id": "hm_tm1_pizza_ordering",
+      "dataset": "unknown"
+    }
+  ],
+  "hm_tm1_restaurant_table": [
+    {
+      "conversation_id": "dlg-68b083ae-6857-403f-8640-49ae9f5bff43",
+      "surface_form": "all set. your reservation is confirmed for march 8th at 8:30pm for 2 people.",
+      "mr": {
+        "restaurant_reservation.time.reservation": "8:30pm",
+        "restaurant_reservation.num.guests": "2"
+      },
+      "topic": "restaurant_table",
+      "hint_map_id": "hm_tm1_restaurant_table",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-9786d0bb-8794-42ca-8f4c-9cbc14c3397a",
+      "surface_form": "You are most welcome. Three Amigos will be seeing you on April 10th at 2 p.m. I will put the reservation down under Miller, that is for 6 guests at a table. I hope you have a wonderful time.",
+      "mr": {
+        "restaurant_reservation.num.guests": [
+          "Three",
+          "6"
+        ],
+        "restaurant_reservation.name.restaurant": "Three Amigos",
+        "restaurant_reservation.time.reservation": [
+          "April 10th at 2 p.m",
+          "2 p.m."
+        ],
+        "restaurant_reservation.name.reservation": "Miller",
+        "restaurant_reservation.type.seating": "table"
+      },
+      "topic": "restaurant_table",
+      "hint_map_id": "hm_tm1_restaurant_table",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-37181c93-76d8-4b04-b312-a6461574bd15",
+      "surface_form": "Good news! I was able to make a reservation for 8 people on Friday, March 22nd at 6pm at Mo's.",
+      "mr": {
+        "restaurant_reservation.num.guests": "8",
+        "restaurant_reservation.time.reservation": "6pm",
+        "restaurant_reservation.name.restaurant": "Mo's"
+      },
+      "topic": "restaurant_table",
+      "hint_map_id": "hm_tm1_restaurant_table",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-31566f13-bd83-415d-aa72-a9c5580db715",
+      "surface_form": "that's right. you can't go wrong with that. a reservation on sunday at 7:30pm at cajun house is available, i'll book it for you now.",
+      "mr": {
+        "restaurant_reservation.time.reservation": "sunday at 7:30pm",
+        "restaurant_reservation.name.restaurant": "cajun house"
+      },
+      "topic": "restaurant_table",
+      "hint_map_id": "hm_tm1_restaurant_table",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-94790b7f-b17d-45c5-949a-198eeb333700",
+      "surface_form": "so that's 2 people for 5 pm at R&G lounge right?",
+      "mr": {
+        "restaurant_reservation.num.guests": "2",
+        "restaurant_reservation.time.reservation": "5 pm",
+        "restaurant_reservation.name.reservation": "R&G lounge"
+      },
+      "topic": "restaurant_table",
+      "hint_map_id": "hm_tm1_restaurant_table",
+      "dataset": "unknown"
+    }
+  ],
+  "hm_tm1_uber_lyft": [
+    {
+      "conversation_id": "dlg-8776cc3f-6bb0-4eda-a4a7-90bfbc383d51",
+      "surface_form": "I found a rate for UberX that will be $18.45, but you can also choose a Lyft that would be $16.44.",
+      "mr": {
+        "uber_lyft.type.ride": "UberX",
+        "uber_lyft.price.estimate": [
+          "$18.45",
+          "$16.44"
+        ]
+      },
+      "topic": "uber_lyft",
+      "hint_map_id": "hm_tm1_uber_lyft",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-e1da71f7-227c-47d8-9a48-0ef809eea0e5",
+      "surface_form": "an uber xl for 4 people comes out to $14.72 and the ride will b about 7 mins.",
+      "mr": {
+        "uber_lyft.type.ride": "uber xl",
+        "uber_lyft.num.people": "4",
+        "uber_lyft.price.estimate": "$14.72",
+        "uber_lyft.duration.estimate": "7 mins"
+      },
+      "topic": "uber_lyft",
+      "hint_map_id": "hm_tm1_uber_lyft",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-925249b9-854d-4e9f-a146-f4fcca38c750",
+      "surface_form": "A regular Lyft is $20-25, a Shared ride is $9-12, an XL ride is $42-49, a Lux ride is $42-49, a Lux Black ride is $60-70, and a Lux Black XL is $86-98",
+      "mr": {
+        "uber_lyft.type.ride": [
+          "regular Lyft",
+          "Shared ride",
+          "XL",
+          "Lux ride",
+          "Lux Black",
+          "Lux Black XL"
+        ],
+        "uber_lyft.price.estimate": [
+          "$20-25",
+          "$9-12",
+          "$42-49",
+          "$60-70",
+          "$86-98"
+        ]
+      },
+      "topic": "uber_lyft",
+      "hint_map_id": "hm_tm1_uber_lyft",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-b401da93-678b-4db9-ac80-f318e124e222",
+      "surface_form": "Sure thin! With uber XL, that allows 1 to 6 passengers the fare will be $16.33.",
+      "mr": {
+        "uber_lyft.type.ride": "uber XL",
+        "uber_lyft.num.people": "1 to 6 passengers",
+        "uber_lyft.price.estimate": "$16.33"
+      },
+      "topic": "uber_lyft",
+      "hint_map_id": "hm_tm1_uber_lyft",
+      "dataset": "unknown"
+    },
+    {
+      "conversation_id": "dlg-cab92c99-9ab0-43db-8535-d73390a25b2b",
+      "surface_form": "Ok, York Galleria to Lancaster Park City in an Uber XL and on what day?",
+      "mr": {
+        "uber_lyft.location.from": "York Galleria",
+        "uber_lyft.location.to": "Lancaster Park City",
+        "uber_lyft.type.ride": "Uber XL"
+      },
+      "topic": "uber_lyft",
+      "hint_map_id": "hm_tm1_uber_lyft",
+      "dataset": "unknown"
+    }
+  ],
+  "hm_viggo": [
+    {
+      "mr": {
+        "dact": "verify_attribute",
+        "slots": {
+          "name": "Assassin's Creed Chronicles: India",
+          "review_rating": "poor",
+          "multiplayer_mode": "single-player",
+          "platforms": "PlayStation"
+        }
+      },
+      "surface_form": "Previously you told me that you don't like to play Assassin's Creed Chronicles: India. Does it mean you hate single-player PlayStation games in general?",
+      "topic": "video_games",
+      "dataset": "viggo",
+      "hint_map_id": "hm_viggo"
+    },
+    {
+      "mr": {
+        "dact": "verify_attribute",
+        "slots": {
+          "name": "Need for Speed: Payback",
+          "esrb_rating": "T (for Teen)",
+          "review_rating": "poor",
+          "perspective": "third person"
+        }
+      },
+      "surface_form": "You said that you disliked Need for Speed: Payback. Is this the case for all third person games rated T?",
+      "topic": "video_games",
+      "dataset": "viggo",
+      "hint_map_id": "hm_viggo"
+    },
+    {
+      "mr": {
+        "dact": "verify_attribute",
+        "slots": {
+          "name": "Outlast II",
+          "released": "2017",
+          "review_rating": "average",
+          "platforms": "Xbox"
+        }
+      },
+      "surface_form": "You said earlier that you thought Outlast II was average. Are you typically unimpressed by Xbox games from 2017?",
+      "topic": "video_games",
+      "dataset": "viggo",
+      "hint_map_id": "hm_viggo"
+    },
+    {
+      "mr": {
+        "dact": "inform",
+        "slots": {
+          "name": "MotorStorm: Apocalypse",
+          "released": "2011",
+          "review_rating": "poor",
+          "genres": "vehicular combat",
+          "perspective": "third person",
+          "platforms": "PlayStation"
+        }
+      },
+      "surface_form": "MotorStorm: Apocalypse was released in 2011. It's a third person vehicular combat game only played on the PlayStation platform. MotorStorm: Apocalypse has a rating of poor.",
+      "topic": "video_games",
+      "dataset": "viggo",
+      "hint_map_id": "hm_viggo"
+    },
+    {
+      "mr": {
+        "dact": "verify_attribute",
+        "slots": {
+          "name": "Outlast II",
+          "released": "2017",
+          "review_rating": "average",
+          "platforms": "Xbox"
+        }
+      },
+      "surface_form": "So you mentioned that Outlast II was just plain old average in quality. Do you think that also applies to the other games released for the Xbox in 2017?",
+      "topic": "video_games",
+      "dataset": "viggo",
+      "hint_map_id": "hm_viggo"
+    }
+  ]
+}

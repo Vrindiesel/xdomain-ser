@@ -1,0 +1,63 @@
+{
+  "uber": {
+    "location.from": "pickup location/address (e.g., '123 Main St', 'SFO', 'current location')",
+    "location.to": "dropoff location/address (e.g., '200 Elm St', 'downtown Marriott')",
+    "type.ride": "ride type/service level (e.g., UberX, UberXL, Lyft, Shared/Pool, Black)",
+    "num.people": "number of passengers (integer, e.g., 1, 2, 3)",
+    "price.estimate": "estimated fare (currency or range, e.g., '$12–15')",
+    "duration.estimate": "estimated travel time (e.g., '18 min')",
+    "time.pickup": "pickup time (e.g., 'now', 'in 10 minutes', '5:30 pm')",
+    "time.dropoff": "dropoff time (exact or estimated, e.g., 'by 6:10 pm')"
+  },
+
+  "movie": {
+    "name.movie": "movie title (exact title, e.g., 'Dune: Part Two')",
+    "name.theater": "theater/cinema name (e.g., 'AMC Metreon')",
+    "num.tickets": "number of tickets (integer, e.g., 2)",
+    "time.start": "showtime start (date/time, e.g., 'Fri 7:45 pm')",
+    "location.theater": "theater address/area (e.g., '135 4th St', 'downtown')",
+    "price.ticket": "price per ticket (currency, e.g., '$14.50')",
+    "type.screening": "screening type/format (e.g., 2D, 3D, IMAX, Dolby)",
+    "time.end": "showtime end (e.g., 'ends 10:05 pm')",
+    "time.duration": "movie runtime (e.g., '126 minutes')"
+  },
+
+  "restaurant": {
+    "name.restaurant": "restaurant name (exact; keep casing/punctuation)",
+    "name.reservation": "reservation holder’s name (e.g., 'Alice Kim')",
+    "num.guests": "party size (integer, e.g., 4)",
+    "time.reservation": "reservation date/time (e.g., 'Sat 7 pm')",
+    "type.seating": "seating preference (e.g., indoor, outdoor, booth, window, bar)",
+    "location.restaurant": "restaurant address/area (e.g., 'SoMa', '221B Baker St')"
+  },
+
+  "coffee": {
+    "location.store": "café/store location (address or area, e.g., 'Market & 4th')",
+    "name.drink": "drink name (e.g., latte, cappuccino, cold brew, Americano)",
+    "size.drink": "drink size (e.g., small/medium/large; short/tall/grande/venti)",
+    "num.drink": "quantity (integer, e.g., 2)",
+    "type.milk": "milk type (e.g., whole, skim, oat, almond, soy)",
+    "preference": "customization (e.g., iced/hot, extra shot, no foam, sugar-free, extra hot)"
+  },
+
+  "pizza": {
+    "name.store": "pizzeria/store name (e.g., 'Tony’s Pizza')",
+    "name.pizza": "pizza name/style (e.g., Margherita, Pepperoni, Hawaiian; or 'build your own')",
+    "size.pizza": "pizza size (e.g., small/medium/large; 12\"/14\"/16\")",
+    "type.topping": "toppings list (e.g., pepperoni, mushrooms, onions, olives)",
+    "type.crust": "crust style (e.g., thin, hand-tossed, deep dish, gluten-free)",
+    "preference": "special instructions (e.g., extra cheese, well-done, light sauce)",
+    "location.store": "store location/address (e.g., '5th & Pine')"
+  },
+
+  "auto": {
+    "name.store": "auto shop/garage name (e.g., 'QuickFix Auto')",
+    "name.customer": "customer full name (e.g., 'Jordan Lee')",
+    "date.appt": "appointment date (e.g., 'Aug 28, 2025')",
+    "time.appt": "appointment time (e.g., '10:30 am')",
+    "reason.appt": "service needed (e.g., oil change, brake inspection, check engine)",
+    "name.vehicle": "vehicle make/model (e.g., 'Toyota Camry')",
+    "year.vehicle": "vehicle year (4-digit, e.g., 2018)",
+    "location.store": "shop address/area (e.g., '415 King St', 'Midtown')"
+  }
+}

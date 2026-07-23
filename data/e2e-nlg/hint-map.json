@@ -1,0 +1,10 @@
+{
+  "name": "restaurant name (e.g., “The Waterman”; keep exact casing/punctuation)",
+  "venue_type": "venue type (restaurant, pub, coffee shop)",
+  "cuisine_type": "cuisine/type of food (e.g., English, Chinese, Italian, fast food)",
+  "priceRange": "price range (e.g., cheap, moderate, expensive; or “£20–25”)",
+  "customerRating": "customer rating (low, average, high)",
+  "area_zone": "area/neighborhood (e.g., city centre, riverside)",
+  "family_suitability": "family suitability (family-friendly / not-family-friendly)",
+  "nearby_landmark": "nearby landmark (free text, e.g., near the ‘nearVariable’)"
+}

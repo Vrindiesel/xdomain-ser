@@ -1,0 +1,25 @@
+{
+  "Movie_Tickets": {
+    "name.movie": "movie title (exact; keep casing/punctuation)",
+    "name.theater": "theater/cinema name (e.g., 'AMC Metreon')",
+    "date.showing": "show date (e.g., 'Fri, Sep 5', '2025-09-05')",
+    "date.release": "release date (e.g., 'Mar 1, 2025')",
+    "description.plot": "plot synopsis/summary (one or two sentences)",
+    "description.other": "other descriptive details (awards, franchise, trivia)",
+    "duration.movie": "runtime (e.g., '126 minutes', '2h 6m')",
+    "location": "theater address/area (e.g., 'Downtown', '135 4th St')",
+    "name.character": "character name mentioned in context",
+    "name.genre": "genre(s) (e.g., action, comedy, drama, sci-fi)",
+    "name.person": "person name (actor/director/producer)",
+    "num.tickets": "number of tickets (integer, e.g., 2)",
+    "price.ticket": "price per ticket (e.g., '$14.50')",
+    "price.total": "total price for all tickets/fees",
+    "rating.movie": "content rating (G/PG/PG-13/R/NC-17)",
+    "review.audience": "audience score/opinion (e.g., '88%', 'liked by audiences')",
+    "review.critic": "critic score/opinion (e.g., '75%', '3/4 stars', 'Certified Fresh')",
+    "seating": "seat preference/assignment (e.g., 'Row D, seats 5–6', 'aisle')",
+    "time.preference": "preferred time window (morning/afternoon/evening/late)",
+    "time.showing": "showtime start (e.g., '7:45 pm')",
+    "type.screening": "format (2D, 3D, IMAX, Dolby)"
+  }
+}

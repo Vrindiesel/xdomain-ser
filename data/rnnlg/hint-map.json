@@ -1,0 +1,71 @@
+{
+  "restaurant": {
+    "name": "venue name (keep casing/punctuation)",
+    "type": "venue type (e.g., 'restaurant', 'pub', 'coffee shop')",
+    "pricerange": "price band (cheap/moderate/expensive; or 'low/mid/high')",
+    "price": "specific price or range (e.g., '$25', '$20–30')",
+    "phone": "telephone number of the venue",
+    "address": "street address (e.g., '123 Mission St')",
+    "postcode": "postal/ZIP code",
+    "area": "neighborhood/area (e.g., 'downtown', 'riverside')",
+    "near": "landmark/nearby place (e.g., 'near Union Square')",
+    "food": "cuisine (e.g., 'Italian', 'Chinese')",
+    "goodformeal": "meal time suitability (breakfast/lunch/dinner)",
+    "child_friendly": "child-friendly? (child_friendly/not_child_friendly)"
+  },
+
+  "hotel": {
+    "name": "hotel name (keep casing/punctuation)",
+    "type": "venue type/subtype (e.g., 'hotel', 'motel', 'inn')",
+    "price_range": "price band (cheap/moderate/expensive; or 'budget/midrange/upscale')",
+    "price": "specific price or range (e.g., '$180', '$150–200')",
+    "phone": "telephone number of the hotel",
+    "address": "street address (e.g., '750 Kearny St')",
+    "postcode": "postal/ZIP code",
+    "area": "neighborhood/area (e.g., 'Fisherman’s Wharf')",
+    "near": "landmark proximity (e.g., 'near Union Square')",
+    "has_internet": "internet available? (has_internet/no_internet) (e.g., 'free Wi-Fi', no Wi-Fi)",
+    "accepts_cards": "credit card card payment accepted? (accepts_credit_cards/no_credit_cards)",
+    "pets_allowed": "are pets and dogs permitted? (pets_allowed/no_pets_allowed)"
+  },
+
+  "laptop": {
+    "family": "model family/series/brand line (e.g., 'ThinkPad', 'Satellite')",
+    "pricerange": "price band (budget/midrange/high-end, or a range like '$700–900')",
+    "battery_rating": "battery quality/lasting time (e.g., 'standard', 'long-lasting')",
+    "drive_range": "storage capacity range (e.g., '256–512GB')",
+    "weightrange": "weight range/class (e.g., 'under 1.2kg', 'lightweight')",
+    "is_for_business_computing": "business-oriented? (business-oriented/not_business_oriented)",
+    "name": "exact product name (e.g., 'Satellite Dinlas 18')",
+    "type": "device type (e.g., 'laptop', 'ultrabook', 'gaming laptop')",
+    "price": "specific price (e.g., '$899')",
+    "warranty": "warranty term (e.g., '1-year', '2 years')",
+    "battery": "battery description (cells/Wh or hours, e.g., '6-cell', '10h')",
+    "design": "build/style (e.g., 'aluminum body', 'convertible 2-in-1')",
+    "dimension": "physical dimensions (e.g., '13.3\" x 9.1\" x 0.6\"')",
+    "utility": "intended use (e.g., 'gaming', 'business', 'student')",
+    "weight": "exact weight (e.g., '1.25 kg', '2.8 lb')",
+    "platform": "OS/platform (e.g., 'Windows 11', 'Ubuntu', 'ChromeOS')",
+    "memory": "RAM capacity/type (e.g., '16GB DDR4')",
+    "drive": "storage spec (type+size, e.g., '512GB SSD', '1TB HDD')",
+    "processor": "CPU model (e.g., 'Intel i5-1135G7', 'Ryzen 7 5800U')"
+  },
+
+  "tv": {
+    "family": "model family/series (e.g., 'Bravia', 'QLED 8-Series')",
+    "price_range": "price band or range (budget/midrange/premium; '$500–700')",
+    "screen_size_range": "screen size band (e.g., '32–40\"', 'over 65\"')",
+    "eco_rating": "energy rating (e.g., 'A+', 'Energy Star certified')",
+    "hdmi_port": "number of HDMI ports (integer in text, e.g., '3 HDMI ports')",
+    "has_usb_port": "USB port present? (has_usb_port/no_usb_port)",
+    "name": "exact TV model name",
+    "type": "panel/tech type (e.g., 'LED', 'OLED', 'QLED', 'LCD')",
+    "price": "specific price (e.g., '$999')",
+    "resolution": "display resolution (e.g., '1080p', '4K UHD', '8K')",
+    "power_consumption": "power usage (e.g., '120W', '0.5W standby')",
+    "accessories": "included extras (e.g., 'stand', 'wall mount', 'remote')",
+    "color": "chassis color (e.g., 'black', 'silver')",
+    "screen_size": "exact diagonal size (e.g., '55\"')",
+    "audio": "audio features (e.g., 'Dolby Atmos', '2.1-ch speakers')"
+  }
+}

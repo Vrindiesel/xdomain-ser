@@ -1,0 +1,563 @@
+{
+  "hm_tm1_auto_repair": {
+    "hint_map_id": "hm_tm1_auto_repair",
+    "hint_map": {
+      "name.store": "auto shop / garage name (e.g., 'QuickFix Auto')",
+      "name.customer": "customer full name (e.g., 'Jordan Lee')",
+      "date.appt": "appointment date (e.g., 'Aug 28, 2025')",
+      "time.appt": "appointment time (e.g., '10:30 am')",
+      "reason.appt": "service needed (e.g., oil change, brake inspection, check engine)",
+      "name.vehicle": "vehicle make/model (e.g., 'Toyota Camry')",
+      "year.vehicle": "vehicle year (4-digit, e.g., 2018)",
+      "location.store": "shop address/area (e.g., '415 King St', 'Midtown')"
+    }
+  },
+  "hm_tm1_auto_repair_appt": {
+    "hint_map_id": "hm_tm1_auto_repair_appt",
+    "hint_map": {
+      "name.store": "auto shop / garage name (e.g., 'QuickFix Auto')",
+      "name.customer": "customer full name (e.g., 'Jordan Lee')",
+      "date.appt": "appointment date (e.g., 'Aug 28, 2025')",
+      "time.appt": "appointment time (e.g., '10:30 am')",
+      "reason.appt": "service needed (e.g., oil change, brake inspection, check engine)",
+      "name.vehicle": "vehicle make / model (e.g., 'Toyota Camry')",
+      "year.vehicle": "vehicle year (4-digit, e.g., 2018)",
+      "location.store": "shop address/area (e.g., '415 King St', 'Midtown')"
+    }
+  },
+  "hm_tm1_coffee_ordering": {
+    "hint_map_id": "hm_tm1_coffee_ordering",
+    "hint_map": {
+      "location.store": "caf\u00e9 / store location (address or area, e.g., 'Market & 4th')",
+      "name.drink": "drink name (e.g., latte, cappuccino, cold brew, Americano)",
+      "size.drink": "drink size (e.g., small/medium/large; short/tall/grande/venti)",
+      "num.drink": "quantity (integer, e.g., 2)",
+      "type.milk": "milk type (e.g., whole, skim, oat, almond, soy)",
+      "preference": "customization (e.g., iced/hot, extra shot, no foam, sugar-free, extra hot)"
+    }
+  },
+  "hm_tm1_movie_finder": {
+    "hint_map_id": "hm_tm1_movie_finder",
+    "hint_map": {
+      "name.movie": "movie title (exact title, e.g., 'Dune: Part Two')",
+      "name.theater": "theater/cinema name (e.g., 'AMC Metreon')",
+      "num.tickets": "number of tickets (integer, e.g., 2)",
+      "time.start": "showtime start (date/time, e.g., 'Fri 7:45 pm')",
+      "location.theater": "theater address/area (e.g., '135 4th St', 'downtown')",
+      "price.ticket": "price per ticket (currency, e.g., '$14.50')",
+      "type.screening": "screening type/format (e.g., 2D, 3D, IMAX, Dolby)",
+      "time.end": "showtime end (e.g., 'ends 10:05 pm')",
+      "time.duration": "movie runtime (e.g., '126 minutes')"
+    }
+  },
+  "hm_tm1_movie_ticket": {
+    "hint_map_id": "hm_tm1_movie_ticket",
+    "hint_map": {
+      "name.movie": "movie title (exact title, e.g., 'Dune: Part Two')",
+      "name.theater": "theater/cinema name (e.g., 'AMC Metreon')",
+      "num.tickets": "number of tickets (integer, e.g., 2)",
+      "time.start": "showtime start (date/time, e.g., 'Fri 7:45 pm')",
+      "location.theater": "theater address/area (e.g., '135 4th St', 'downtown')",
+      "price.ticket": "price per ticket (currency, e.g., '$14.50')",
+      "type.screening": "screening type/format (e.g., 2D, 3D, IMAX, Dolby)",
+      "time.end": "showtime end (e.g., 'ends 10:05 pm')",
+      "time.duration": "movie runtime (e.g., '126 minutes')"
+    }
+  },
+  "hm_tm1_movie_tickets": {
+    "hint_map_id": "hm_tm1_movie_tickets",
+    "hint_map": {
+      "name.movie": "movie title (exact title, e.g., 'Dune: Part Two')",
+      "name.theater": "theater/cinema name (e.g., 'AMC Metreon')",
+      "num.tickets": "number of tickets (integer, e.g., 2)",
+      "time.start": "showtime start (date/time, e.g., 'Fri 7:45 pm')",
+      "location.theater": "theater address/area (e.g., '135 4th St', 'downtown')",
+      "price.ticket": "price per ticket (currency, e.g., '$14.50')",
+      "type.screening": "screening type/format (e.g., 2D, 3D, IMAX, Dolby)",
+      "time.end": "showtime end (e.g., 'ends 10:05 pm')",
+      "time.duration": "movie runtime (e.g., '126 minutes')"
+    }
+  },
+  "hm_tm1_pizza_ordering": {
+    "hint_map_id": "hm_tm1_pizza_ordering",
+    "hint_map": {
+      "name.store": "pizzeria/store name (e.g., 'Tony\u2019s Pizza')",
+      "name.pizza": "pizza name/style (e.g., Margherita, Pepperoni, Hawaiian; or 'build your own')",
+      "size.pizza": "pizza size (e.g., small/medium/large; 12\"/14\"/16\")",
+      "type.topping": "toppings list (e.g., pepperoni, mushrooms, onions, olives)",
+      "type.crust": "crust style (e.g., thin, hand-tossed, deep dish, gluten-free)",
+      "preference": "special instructions (e.g., extra cheese, well-done, light sauce)",
+      "location.store": "store location/address (e.g., '5th & Pine')"
+    }
+  },
+  "hm_tm1_restaurant_table": {
+    "hint_map_id": "hm_tm1_restaurant_table",
+    "hint_map": {
+      "name.restaurant": "restaurant name (exact; keep casing/punctuation)",
+      "name.reservation": "reservation holder\u2019s name (e.g., 'Alice Kim')",
+      "num.guests": "party size (integer, e.g., 4)",
+      "time.reservation": "reservation date/time (e.g., 'Sat 7 pm')",
+      "type.seating": "seating preference (e.g., indoor, outdoor, booth, window, bar)",
+      "location.restaurant": "restaurant address/area (e.g., 'SoMa', '221B Baker St')"
+    }
+  },
+  "hm_tm1_uber_lyft": {
+    "hint_map_id": "hm_tm1_uber_lyft",
+    "hint_map": {
+      "location.from": "pickup location/address (e.g., '123 Main St', 'SFO', 'current location')",
+      "location.to": "dropoff location/address (e.g., '200 Elm St', 'downtown Marriott')",
+      "type.ride": "ride type/service level (e.g., UberX, UberXL, Lyft, Shared/Pool, Black)",
+      "num.people": "number of passengers (integer, e.g., 1, 2, 3)",
+      "price.estimate": "estimated fare (currency or range, e.g., '$12\u201315')",
+      "duration.estimate": "estimated travel time (e.g., '18 min')",
+      "time.pickup": "pickup time (e.g., 'now', 'in 10 minutes', '5:30 pm')",
+      "time.dropoff": "dropoff time (exact or estimated, e.g., 'by 6:10 pm')"
+    }
+  },
+  "hm_tm2_flights": {
+    "hint_map_id": "hm_tm2_flights",
+    "hint_map": {
+      "flight_search": {
+        "type": "trip type (e.g., one-way, round-trip, multi-city)",
+        "destination1": "first destination city/airport (e.g., 'LAX', 'Paris')",
+        "destination2": "second destination (for multi-city), optional",
+        "origin": "origin city/airport (e.g., 'SFO', 'New York JFK')",
+        "date.depart": "departure date (e.g., 'Sep 12, 2025')",
+        "date.intermediate": "intermediate/connection date (for multi-city)",
+        "date.return": "return date (for round-trip)",
+        "time_of_day": "preferred departure window (morning/afternoon/evening/red-eye)",
+        "seating_class": "cabin class (economy, premium economy, business, first)",
+        "seat_location": "seat preference (aisle, window, middle, exit row)",
+        "stops": "number of stops (nonstop, 1 stop, 2+ stops)",
+        "price_range": "budget (e.g., '$200\u2013300', 'under $500')",
+        "num.pax": "number of passengers (e.g., 1, 2, 3)",
+        "luggage": "bags allowance (e.g., '1 checked bag', 'carry-on only')",
+        "total_fare": "total trip price (e.g., '$648 all-in')",
+        "other_description": "constraints/preferences (e.g., airline prefs, flexible dates, avoid redeyes)"
+      },
+      "flight_detail": {
+        "from": "departure city/airport (e.g., 'SFO')",
+        "to": "arrival city/airport (e.g., 'LAX')",
+        "airline": "airline name (e.g., 'Delta')",
+        "flight_number": "airline flight number (e.g., 'DL 123')",
+        "date": "flight date (e.g., 'Sep 12, 2025')",
+        "from.time": "scheduled departure time (e.g., '07:45')",
+        "to.time": "scheduled arrival time (e.g., '09:10')",
+        "stops": "stop count (nonstop / 1 stop / 2+)",
+        "stops.location": "stopover airport(s) (e.g., 'PHX')",
+        "seating_class": "cabin class (economy/business/first)",
+        "seat_location": "seat preference (aisle/window/middle)",
+        "fare": "price for this leg (e.g., '$219')",
+        "other_description": "extras (e.g., aircraft, wifi, basic economy restrictions)"
+      }
+    }
+  },
+  "hm_tm2_food_ordering": {
+    "hint_map_id": "hm_tm2_food_ordering",
+    "hint_map": {
+      "food_order": {
+        "name.item": "dish or item name (e.g., 'chicken burrito')",
+        "other_description.item": "customizations (e.g., 'no sour cream', 'extra spicy')",
+        "type.retrieval": "pickup/delivery/dine-in",
+        "name.person": "customer name (e.g., 'Maya Patel')",
+        "total_price": "order total (e.g., '$28.45')",
+        "time.pickup": "pickup time (e.g., '6:15 pm')",
+        "num.people": "serves how many people (e.g., 2)",
+        "name.restaurant": "restaurant name",
+        "type.food": "cuisine (e.g., Mexican, Chinese, Italian)",
+        "type.meal": "meal type (breakfast/lunch/dinner)",
+        "location.restaurant": "restaurant address/area",
+        "rating.restaurant": "restaurant rating (stars or adjectives)",
+        "price_range": "price level (e.g., '$$', 'cheap/moderate/expensive')",
+        "phone.restaurant": "restaurant phone",
+        "business_hours.restaurant": "opening hours (e.g., '10am\u201310pm')",
+        "official_description.restaurant": "official blurb/description"
+      }
+    }
+  },
+  "hm_tm2_hotels": {
+    "hint_map_id": "hm_tm2_hotels",
+    "hint_map": {
+      "hotel_search": {
+        "name.hotel": "hotel name (e.g., 'Hilton Midtown')",
+        "location.hotel": "city/area (e.g., 'Seattle downtown')",
+        "sub_location.hotel": "neighborhood/sub-area (e.g., 'SoMa')",
+        "star_rating": "hotel class (1\u20135 stars)",
+        "customer_rating": "guest rating (score or adjectives)",
+        "price_range": "budget per night (e.g., '$120\u2013180')",
+        "amenity": "amenities list (wifi, pool, gym, breakfast, parking)",
+        "num.beds": "beds per room (e.g., 2)",
+        "type.bed": "bed type (king, queen, twin)",
+        "num.rooms": "number of rooms (e.g., 2)",
+        "check-in_date": "check-in date (e.g., 'Aug 30')",
+        "check-out_date": "check-out date (e.g., 'Sep 2')",
+        "date_range": "stay range (e.g., 'Aug 30\u2013Sep 2')",
+        "num.guests": "total guests (e.g., 4)",
+        "type.room": "room type (standard, suite, deluxe, accessible)",
+        "other_request": "special requests (e.g., high floor, late checkout)"
+      },
+      "hotel_detail": {
+        "name.hotel": "hotel name",
+        "star_rating": "class (1\u20135 stars)",
+        "customer_rating": "guest rating (e.g., '8.6/10', 'very good')",
+        "customer_review": "short review text",
+        "price_per_night": "nightly rate (e.g., '$159')",
+        "total_fare": "total price for stay",
+        "amenity": "amenities included",
+        "location": "address/neighborhood",
+        "type.room": "room type",
+        "other_detail": "other notable details"
+      }
+    }
+  },
+  "hm_tm2_movies": {
+    "hint_map_id": "hm_tm2_movies",
+    "hint_map": {
+      "movie_search": {
+        "name.movie": "movie title (exact)",
+        "genre": "genre(s) (e.g., action, comedy, drama)",
+        "name.theater": "theater/cinema name",
+        "location.theater": "theater address/area",
+        "time.start": "showtime start (e.g., '7:45 pm')",
+        "time.end": "showtime end (e.g., '10:05 pm')",
+        "price.ticket": "ticket price (e.g., '$14.50')",
+        "type.screening": "format (2D, 3D, IMAX, Dolby)",
+        "audience_rating": "audience score (e.g., '88%')",
+        "critic_rating": "critic score (e.g., '75%', '3/4 stars')",
+        "movie_rating": "content rating (G/PG/PG-13/R/NC-17)",
+        "release_date": "release date (e.g., 'Mar 1, 2025')",
+        "runtime": "duration (e.g., '126 minutes')",
+        "real_person": "actor/director name mentioned",
+        "character": "character name mentioned",
+        "synopsis": "plot/description",
+        "streaming_service": "platform (e.g., Netflix, Prime Video)",
+        "other_description": "other constraints/preferences"
+      },
+      "movie_ticket": {
+        "name.movie": "movie title",
+        "name.theater": "theater name",
+        "num.tickets": "number of tickets (e.g., 2)",
+        "time.start": "showtime start",
+        "type.screening": "format (2D/3D/IMAX/Dolby)",
+        "seating": "seat selection/preference (e.g., row/seat numbers, aisle)",
+        "ticket_booking": "successfull completion of ticket booking (e.g., 'The ticket has been booked', 'Enjoy your movie')"
+      }
+    }
+  },
+  "hm_tm2_music": {
+    "hint_map_id": "hm_tm2_music",
+    "hint_map": {
+      "music": {
+        "name.track": "track/song title",
+        "name.artist": "artist name",
+        "name.album": "album title",
+        "name.genre": "genre (e.g., rock, hip hop, jazz)",
+        "type.music": "music type (song, album, playlist, live, acoustic)",
+        "describes_track": "description of the track (mood, tempo, style)",
+        "describes_artist": "description of the artist (bio, style)",
+        "describes_album": "album description (theme, era)",
+        "describes_genre": "genre description/characteristics",
+        "describes_type.music": "type description (e.g., 'live acoustic set')",
+        "technical_difficulty": "difficulty to perform/play (e.g., 'beginner', 'advanced')"
+      }
+    }
+  },
+  "hm_tm2_restaurant_search": {
+    "hint_map_id": "hm_tm2_restaurant_search",
+    "hint_map": {
+      "restaurant": {
+        "name.restaurant": "restaurant name",
+        "location": "city/area",
+        "sub-location": "neighborhood/sub-area",
+        "type.food": "cuisine (e.g., Italian, Thai, fast food)",
+        "menu_item": "specific dish/item (e.g., 'Margherita pizza')",
+        "type.meal": "meal type (breakfast/lunch/dinner)",
+        "rating": "rating (stars or adjectives)",
+        "price_range": "price level (e.g., '$$', 'cheap/moderate/expensive')",
+        "business_hours": "opening hours (e.g., '10am\u201310pm')",
+        "other_description": "other constraints/preferences"
+      },
+      "restaurant_reservation": {
+        "name.restaurant": "restaurant name",
+        "name.reservation": "reservation holder\u2019s name",
+        "num.guests": "party size (e.g., 4)",
+        "time.reservation": "reservation time (e.g., '7 pm')",
+        "date.reservation": "reservation date (e.g., 'Sat, Aug 30')",
+        "type.seating": "seating preference (indoor/outdoor/booth/window/bar)"
+      }
+    }
+  },
+  "hm_tm2_sports_epl": {
+    "hint_map_id": "hm_tm2_sports_epl",
+    "hint_map": {
+      "name.team": "team/club name (e.g., 'Arsenal')",
+      "record.team": "team record (e.g., '18\u20135\u20133')",
+      "record.games_ahead": "games ahead in table",
+      "record.games_back": "games back (relative to leader)",
+      "place.team": "standing/place (e.g., '2nd in league')",
+      "result.match": "match result (win/loss/draw)",
+      "score.match": "final score (e.g., '2\u20131')",
+      "date.match": "match date",
+      "day.match": "match day of week",
+      "time.match": "kickoff time",
+      "name.player": "player name",
+      "position.player": "player position (e.g., 'FW', 'GK')",
+      "record.player": "player stats line (e.g., '2 goals, 1 assist')",
+      "name.non_player": "coach/manager/ref/owner name",
+      "venue": "stadium/venue",
+      "other_description.person": "other person details",
+      "other_description.team": "other team details",
+      "other_description.match": "other match info (injuries, cards, attendance)"
+    }
+  },
+  "hm_tm2_sports_mlb": {
+    "hint_map_id": "hm_tm2_sports_mlb",
+    "hint_map": {
+      "name.team": "team name",
+      "record.team": "team record",
+      "record.games_ahead": "games ahead",
+      "record.games_back": "games back",
+      "place.team": "division/league place",
+      "result.match": "game result",
+      "score.match": "final score",
+      "date.match": "game date",
+      "day.match": "day of week",
+      "time.match": "first pitch time",
+      "name.player": "player name",
+      "position.player": "player position",
+      "record.player": "player stat line",
+      "name.non_player": "coach/manager/umpire",
+      "venue": "ballpark",
+      "other_description.person": "other person details",
+      "other_description.team": "other team details",
+      "other_description.match": "other game info"
+    }
+  },
+  "hm_tm2_sports_mls": {
+    "hint_map_id": "hm_tm2_sports_mls",
+    "hint_map": {
+      "name.team": "team name",
+      "record.team": "team record",
+      "record.games_ahead": "games ahead",
+      "record.games_back": "games back",
+      "place.team": "standing/place",
+      "result.match": "match result",
+      "score.match": "final score",
+      "date.match": "match date",
+      "day.match": "day of week",
+      "time.match": "kickoff time",
+      "name.player": "player name",
+      "position.player": "player position",
+      "record.player": "player stats",
+      "name.non_player": "coach/official",
+      "venue": "stadium",
+      "other_description.person": "other person details",
+      "other_description.team": "other team details",
+      "other_description.match": "other match info"
+    }
+  },
+  "hm_tm2_sports_nba": {
+    "hint_map_id": "hm_tm2_sports_nba",
+    "hint_map": {
+      "name.team": "team name",
+      "record.team": "team record",
+      "record.games_ahead": "games ahead",
+      "record.games_back": "games back",
+      "place.team": "standing/place",
+      "result.match": "game result",
+      "score.match": "final score",
+      "date.match": "game date",
+      "day.match": "day of week",
+      "time.match": "tip-off time",
+      "name.player": "player name",
+      "position.player": "player position",
+      "record.player": "stat line",
+      "name.non_player": "coach/official",
+      "venue": "arena",
+      "other_description.person": "other person details",
+      "other_description.team": "other team details",
+      "other_description.match": "other game info"
+    }
+  },
+  "hm_tm2_sports_nfl": {
+    "hint_map_id": "hm_tm2_sports_nfl",
+    "hint_map": {
+      "name.team": "team name",
+      "record.team": "team record",
+      "record.games_ahead": "games ahead",
+      "record.games_back": "games back",
+      "place.team": "standing/place",
+      "result.match": "game result",
+      "score.match": "final score",
+      "date.match": "game date",
+      "day.match": "day of week",
+      "time.match": "kickoff time",
+      "name.player": "player name",
+      "position.player": "player position",
+      "record.player": "stat line",
+      "name.non_player": "coach/official",
+      "venue": "stadium",
+      "other_description.person": "other person details",
+      "other_description.team": "other team details",
+      "other_description.match": "other game info"
+    }
+  },
+  "hm_viggo": {
+    "hint_map_id": "hm_viggo",
+    "hint_map": {
+      "review_rating": "review rating (excellent/good/average/poor)",
+      "esrb_rating": "ESRB rating (E, E10+, T, M, AO)",
+      "perspective": "perspective (e.g., first person, third person, bird view)",
+      "multiplayer_mode": "game mode (single-player, multiplayer, both, none)",
+      "released": "release year",
+      "platforms": "platform family (PC, PlayStation, Xbox, Nintendo)",
+      "steam_availability": "Steam availability (on_steam/not_on_steam)",
+      "genres": "genres (e.g., action-adventure, shooter, indie)",
+      "developer": "developer",
+      "publisher": "publisher",
+      "name": "game title"
+    },
+    "value_map": {
+      "multiplayer_mode": {
+        "single-player": ["single-player"],
+        "multiplayer": ["multiplayer"]
+      }
+    }
+  },
+  "hm_rnnlg_hotel": {
+    "hint_map_id": "hm_rnnlg_hotel",
+    "hint_map": {
+      "name": "hotel name (keep casing/punctuation)",
+      "type": "venue type/subtype (e.g., 'hotel', 'motel', 'inn')",
+      "price_range": "price band (cheap/moderate/expensive; or 'budget/midrange/upscale')",
+      "price": "specific price or range (e.g., '$180', '$150\u2013200')",
+      "phone": "telephone number of the hotel",
+      "address": "street address (e.g., '750 Kearny St')",
+      "postcode": "postal/ZIP code",
+      "area": "neighborhood/area (e.g., 'Fisherman\u2019s Wharf')",
+      "near": "landmark proximity (e.g., 'near Union Square')",
+      "has_internet": "internet available? (has_internet / no_internet) (e.g., 'free Wi-Fi', no Wi-Fi)",
+      "accepts_cards": "credit card card payment accepted? (accepts_credit_cards / no_credit_cards)",
+      "pets_allowed": "are pets and dogs permitted? (pets_allowed / no_pets_allowed)"
+    },
+    "value_map": {
+      "hotel_pets_allowed": {
+        "yes": ["yes", "pets_allowed", "dogs are allowed", "dogs", "dogs allowed"],
+        "no": ["no", "no_pets_allowed", "no dogs allowed"],
+        "dontcare": ["dontcare"]
+      },
+      "hotel_has_internet": {
+        "yes": ["yes", "has_internet", "it has internet"],
+        "no": ["no", "no_internet"],
+        "dontcare": ["dontcare"]
+      },
+      "accepts_cards": {
+        "yes": ["yes", "accepts_credit_cards"],
+        "no": ["no", "no_credit_cards"],
+        "dontcare": ["dontcare"]
+      }
+    }
+  },
+  "hm_rnnlg_laptop": {
+    "hint_map_id": "hm_rnnlg_laptop",
+    "hint_map": {
+      "family": "model family/series/brand line (e.g., 'ThinkPad', 'Satellite')",
+      "pricerange": "price band (budget/midrange/high-end, or a range like '$700\u2013900')",
+      "battery_rating": "battery quality/lasting time (e.g., 'standard', 'long-lasting')",
+      "drive_range": "storage capacity range (e.g., '256\u2013512GB')",
+      "weightrange": "weight range/class (e.g., 'under 1.2kg', 'lightweight')",
+      "is_for_business_computing": "business-oriented? (business-oriented / not_business_oriented)",
+      "name": "exact product name (e.g., 'Satellite Dinlas 18')",
+      "type": "device type (e.g., 'laptop', 'ultrabook', 'gaming laptop')",
+      "price": "specific price (e.g., '$899')",
+      "warranty": "warranty term (e.g., '1-year', '2 years')",
+      "battery": "battery description (cells/Wh or hours, e.g., '6-cell', '10h')",
+      "design": "build/style (e.g., 'aluminum body', 'convertible 2-in-1')",
+      "dimension": "physical dimensions (e.g., '13.3\" x 9.1\" x 0.6\"')",
+      "utility": "intended use (e.g., 'gaming', 'business', 'student')",
+      "weight": "exact weight (e.g., '1.25 kg', '2.8 lb')",
+      "platform": "OS/platform (e.g., 'Windows 11', 'Ubuntu', 'ChromeOS')",
+      "memory": "RAM capacity/type (e.g., '16GB DDR4')",
+      "drive": "storage spec (type+size, e.g., '512GB SSD', '1TB HDD')",
+      "processor": "CPU model (e.g., 'Intel i5-1135G7', 'Ryzen 7 5800U')"
+    },
+    "value_map": {
+      "is_for_business_computing": {
+        "yes": ["business", "business computing", "business-oriented", "yes"],
+        "no": ["no_usb_port", "no"],
+        "dontcare": ["dontcare"]
+      }
+    }
+  },
+  "hm_rnnlg_restaurant": {
+    "hint_map_id": "hm_rnnlg_restaurant",
+    "hint_map": {
+      "name": "venue name (keep casing/punctuation)",
+      "type": "venue type (e.g., 'restaurant', 'pub', 'coffee shop')",
+      "pricerange": "price band (cheap/moderate/expensive; or 'low/mid/high')",
+      "price": "specific price or range (e.g., '$25', '$20\u201330')",
+      "phone": "telephone number of the venue",
+      "address": "street address (e.g., '123 Mission St')",
+      "postcode": "postal/ZIP code",
+      "area": "neighborhood/area (e.g., 'downtown', 'riverside')",
+      "near": "landmark/nearby place (e.g., 'near Union Square')",
+      "food": "cuisine (e.g., 'Italian', 'Chinese')",
+      "goodformeal": "meal time suitability (breakfast/lunch/dinner)",
+      "child_friendly": "child-friendly? (child_friendly/not_child_friendly)"
+    }
+  },
+  "hm_rnnlg_tv": {
+    "hint_map_id": "hm_rnnlg_tv",
+    "hint_map": {
+      "family": "model family/series (e.g., 'Bravia', 'QLED 8-Series')",
+      "price_range": "price band or range (budget/midrange/premium; '$500\u2013700')",
+      "screen_size_range": "screen size band (e.g., '32\u201340\"', 'over 65\"')",
+      "eco_rating": "energy rating (e.g., 'A+', 'Energy Star certified')",
+      "hdmi_port": "number of HDMI ports (integer in text, e.g., '3 HDMI ports')",
+      "has_usb_port": "USB port present? (has_usb_port / no_usb_port / dontcare)",
+      "name": "exact TV model name",
+      "type": "panel/tech type (e.g., 'LED', 'OLED', 'QLED', 'LCD')",
+      "price": "specific price (e.g., '$999')",
+      "resolution": "display resolution (e.g., '1080p', '4K UHD', '8K')",
+      "power_consumption": "power usage (e.g., '120W', '0.5W standby')",
+      "accessories": "included extras (e.g., 'stand', 'wall mount', 'remote')",
+      "color": "chassis color (e.g., 'black', 'silver')",
+      "screen_size": "exact diagonal size (e.g., '55\"')",
+      "audio": "audio features (e.g., 'Dolby Atmos', '2.1-ch speakers')"
+    },
+    "value_map": {
+      "tv_has_usb_port": {
+        "yes": ["has_usb_port", "yes"],
+        "no": ["no_usb_port", "no"],
+        "dontcare": ["dontcare"]
+      }
+    }
+  },
+  "hm_e2e_nlg": {
+    "hint_map_id": "hm_e2e_nlg",
+    "hint_map": {
+      "name": "restaurant name (e.g., \u201cThe Waterman\u201d; keep exact casing/punctuation)",
+      "venue_type": "venue type (restaurant, pub, coffee shop)",
+      "cuisine_type": "cuisine/type of food (e.g., English, Chinese, Italian, fast food)",
+      "priceRange": "price range (e.g., cheap, moderate, expensive; or \u201c\u00a320\u201325\u201d)",
+      "customerRating": "customer rating (low, average, high)",
+      "area_zone": "area/neighborhood (e.g., city centre, riverside)",
+      "family_suitability": "family suitability (family-friendly / not-family-friendly)",
+      "nearby_landmark": "nearby landmark (free text, e.g., near the \u2018nearVariable\u2019)"
+    }
+  },
+    "hm_tm3_movie_tickets": {
+    "hint_map_id": "hm_tm3_movie_tickets",
+    "hint_map": {
+      "name.movie": "movie title (exact title, e.g., 'Dune: Part Two')",
+      "name.theater": "theater/cinema name (e.g., 'AMC Metreon')",
+      "num.tickets": "number of tickets (integer, e.g., 2)",
+      "time.start": "showtime start (date/time, e.g., 'Fri 7:45 pm')",
+      "location.theater": "theater address/area (e.g., '135 4th St', 'downtown')",
+      "price.ticket": "price per ticket (currency, e.g., '$14.50')",
+      "type.screening": "screening type/format (e.g., 2D, 3D, IMAX, Dolby)",
+      "time.end": "showtime end (e.g., 'ends 10:05 pm')",
+      "time.duration": "movie runtime (e.g., '126 minutes')"
+    }
+  }
+}

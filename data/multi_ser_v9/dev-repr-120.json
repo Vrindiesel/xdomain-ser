@@ -1,0 +1,1802 @@
+[
+  {
+    "mr": {
+      "slots": {
+        "name": "Aromi",
+        "venue_type": "coffee shop",
+        "cuisine_type": "English",
+        "customerRating": "5 out of 5",
+        "area_zone": "city centre",
+        "family_suitability": "not-family-friendly"
+      }
+    },
+    "surface_form": "Aromi, the coffee shop in the city center was given a customer rating of 5 out of 5 for a no family-friendly English restaurant",
+    "topic": "restaurants",
+    "dataset": "e2e_nlg",
+    "hint_map_id": "hm_e2e_nlg"
+  },
+  {
+    "mr": {
+      "slots": {
+        "name": "The Rice Boat",
+        "cuisine_type": "Italian",
+        "priceRange": "high",
+        "customerRating": "average",
+        "area_zone": "riverside",
+        "family_suitability": "family-friendly",
+        "nearby_landmark": "Express by Holiday Inn"
+      }
+    },
+    "surface_form": "The Rice Boat, a high-priced, well-reviewed family restaurant is a short distance from Express by Holiday Inn.",
+    "topic": "restaurants",
+    "dataset": "e2e_nlg",
+    "hint_map_id": "hm_e2e_nlg"
+  },
+  {
+    "mr": {
+      "slots": {
+        "name": "The Eagle",
+        "venue_type": "coffee shop",
+        "cuisine_type": "Indian",
+        "priceRange": "cheap",
+        "customerRating": "average",
+        "area_zone": "city centre",
+        "family_suitability": "family-friendly",
+        "nearby_landmark": "Burger King"
+      }
+    },
+    "surface_form": "The Eagle is a cheap coffee shop in the center of town, near Burger King, that serves moderately-rated Indian dishes in a family-friendly environment.",
+    "topic": "restaurants",
+    "dataset": "e2e_nlg",
+    "hint_map_id": "hm_e2e_nlg"
+  },
+  {
+    "mr": {
+      "slots": {
+        "name": "The Cricketers",
+        "venue_type": "coffee shop",
+        "cuisine_type": "Fast food",
+        "customerRating": "5 out of 5",
+        "family_suitability": "family-friendly",
+        "nearby_landmark": "The Portland Arms"
+      }
+    },
+    "surface_form": "The Cricketers is a five star coffee shop located near The Portland Arms.",
+    "topic": "restaurants",
+    "dataset": "e2e_nlg",
+    "hint_map_id": "hm_e2e_nlg"
+  },
+  {
+    "mr": {
+      "slots": {
+        "name": "Cotto",
+        "venue_type": "coffee shop",
+        "cuisine_type": "English",
+        "priceRange": "high",
+        "customerRating": "average",
+        "area_zone": "riverside",
+        "nearby_landmark": "The Portland Arms"
+      }
+    },
+    "surface_form": "Cotto is a coffee shop by The Portland Arms and the river that serves English food. It has a high price range but has only been given average reviews.",
+    "topic": "restaurants",
+    "dataset": "e2e_nlg",
+    "hint_map_id": "hm_e2e_nlg"
+  },
+  {
+    "mr": {
+      "slots": {
+        "name": "The Rice Boat",
+        "cuisine_type": "Italian",
+        "priceRange": "cheap",
+        "customerRating": "average",
+        "area_zone": "city centre",
+        "family_suitability": "not-family-friendly",
+        "nearby_landmark": "Express by Holiday Inn"
+      }
+    },
+    "surface_form": "Located in city centre near Express by Holiday Inn is a cheap Italian restaurant called The Rice Boat. It has average customer ratings and is not family-friendly.",
+    "topic": "restaurants",
+    "dataset": "e2e_nlg",
+    "hint_map_id": "hm_e2e_nlg"
+  },
+  {
+    "mr": {
+      "slots": {
+        "name": "The Rice Boat",
+        "cuisine_type": "Japanese",
+        "priceRange": "more than \u00a330",
+        "customerRating": "5 out of 5",
+        "area_zone": "riverside",
+        "family_suitability": "not-family-friendly",
+        "nearby_landmark": "Express by Holiday Inn"
+      }
+    },
+    "surface_form": "The Rice Boat is a Japanese restaurant located near the Express by Holiday Inn, by the riverside. Not recommended for children, The Rice Boat is priced more than \u00a330. Rated 5 out of 5.",
+    "topic": "restaurants",
+    "dataset": "e2e_nlg",
+    "hint_map_id": "hm_e2e_nlg"
+  },
+  {
+    "mr": {
+      "slots": {
+        "name": "The Rice Boat",
+        "cuisine_type": "English",
+        "priceRange": "cheap",
+        "customerRating": "5 out of 5",
+        "area_zone": "riverside",
+        "family_suitability": "not-family-friendly",
+        "nearby_landmark": "Express by Holiday Inn"
+      }
+    },
+    "surface_form": "The Rice Boat is a family-friendly restaurant that services English food located near Express by Holiday Inn in the riverside area. It is inexpensive and has received a customer rating of 5 out of 5.",
+    "topic": "restaurants",
+    "dataset": "e2e_nlg",
+    "hint_map_id": "hm_e2e_nlg"
+  },
+  {
+    "mr": {
+      "slots": {
+        "name": "The Mill",
+        "venue_type": "coffee shop",
+        "cuisine_type": "Chinese",
+        "priceRange": "\u00a320-25",
+        "area_zone": "riverside",
+        "nearby_landmark": "The Sorrento"
+      }
+    },
+    "surface_form": "The Mill is a cheap Chinese coffee shop in the riverside area, near The Sorrento.",
+    "topic": "restaurants",
+    "dataset": "e2e_nlg",
+    "hint_map_id": "hm_e2e_nlg"
+  },
+  {
+    "mr": {
+      "slots": {
+        "name": "Giraffe",
+        "venue_type": "coffee shop",
+        "priceRange": "more than \u00a330",
+        "customerRating": "5 out of 5",
+        "family_suitability": "family-friendly",
+        "nearby_landmark": "The Bakers"
+      }
+    },
+    "surface_form": "Highly rated expensive  kid friendly Giraffe is a coffee shop near The Bakers",
+    "topic": "restaurants",
+    "dataset": "e2e_nlg",
+    "hint_map_id": "hm_e2e_nlg"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "hotel_name": "red victorian bed breakfast and arts cafe",
+        "hotel_address": "1665 haight street",
+        "hotel_phone": "4158641978",
+        "hotel_postcode": "94117"
+      }
+    },
+    "surface_form": "of course ! t red victorian bed breakfast and arts cafe is at 1665 haight street , post code 94117 and the phone number is 4158641978",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_hotel",
+    "topic": "hotel"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "hotel_name": "buena vista motor inn",
+        "hotel_area": "fort mason",
+        "hotel_has_internet": "has_internet"
+      }
+    },
+    "surface_form": "buena vista motor inn in the fort mason area has internet",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_hotel",
+    "topic": "hotel"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "hotel_name": "the regency inn",
+        "hotel_price_range": "inexpensive",
+        "hotel_address": "587 eddy street"
+      }
+    },
+    "surface_form": "the regency inn is a nice place , it is in the inexpensive price range and their address is 587 eddy st",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_hotel",
+    "topic": "hotel"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "hotel_name": "san remo hotel",
+        "hotel_has_internet": "has_internet",
+        "hotel_phone": "4157768688"
+      }
+    },
+    "surface_form": "the san remo hotel has internet and its phone number is 4157768688",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_hotel",
+    "topic": "hotel"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "hotel_name": "fairmont heritage place c ghirardelli square",
+        "hotel_area": "russian hill",
+        "hotel_price_range": "ultra high end"
+      }
+    },
+    "surface_form": "fairmont heritage place c ghirardelli square in the russian hill are is in the ultra high end price range",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_hotel",
+    "topic": "hotel"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "hotel_name": "inn at the presidio",
+        "hotel_price_range": "pricey",
+        "hotel_address": "42 moraga avenue and presidio main post",
+        "hotel_phone": "4158007356"
+      }
+    },
+    "surface_form": "the inn at the presidio is a pricey hotel located at 42 moraga avenue and presidio main post and its phone number 4158007356",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_hotel",
+    "topic": "hotel"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "hotel_name": "eula hotel",
+        "hotel_price_range": "inexpensive",
+        "hotel_has_internet": "none"
+      }
+    },
+    "surface_form": "the eula hotel is inexpensive and does not provide internet",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_hotel",
+    "topic": "hotel"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "hotel_name": "seal rock inn",
+        "hotel_area": "outer richmond",
+        "hotel_pets_allowed": "none"
+      }
+    },
+    "surface_form": "the seal rock inn in the outer richmond area does not allow dogs",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_hotel",
+    "topic": "hotel"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "hotel_name": "stanyan park hotel",
+        "hotel_address": "750 stanyan street",
+        "hotel_postcode": "94117"
+      }
+    },
+    "surface_form": "stanyan park hotel is a nice place , their address is 750 stanyan street and their postcode is 94117",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_hotel",
+    "topic": "hotel"
+  },
+  {
+    "mr": {
+      "dact": "inform_count",
+      "slots": {
+        "hotel_type": "hotel",
+        "hotel_count": "34",
+        "hotel_price_range": "pricey"
+      }
+    },
+    "surface_form": "there are 34 hotel -s in the pricey range",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_hotel",
+    "topic": "hotel"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "laptop_name": "satellite eurus 65",
+        "laptop_type": "laptop",
+        "laptop_family": "satellite",
+        "laptop_battery": "5.5 hour",
+        "laptop_design": "smart silver brushed aluminum finish , black keyboard"
+      }
+    },
+    "surface_form": "the satellite eurus 65 laptop from the satellite family has a 5.5 hour battery and smart silver brushed aluminum finish , black keyboard",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_laptop",
+    "topic": "laptop"
+  },
+  {
+    "mr": {
+      "dact": "recommend",
+      "slots": {
+        "laptop_name": "tecra pontus 52",
+        "laptop_type": "laptop",
+        "laptop_price_range": "moderate",
+        "laptop_platform": "windows 7 pro",
+        "laptop_battery": "10 hour"
+      }
+    },
+    "surface_form": "a laptop that operates windows 7 pro with a 10 hour battery life , i recommend the tecra pontus 52 with its moderate price range",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_laptop",
+    "topic": "laptop"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "laptop_name": "tecra eurus 20",
+        "laptop_type": "laptop",
+        "laptop_platform": "windows 7 pro",
+        "laptop_is_for_business_computing": "business_oriented",
+        "laptop_price_range": "moderate"
+      }
+    },
+    "surface_form": "tecra eurus 20 business laptop runs on windows 7 pro platform and is in the moderate price range",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_laptop",
+    "topic": "laptop"
+  },
+  {
+    "mr": {
+      "dact": "recommend",
+      "slots": {
+        "laptop_name": "satellite pollux 92",
+        "laptop_type": "laptop",
+        "laptop_family": "satellite",
+        "laptop_design": "luxe white glossy finish , white keyboard",
+        "laptop_weight_range": "mid weight"
+      }
+    },
+    "surface_form": "the satellite pollux 92 is a great laptop . it is a part of the satellite product family . it has a luxe white glossy finish , white keyboard , and it is mid weight",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_laptop",
+    "topic": "laptop"
+  },
+  {
+    "mr": {
+      "dact": "recommend",
+      "slots": {
+        "laptop_name": "satellite pallas 21",
+        "laptop_type": "laptop",
+        "laptop_weight_range": "mid weight",
+        "laptop_is_for_business_computing": "business_oriented",
+        "laptop_utility": "everyday computing"
+      }
+    },
+    "surface_form": "satellite pallas 21 is a nice mid weight laptop for everyday computing and business use",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_laptop",
+    "topic": "laptop"
+  },
+  {
+    "mr": {
+      "dact": "recommend",
+      "slots": {
+        "laptop_name": "satellite cerus 12",
+        "laptop_type": "laptop",
+        "laptop_dimension": "33.35 inch",
+        "laptop_platform": "windows 8.1",
+        "laptop_processor": "intel core i5"
+      }
+    },
+    "surface_form": "the satellite cerus 12 laptop features a 33.35 inch screen , windows 8.1 and an intel core i5 processor . it is essential for all of your computing needs",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_laptop",
+    "topic": "laptop"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "laptop_name": "satellite pallas 21",
+        "laptop_type": "laptop",
+        "laptop_price": "363 dollars",
+        "laptop_utility": "everyday computing",
+        "laptop_battery_rating": "good"
+      }
+    },
+    "surface_form": "satellite pallas 21 is a laptop which costs 363 dollars , is used for everyday computing , and is in the good battery rating",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_laptop",
+    "topic": "laptop"
+  },
+  {
+    "mr": {
+      "dact": "recommend",
+      "slots": {
+        "laptop_name": "satellite heracles 99",
+        "laptop_type": "laptop",
+        "laptop_dimension": "33.35 inch",
+        "laptop_warranty": "1 year european",
+        "laptop_price": "329 dollars"
+      }
+    },
+    "surface_form": "the satellite heracles 99 is a 33.35 inch laptop that costs 329 dollars and has a 1 year european warranty",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_laptop",
+    "topic": "laptop"
+  },
+  {
+    "mr": {
+      "dact": "inform_count",
+      "slots": {
+        "laptop_count": "118",
+        "laptop_type": "laptop",
+        "laptop_is_for_business_computing": "not_business_oriented",
+        "laptop_weight_range": "mid weight",
+        "laptop_family": "satellite pro"
+      }
+    },
+    "surface_form": "there are 118 laptop -s which is not used for business computing , in the mid weight weight range and in the satellite pro family",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_laptop",
+    "topic": "laptop"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "laptop_name": "satellite momus 73",
+        "laptop_type": "laptop",
+        "laptop_warranty": "1 year european",
+        "laptop_family": "satellite pro",
+        "laptop_battery_rating": "standard"
+      }
+    },
+    "surface_form": "satellite momus 73 is a laptop which has a 1 year european warranty , is in the satellite pro product family , and is in the standard battery rating",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_laptop",
+    "topic": "laptop"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "restaurant_name": "minami restaurant",
+        "restaurant_near": "outer richmond",
+        "restaurant_food": "sushi"
+      }
+    },
+    "surface_form": "minami restaurant is near outer richmond food and serves sushi",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_restaurant",
+    "topic": "restaurant"
+  },
+  {
+    "mr": {
+      "dact": "inform_count",
+      "slots": {
+        "restaurant_type": "restaurant",
+        "restaurant_count": "2",
+        "restaurant_good_for_meal": "dinner",
+        "restaurant_food": "singaporean"
+      }
+    },
+    "surface_form": "2 restaurant -s serve singaporean for dinner",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_restaurant",
+    "topic": "restaurant"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "restaurant_name": "assab eritrean restaurant",
+        "restaurant_area": "hayes valley or laurel heights",
+        "restaurant_address": "2845 geary blvd"
+      }
+    },
+    "surface_form": "assab eritrean restaurant is a nice place , it is in the area of laurel heights , their address is 2845 geary blvd and it is in the area of hayes valley",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_restaurant",
+    "topic": "restaurant"
+  },
+  {
+    "mr": {
+      "dact": "inform_no_match",
+      "slots": {
+        "restaurant_area": "embarcadero",
+        "restaurant_kidsallowed": "yes",
+        "restaurant_price_range": "expensive"
+      }
+    },
+    "surface_form": "i am sorry but there is no place , where child -s are allowed , in the expensive price range and in the area of embarcadero",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_restaurant",
+    "topic": "restaurant"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "restaurant_name": "sanjalisco",
+        "restaurant_near": "mission",
+        "restaurant_address": "901 s van ness avenue",
+        "restaurant_phone": "4156488383"
+      }
+    },
+    "surface_form": "sanjalisco is a nice place , their address is 901 s van ness avenue , their phone number is 4156488383 and it is near mission",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_restaurant",
+    "topic": "restaurant"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "restaurant_name": "alborz persian cuisine",
+        "restaurant_area": "cathedral hill",
+        "restaurant_price_range": "moderate"
+      }
+    },
+    "surface_form": "alborz persian cuisine is in cathedral hill and has moderate price -s",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_restaurant",
+    "topic": "restaurant"
+  },
+  {
+    "mr": {
+      "dact": "inform_count",
+      "slots": {
+        "restaurant_type": "restaurant",
+        "restaurant_count": "54",
+        "restaurant_kidsallowed": "yes",
+        "restaurant_price_range": "cheap"
+      }
+    },
+    "surface_form": "there are 54 restaurant -s that are cheap and allow child -s",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_restaurant",
+    "topic": "restaurant"
+  },
+  {
+    "mr": {
+      "dact": "inform_no_match",
+      "slots": {
+        "restaurant_kidsallowed": "yes",
+        "restaurant_food": "lounge"
+      }
+    },
+    "surface_form": "i am sorry but there is no place , where child -s are allowed and serving lounge food",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_restaurant",
+    "topic": "restaurant"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "restaurant_name": "restaurant ducroix",
+        "restaurant_food": "french",
+        "restaurant_good_for_meal": "lunch"
+      }
+    },
+    "surface_form": "restaurant ducroix serves french food and is good for lunch",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_restaurant",
+    "topic": "restaurant"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "restaurant_name": "tuba restaurant",
+        "restaurant_price": "22 euro",
+        "restaurant_phone": "4158268822"
+      }
+    },
+    "surface_form": "tuba restaurant serves meal -s for 22 euro . the phone number is 4158268822",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_restaurant",
+    "topic": "restaurant"
+  },
+  {
+    "mr": {
+      "dact": "inform_count",
+      "slots": {
+        "tv_count": "117",
+        "tv_type": "television",
+        "tv_family": "dontcare",
+        "tv_screen_size_range": "dontcare",
+        "tv_eco_rating": "a+"
+      }
+    },
+    "surface_form": "There are 117 televisions in all product family, if you don't care about the screen size and in the A+ eco rating",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_tv",
+    "topic": "tv"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "tv_name": "pontus 43",
+        "tv_type": "television",
+        "tv_has_usb_port": "has_usb_port",
+        "tv_accessories": "remote control and european warranty",
+        "tv_power_consumption": "34 watt"
+      }
+    },
+    "surface_form": "the 34 watt pontus 43 television is usb ready and comes with a remote control and european warranty .",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_tv",
+    "topic": "tv"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "tv_name": "pontus 94",
+        "tv_type": "television",
+        "tv_power_consumption": "46 watt",
+        "tv_eco_rating": "a+",
+        "tv_screen_size_range": "medium"
+      }
+    },
+    "surface_form": "pontus 94 is a television which has 46 watt power consumption, is in the A+ eco rating, and is in the medium screen size range.",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_tv",
+    "topic": "tv"
+  },
+  {
+    "mr": {
+      "dact": "recommend",
+      "slots": {
+        "tv_name": "momus 29",
+        "tv_type": "television",
+        "tv_accessories": "remote control",
+        "tv_family": "w3",
+        "tv_screen_size": "32 inch"
+      }
+    },
+    "surface_form": "momus 29 is a nice television. it comes with remote control, it is in the W3 product family, and its screen size is 32 inch.",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_tv",
+    "topic": "tv"
+  },
+  {
+    "mr": {
+      "dact": "inform_only_match",
+      "slots": {
+        "tv_name": "chronos 52",
+        "tv_type": "television",
+        "tv_hdmi_port": "2",
+        "tv_eco_rating": "a+",
+        "tv_price_range": "cheap"
+      }
+    },
+    "surface_form": "I'm sorry but there are no other televisions except for chronos 52 with 2 hdmi ports, in the A+ eco rating and in the cheap price range",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_tv",
+    "topic": "tv"
+  },
+  {
+    "mr": {
+      "dact": "inform_only_match",
+      "slots": {
+        "tv_name": "oceanus 39",
+        "tv_type": "television",
+        "tv_has_usb_port": "has_usb_port",
+        "tv_family": "l1",
+        "tv_price_range": "cheap"
+      }
+    },
+    "surface_form": "there are no oceanus 39 televisions with usb ports from the l1 family in the cheap price range .",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_tv",
+    "topic": "tv"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "tv_name": "uranus 29",
+        "tv_type": "television",
+        "tv_power_consumption": "18 watt",
+        "tv_screen_size": "24 inch",
+        "tv_has_usb_port": "has_usb_port"
+      }
+    },
+    "surface_form": "uranus 29 is a television which has 18 watt power consumption, has a 24 inch screen size, and has usb ports.",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_tv",
+    "topic": "tv"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "tv_name": "pontus 18",
+        "tv_type": "television",
+        "tv_resolution": "1080p",
+        "tv_screen_size": "55 inch",
+        "tv_price": "1900 dollars"
+      }
+    },
+    "surface_form": "the pontus 18 is a 55 inch 1080p television that costs 1900 dollars .",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_tv",
+    "topic": "tv"
+  },
+  {
+    "mr": {
+      "dact": "inform_count",
+      "slots": {
+        "tv_count": "91",
+        "tv_type": "television",
+        "tv_has_usb_port": "dontcare",
+        "tv_hdmi_port": "2",
+        "tv_family": "l2"
+      }
+    },
+    "surface_form": "There are 91 televisions if you don't care about whether it has usb port or not, with 2 hdmi ports and in the L2 family",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_tv",
+    "topic": "tv"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "tv_name": "crios 89",
+        "tv_type": "television",
+        "tv_family": "l1",
+        "tv_screen_size_range": "medium",
+        "tv_has_usb_port": "has_usb_port"
+      }
+    },
+    "surface_form": "the crios 89 television in the l1 product family has a medium sized screen and usb ports . ",
+    "dataset": "rnnlg",
+    "hint_map_id": "hm_rnnlg_tv",
+    "topic": "tv"
+  },
+  {
+    "conversation_id": "dlg-67f3ea27-4137-4557-a748-fa8d5101e721",
+    "surface_form": "Ok I'm confiming that we have an appointment for you at 9:00am Thursday morning to get your 2018 Cadillac Escalade checked out for the The rear window defogger that has stopped functioning correctly. The inspection fee is $100. Thank you.",
+    "mr": {
+      "auto_repair.appointment": "I'm confiming that we have an appointment for you",
+      "auto_repair.time.appt": [
+        "9:00am",
+        "morning"
+      ],
+      "auto_repair.date.appt": "Thursday",
+      "auto_repair.year.vehicle": "2018",
+      "auto_repair.name.vehicle": "Cadillac Escalade",
+      "auto_repair.reason.appt": "rear window defogger that has stopped functioning correctly"
+    },
+    "topic": "auto_repair_appt",
+    "hint_map_id": "hm_tm1_auto_repair_appt",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-a8533b60-f82c-464c-877a-51150ae0bb77",
+    "surface_form": "so you need an oil change tomorrow morning",
+    "mr": {
+      "auto_repair.reason.appt": "need an oil change",
+      "auto_repair.date.appt": "tomorrow",
+      "auto_repair.time.appt": "morning"
+    },
+    "topic": "auto_repair_appt",
+    "hint_map_id": "hm_tm1_auto_repair_appt",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-bcf4f50b-3fbc-4d32-b9fc-2f377013f161",
+    "surface_form": "Okay, tomorrow morning 830am, will check oil leaking issue and replace driver-side tail light.",
+    "mr": {
+      "auto_repair.date.appt": "tomorrow",
+      "auto_repair.time.appt": "morning 830am",
+      "auto_repair.reason.appt": "oil leaking issue and replace driver-side tail light"
+    },
+    "topic": "auto_repair_appt",
+    "hint_map_id": "hm_tm1_auto_repair_appt",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-52d07c42-a2ef-4eca-a780-a10a89b1399e",
+    "surface_form": "Okay I just finished filling out everything online and they will take a look at your 2007 Ford 150 tomorrow, 9 AM, at Intelligent Auto Solutions.",
+    "mr": {
+      "auto_repair.year.vehicle": "2007",
+      "auto_repair.name.vehicle": "Ford 150",
+      "auto_repair.date.appt": "tomorrow",
+      "auto_repair.time.appt": "9 AM",
+      "auto_repair.name.store": "Intelligent Auto Solutions"
+    },
+    "topic": "auto_repair_appt",
+    "hint_map_id": "hm_tm1_auto_repair_appt",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-6d2f42bd-bb1a-4611-a89f-415d5188c609",
+    "surface_form": "Just to verify, the appointment is for brakes making noises on a 2015 Chevy Cruze. Is this correct?",
+    "mr": {
+      "auto_repair.reason.appt": "brakes making noises",
+      "auto_repair.year.vehicle": "2015",
+      "auto_repair.name.vehicle": "Chevy Cruze"
+    },
+    "topic": "auto_repair_appt",
+    "hint_map_id": "hm_tm1_auto_repair_appt",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-35ccf1b2-272b-415b-b977-35a9b3b41f1d",
+    "surface_form": "I spoke to Frank. He said you should bring it over ASAP and they will look at it today.",
+    "mr": {
+      "auto_repair.time.appt": "ASAP",
+      "auto_repair.date.appt": "today"
+    },
+    "topic": "auto_repair_appt",
+    "hint_map_id": "hm_tm1_auto_repair_appt",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-b9999f6e-14e0-4c45-aa7a-3efb48842acb",
+    "surface_form": "OK. I have you in today at 2pm for you 2019 Ford Explorer XLT for squealing brakes.",
+    "mr": {
+      "auto_repair.date.appt": "today",
+      "auto_repair.time.appt": "2pm",
+      "auto_repair.year.vehicle": "2019",
+      "auto_repair.name.vehicle": "Ford Explorer XLT",
+      "auto_repair.reason.appt": "squealing brakes"
+    },
+    "topic": "auto_repair_appt",
+    "hint_map_id": "hm_tm1_auto_repair_appt",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-490bae36-5fcf-448e-9a3a-e05a1a0a2724",
+    "surface_form": "Ok, you have an appointment to have the car towed from 1234 Main st. to Intelligent Auto Solutions today and they will look at it first thing in the morning. The parts are on hand and barring any other problems it ahould be good to drive by early afternoon tomorrow. The for everything will be around 1600 dollars.",
+    "mr": {
+      "auto_repair.location.store": "1234 Main st",
+      "auto_repair.name.store": "Intelligent Auto Solutions",
+      "auto_repair.time.appt": "morning",
+      "auto_repair.reason.appt": "The parts are on hand and barring any other problems",
+      "auto_repair.date.appt": "tomorrow"
+    },
+    "topic": "auto_repair_appt",
+    "hint_map_id": "hm_tm1_auto_repair_appt",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-34d33248-a2d7-4465-9bfe-6f3b53f2c543",
+    "surface_form": "Ok Great. Let me confirm your information before I submit your appointment; You have a 2004 Toyota Camry V6 Model under reservation name John Smith address 123 Anystreet in Sunset CA and your phone number is 2135550169 is that correct?",
+    "mr": {
+      "auto_repair.year.vehicle": "2004",
+      "auto_repair.name.vehicle": [
+        "Toyota",
+        "Camry V6 Model"
+      ],
+      "auto_repair.name.customer": "John Smith"
+    },
+    "topic": "auto_repair_appt",
+    "hint_map_id": "hm_tm1_auto_repair_appt",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-90cd03d0-522f-46bd-930b-e8ae2d41f845",
+    "surface_form": "OK. So tomorrow at 6 am meet Leroy at Intelligent Auto Solutions to see about the car missing and dying at stop lights.",
+    "mr": {
+      "auto_repair.date.appt": "tomorrow",
+      "auto_repair.time.appt": "6 am",
+      "auto_repair.name.store": "Intelligent Auto Solutions",
+      "auto_repair.reason.appt": [
+        "to see about the car missing and dying at stop lights",
+        "car missing and dying at stop lights."
+      ]
+    },
+    "topic": "auto_repair_appt",
+    "hint_map_id": "hm_tm1_auto_repair_appt",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-4d9b8f84-bad6-4858-8e65-58126704c19c",
+    "surface_form": "So you want a grande Caffe Americano with whole milk and 2 sugars.",
+    "mr": {
+      "coffee_ordering.size.drink": "grande",
+      "coffee_ordering.name.drink": "Caffe Americano",
+      "coffee_ordering.type.milk": "whole milk",
+      "coffee_ordering.preference": "2 sugars"
+    },
+    "topic": "coffee_ordering",
+    "hint_map_id": "hm_tm1_coffee_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-3e192576-90ee-4190-9349-915a17e1919f",
+    "surface_form": "Okay. I''ve got a venti iced caramel macchiato with soy milk and extra syrup. Is that correct?",
+    "mr": {
+      "coffee_ordering.size.drink": "venti",
+      "coffee_ordering.name.drink": "iced caramel macchiato",
+      "coffee_ordering.type.milk": "soy milk",
+      "coffee_ordering.preference": "syrup"
+    },
+    "topic": "coffee_ordering",
+    "hint_map_id": "hm_tm1_coffee_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-cbb2fad7-5a8e-4e44-b03f-6288e258535d",
+    "surface_form": "so i have placed an order for a cappachino with 2% milk and whipped cream to be picked up at the starbucks at golden rod in orlando, is that correct?",
+    "mr": {
+      "coffee_ordering.name.drink": "cappachino",
+      "coffee_ordering.type.milk": "2% milk",
+      "coffee_ordering.preference": "whipped cream",
+      "coffee_ordering.location.store": "golden rod in orlando"
+    },
+    "topic": "coffee_ordering",
+    "hint_map_id": "hm_tm1_coffee_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-89228aaa-c458-40b8-bb93-8d260d5efcf1",
+    "surface_form": "1 hot venti americano.",
+    "mr": {
+      "coffee_ordering.num.drink": "1",
+      "coffee_ordering.preference": "hot",
+      "coffee_ordering.size.drink": "venti",
+      "coffee_ordering.name.drink": "americano"
+    },
+    "topic": "coffee_ordering",
+    "hint_map_id": "hm_tm1_coffee_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-91ca168c-d9c7-4269-b515-15f407eec645",
+    "surface_form": "let me confirm your order: venti latte with soy milk and sugar free vanilla syrup is this correct?",
+    "mr": {
+      "coffee_ordering.size.drink": "venti",
+      "coffee_ordering.name.drink": "latte",
+      "coffee_ordering.type.milk": "soy milk and",
+      "coffee_ordering.preference": "sugar free vanilla syrup"
+    },
+    "topic": "coffee_ordering",
+    "hint_map_id": "hm_tm1_coffee_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-4c67022a-81fa-4612-a37b-893dd1beac59",
+    "surface_form": "Okay. So you said you would like one Grande Iced Salted Caramel Mocha with almond milk and whipped cream?",
+    "mr": {
+      "coffee_ordering.num.drink": "one",
+      "coffee_ordering.size.drink": "Grande",
+      "coffee_ordering.name.drink": "Iced Salted Caramel Mocha",
+      "coffee_ordering.type.milk": "almond milk",
+      "coffee_ordering.preference": "whipped cream"
+    },
+    "topic": "coffee_ordering",
+    "hint_map_id": "hm_tm1_coffee_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-7b1a7b96-1fcf-43e5-9c6f-54623c0ad663",
+    "surface_form": "So that's a grande whole milk cappuccino with whipped cream from the Starbucks on 1500 Broadway.",
+    "mr": {
+      "coffee_ordering.size.drink": "grande",
+      "coffee_ordering.type.milk": "whole milk",
+      "coffee_ordering.name.drink": "cappuccino",
+      "coffee_ordering.preference": "whipped cream",
+      "coffee_ordering.location.store": "Starbucks on 1500 Broadway"
+    },
+    "topic": "coffee_ordering",
+    "hint_map_id": "hm_tm1_coffee_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-bb7cdb29-2483-4a1c-9c2d-e7a952516e84",
+    "surface_form": "so a grande capuccino with soy milk and whipped cream, correct?",
+    "mr": {
+      "coffee_ordering.size.drink": "grande",
+      "coffee_ordering.name.drink": "capuccino",
+      "coffee_ordering.type.milk": "soy milk",
+      "coffee_ordering.preference": "whipped cream"
+    },
+    "topic": "coffee_ordering",
+    "hint_map_id": "hm_tm1_coffee_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-b9ef50b0-3728-4631-a76a-6e4827ebceac",
+    "surface_form": "so thats 1 grande iced latte macchiato with whole milk with no additional flavoring to be picked up at a starbucks inside target at 1 N Galleria Dr.",
+    "mr": {
+      "coffee_ordering.num.drink": "1 grande",
+      "coffee_ordering.size.drink": "grande",
+      "coffee_ordering.preference": "iced",
+      "coffee_ordering.name.drink": "latte macchiato",
+      "coffee_ordering.type.milk": "whole milk",
+      "coffee_ordering.location.store": "1 N Galleria Dr"
+    },
+    "topic": "coffee_ordering",
+    "hint_map_id": "hm_tm1_coffee_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-abf24428-fc94-4c13-bb2a-bd93da6a3112",
+    "surface_form": "So that's a grande cappuccino with whole milk from the starbucks on wall street.",
+    "mr": {
+      "coffee_ordering.size.drink": "grande",
+      "coffee_ordering.name.drink": "cappuccino",
+      "coffee_ordering.type.milk": "whole milk",
+      "coffee_ordering.location.store": "wall street"
+    },
+    "topic": "coffee_ordering",
+    "hint_map_id": "hm_tm1_coffee_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-908d24c8-5577-4f58-8bf7-4ec8d353bd3d",
+    "surface_form": "Okay, so 10:25 pm tonight for Fight with My Family at AMC Jersey Gardens 20.",
+    "mr": {
+      "movie_ticket.time.start": "10:25 pm tonight",
+      "movie_ticket.name.movie": "Fight with My Family",
+      "movie_ticket.name.theater": "AMC Jersey Gardens 20"
+    },
+    "topic": "movie_tickets",
+    "hint_map_id": "hm_tm1_movie_tickets",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-4fe9ffcb-a126-448f-bd38-3cfbb6b56de6",
+    "surface_form": "two tickets for spider-man: into the spider-verse that will be $28.93.",
+    "mr": {
+      "movie_ticket.num.tickets": "two",
+      "movie_ticket.name.movie": "spider-man: into the spider-verse",
+      "movie_ticket.price.ticket": "$28.93"
+    },
+    "topic": "movie_tickets",
+    "hint_map_id": "hm_tm1_movie_tickets",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-2d9eaf03-0f46-4b2f-8c74-194fe11d7910",
+    "surface_form": "3 tickets for the 3:15pm showing of the lego movie 2 will b $30. I'll process the payment now.",
+    "mr": {
+      "movie_ticket.num.tickets": "3 tickets",
+      "movie_ticket.time.start": "3:15pm",
+      "movie_ticket.name.movie": "lego movie 2",
+      "movie_ticket.price.ticket": "$30"
+    },
+    "topic": "movie_tickets",
+    "hint_map_id": "hm_tm1_movie_tickets",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-8c5c37fa-7b3d-4224-ba4e-25218f1d49cf",
+    "surface_form": "Two tickets to the 5:10 showing of The Beach Bum at Alamo Drafthouse, confirmed. The tickets should be arriving via text message soon.",
+    "mr": {
+      "movie_ticket.num.tickets": "Two",
+      "movie_ticket.time.start": "5:10",
+      "movie_ticket.name.movie": "The Beach Bum",
+      "movie_ticket.name.theater": "Alamo Drafthouse"
+    },
+    "topic": "movie_tickets",
+    "hint_map_id": "hm_tm1_movie_tickets",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-0156f7e5-dbc6-41e2-932b-ae484c4a2500",
+    "surface_form": "ok, i have booked 4 tickets to see what men want at 7pm tonight at the amc plymouth meeting mall, your tickets and receipt will be texted to you, can i help with anything else?",
+    "mr": {
+      "movie_ticket.num.tickets": "4 tickets",
+      "movie_ticket.time.start": "7pm",
+      "movie_ticket.name.theater": "plymouth meeting mall"
+    },
+    "topic": "movie_tickets",
+    "hint_map_id": "hm_tm1_movie_tickets",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-442cbe52-137e-45f0-ab77-42f1fd44074e",
+    "surface_form": "Sorry, they don't have a show for Wonder Park at 6:00 tonight. And they only have 3D for Wonder Park in the afternoon at 2:30.",
+    "mr": {
+      "movie_ticket.name.movie": "Wonder Park",
+      "movie_ticket.time.start": [
+        "6:00",
+        "2:30"
+      ],
+      "movie_ticket.type.screening": "3D"
+    },
+    "topic": "movie_tickets",
+    "hint_map_id": "hm_tm1_movie_tickets",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-8dcd3efd-4e02-45c4-bf0e-a18e4a01b728",
+    "surface_form": "ok, you all set. one ticket to the 10pm showing of aquaman at amc freehold 14 has been booked.",
+    "mr": {
+      "movie_ticket.num.tickets": "one",
+      "movie_ticket.time.start": "10pm",
+      "movie_ticket.name.movie": "aquaman",
+      "movie_ticket.name.theater": "amc freehold 14"
+    },
+    "topic": "movie_tickets",
+    "hint_map_id": "hm_tm1_movie_tickets",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-f54c1597-b2e6-418c-a54b-15c5739c109c",
+    "surface_form": "Okay, so Santana Row and Oakridge both have showings on Sunday around 1:30-2pm, regular seats, no 3D. Do any of these sound good?",
+    "mr": {
+      "movie_ticket.name.theater": [
+        "Santana Row",
+        "Oakridge"
+      ],
+      "movie_ticket.time.start": [
+        "1:30",
+        "2pm"
+      ],
+      "movie_ticket.type.screening": [
+        "regular seats",
+        "no 3D"
+      ]
+    },
+    "topic": "movie_tickets",
+    "hint_map_id": "hm_tm1_movie_tickets",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-d243ec98-532a-4fe0-82fa-3e026040305b",
+    "surface_form": "so you would like 2 tickets for On The Basis of Sex at 8pm at Regal Hollywood.",
+    "mr": {
+      "movie_ticket.num.tickets": "2",
+      "movie_ticket.name.movie": "On The Basis of Sex",
+      "movie_ticket.time.start": "8pm",
+      "movie_ticket.name.theater": "Regal Hollywood"
+    },
+    "topic": "movie_tickets",
+    "hint_map_id": "hm_tm1_movie_tickets",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-a250a88d-e834-453e-bc0a-b16268fac314",
+    "surface_form": "Two tickets to see Aquaman at 7pm at Century 12 Evanston / CineArts 6 & XD will cost $24.",
+    "mr": {
+      "movie_ticket.num.tickets": "Two",
+      "movie_ticket.name.movie": "Aquaman",
+      "movie_ticket.time.start": "7pm",
+      "movie_ticket.name.theater": "Century 12 Evanston / CineArts 6 & XD",
+      "movie_ticket.price.ticket": "$24"
+    },
+    "topic": "movie_tickets",
+    "hint_map_id": "hm_tm1_movie_tickets",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-09d4bbc4-4ad2-43f7-8ddf-6040af31ce41",
+    "surface_form": "okay, i have 4 small think crust pizzas and all of them to be veggie lovers.",
+    "mr": {
+      "pizza_ordering.size.pizza": "small",
+      "pizza_ordering.type.crust": "think crust",
+      "pizza_ordering.name.pizza": "veggie lovers"
+    },
+    "topic": "pizza_ordering",
+    "hint_map_id": "hm_tm1_pizza_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-7c21a07e-ddc9-4ae0-85f2-096cf628aecf",
+    "surface_form": "sure. 3 medium pizzas. on the first, a veggie without onions, the second one is a florence and the third, a spinach delux. extra cheese on them. correct?",
+    "mr": {
+      "pizza_ordering.size.pizza": "medium pizzas",
+      "pizza_ordering.name.pizza": [
+        "veggie",
+        "florence",
+        "spinach delux"
+      ],
+      "pizza_ordering.type.topping": "without onions",
+      "pizza_ordering.preference": "extra cheese"
+    },
+    "topic": "pizza_ordering",
+    "hint_map_id": "hm_tm1_pizza_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-359724ee-c37d-4dcf-bf7c-d316936e03d5",
+    "surface_form": "alright, so i have here 3 large pizzas, with thick crust. the firstly a veggie lovers, then one meat lovers and lastly chicken BBQ.",
+    "mr": {
+      "pizza_ordering.size.pizza": "3 large",
+      "pizza_ordering.type.crust": "thick crust",
+      "pizza_ordering.name.pizza": [
+        "veggie lovers",
+        "meat lovers and",
+        "chicken BBQ"
+      ]
+    },
+    "topic": "pizza_ordering",
+    "hint_map_id": "hm_tm1_pizza_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-9b997fdd-23a6-4b0f-9658-93c89b2c70f0",
+    "surface_form": "Okay, just to confirm, you wanted 2 large pizzas, one pepperoni, and one suprerme.",
+    "mr": {
+      "pizza_ordering.size.pizza": "large",
+      "pizza_ordering.name.pizza": [
+        "pepperoni",
+        "suprerme."
+      ],
+      "pizza_ordering.type.topping": "suprerme"
+    },
+    "topic": "pizza_ordering",
+    "hint_map_id": "hm_tm1_pizza_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-34851ce1-c3ab-49d4-9a91-df5faf99c312",
+    "surface_form": "you got it. so it's 4 pizzas, all large, thick crust, 1 pepperoni, 1 sausage, 1 cheese, and 1 veggie, and 1 hot wings plate and 1 cheese bread order.",
+    "mr": {
+      "pizza_ordering.size.pizza": "large",
+      "pizza_ordering.type.crust": "thick crust",
+      "pizza_ordering.name.pizza": [
+        "pepperoni",
+        "sausage",
+        "cheese",
+        "veggie"
+      ]
+    },
+    "topic": "pizza_ordering",
+    "hint_map_id": "hm_tm1_pizza_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-81cbc4ff-af30-4ea5-838e-201196d8e639",
+    "surface_form": "OK, now I have to then crust medium pizzas one with pepperoni and mushroom, and the other with black olives and jalape\u00f1os, and two orders of breadsticks.",
+    "mr": {
+      "pizza_ordering.type.crust": [
+        "then crust",
+        "hen"
+      ],
+      "pizza_ordering.size.pizza": "edium",
+      "pizza_ordering.type.topping": [
+        "epperoni",
+        "mushroom",
+        "ushroom,",
+        "lack olives",
+        "jalape\u00f1os",
+        "alape\u00f1os,"
+      ]
+    },
+    "topic": "pizza_ordering",
+    "hint_map_id": "hm_tm1_pizza_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-5e846a8a-e4d0-4014-9dfb-8ed2d73b41ec",
+    "surface_form": "Okay, so I am ordering three pizzas from Si-Pie for immediate pickup. One with double pepperoni, one with ham and pineapple, and one with tomato and green pepper. Also one order of garlic bread and one order of mozarella sticks, both with extra marinara sauce.",
+    "mr": {
+      "pizza_ordering.name.store": "Si-Pie",
+      "pizza_ordering.preference": "double pepperoni",
+      "pizza_ordering.type.topping": [
+        "ham",
+        "pineapple",
+        "tomato",
+        "green pepper"
+      ]
+    },
+    "topic": "pizza_ordering",
+    "hint_map_id": "hm_tm1_pizza_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-1396fb27-a06d-41db-94ca-679b290d6b6e",
+    "surface_form": "ok. the total for 2 large gluten free pizzas, 1 with bbq chicken and 1 with pepperoni and sausage, is $35.33.",
+    "mr": {
+      "pizza_ordering.size.pizza": "large",
+      "pizza_ordering.type.crust": "gluten free",
+      "pizza_ordering.name.pizza": "bbq chicken",
+      "pizza_ordering.type.topping": [
+        "pepperoni",
+        "sausage"
+      ]
+    },
+    "topic": "pizza_ordering",
+    "hint_map_id": "hm_tm1_pizza_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-8fcca7c7-5048-4fab-b55c-1e7604ce9bb5",
+    "surface_form": "Okay, so that's two medium stuffed crust pizzas from Nino's. One is chicken barbecue and the other is Hawaiian.",
+    "mr": {
+      "pizza_ordering.size.pizza": "medium",
+      "pizza_ordering.type.crust": "stuffed crust",
+      "pizza_ordering.name.store": "Nino's",
+      "pizza_ordering.name.pizza": [
+        "chicken barbecue",
+        "Hawaiian"
+      ]
+    },
+    "topic": "pizza_ordering",
+    "hint_map_id": "hm_tm1_pizza_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-ec12c805-6d06-4887-834a-f9a72a2f70b6",
+    "surface_form": "right,sorry,So the handtossed crust,tomato sauce,mozerella cheese and your toppings are sausage and spinach?",
+    "mr": {
+      "pizza_ordering.type.crust": "handtossed crust",
+      "pizza_ordering.preference": [
+        "tomato sauce",
+        "mozerella cheese"
+      ],
+      "pizza_ordering.type.topping": [
+        "sausage",
+        "spinach"
+      ]
+    },
+    "topic": "pizza_ordering",
+    "hint_map_id": "hm_tm1_pizza_ordering",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-f4501415-d454-4063-8b9c-91bc7f70efea",
+    "surface_form": "Mrs. Jackson, let me make sure I have your reservation correct. You would like to seat two, quiet dining table outside where there is less traffic for Saturday 17th at 6 p.m. sharp?",
+    "mr": {
+      "restaurant_reservation.name.reservation": "Mrs. Jackson",
+      "restaurant_reservation.num.guests": "two",
+      "restaurant_reservation.type.seating": "quiet dining table outside",
+      "restaurant_reservation.time.reservation": [
+        "Saturday 17th at 6 p.m. sharp",
+        "6 p.m"
+      ]
+    },
+    "topic": "restaurant_table",
+    "hint_map_id": "hm_tm1_restaurant_table",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-fbf2d4f0-a63c-4bd5-8f85-e8b4a2526648",
+    "surface_form": "On Thursday, there is a 7:00PM booking available for a two-person indoor table. Would this be acceptable or do you want to try something else?",
+    "mr": {
+      "restaurant_reservation.time.reservation": "7:00PM",
+      "restaurant_reservation.num.guests": "two",
+      "restaurant_reservation.type.seating": "indoor table"
+    },
+    "topic": "restaurant_table",
+    "hint_map_id": "hm_tm1_restaurant_table",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-e67f2257-e7a8-463d-bf43-c609e697a959",
+    "surface_form": "ok, i have made a reservation for 3 people at mugubokoka restaurant for tomorrow at 3pm, is that correct?",
+    "mr": {
+      "restaurant_reservation.num.guests": "3",
+      "restaurant_reservation.name.restaurant": "mugubokoka restaurant",
+      "restaurant_reservation.time.reservation": "3pm"
+    },
+    "topic": "restaurant_table",
+    "hint_map_id": "hm_tm1_restaurant_table",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-5fb55678-96fd-4617-b62e-00646378ae94",
+    "surface_form": "Sure, give me a moment. Okay, all done. YOu have a reservation at Ciao Bella at a booth table for two, at 8:00pm on 2/15, Friday.",
+    "mr": {
+      "restaurant_reservation.name.restaurant": "Ciao Bella",
+      "restaurant_reservation.type.seating": "booth",
+      "restaurant_reservation.num.guests": "two",
+      "restaurant_reservation.time.reservation": "8:00pm"
+    },
+    "topic": "restaurant_table",
+    "hint_map_id": "hm_tm1_restaurant_table",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-d665824a-5f9e-448b-85db-b06ceff609f2",
+    "surface_form": "Gene & Georgetti's Friday April 5 at 8:00 upstairs for two?",
+    "mr": {
+      "restaurant_reservation.name.restaurant": "Gene & Georgetti's",
+      "restaurant_reservation.time.reservation": "8:00",
+      "restaurant_reservation.num.guests": "two"
+    },
+    "topic": "restaurant_table",
+    "hint_map_id": "hm_tm1_restaurant_table",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-d4e77422-bb6f-4499-9849-a5eb6c8c5458",
+    "surface_form": "The best place would be walrus and carpenter in ballard, should I make a reservation for two?",
+    "mr": {
+      "restaurant_reservation.name.restaurant": "walrus and carpenter",
+      "restaurant_reservation.location.restaurant": "ballard",
+      "restaurant_reservation.num.guests": "two"
+    },
+    "topic": "restaurant_table",
+    "hint_map_id": "hm_tm1_restaurant_table",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-e6762ed2-1fcf-4f46-aba2-a82e8792a972",
+    "surface_form": "ok, i have booked a table for 4 at tara's indian cuisine for tomorrow at 7 pm.",
+    "mr": {
+      "restaurant_reservation.num.guests": "4",
+      "restaurant_reservation.name.restaurant": "tara's indian cuisine",
+      "restaurant_reservation.time.reservation": "tomorrow at 7 pm"
+    },
+    "topic": "restaurant_table",
+    "hint_map_id": "hm_tm1_restaurant_table",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-35de94bc-9832-4f41-9f12-c1ba3b2c3b11",
+    "surface_form": "got it. Your reservation is confirmed for tonight at 7pm for 3 people at ozumo.",
+    "mr": {
+      "restaurant_reservation.time.reservation": "7pm",
+      "restaurant_reservation.num.guests": "3",
+      "restaurant_reservation.name.restaurant": "ozumo"
+    },
+    "topic": "restaurant_table",
+    "hint_map_id": "hm_tm1_restaurant_table",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-89a3c0fc-550a-4b2b-8a6e-038cc8913952",
+    "surface_form": "ok, i have booked a table for 2 at epic steak for tomorrow at 9:00pm. can i help with anything else?",
+    "mr": {
+      "restaurant_reservation.num.guests": "2",
+      "restaurant_reservation.name.restaurant": "epic steak",
+      "restaurant_reservation.time.reservation": "9:00pm"
+    },
+    "topic": "restaurant_table",
+    "hint_map_id": "hm_tm1_restaurant_table",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-4edf098a-b577-4d51-95dc-1f8acfac31c7",
+    "surface_form": "Sure sir let me confirm you want me to book a table for lake side restaurant on 19th for 2 guest st 8 pm",
+    "mr": {
+      "restaurant_reservation.name.restaurant": "lake side restaurant",
+      "restaurant_reservation.num.guests": "2",
+      "restaurant_reservation.time.reservation": "8 pm"
+    },
+    "topic": "restaurant_table",
+    "hint_map_id": "hm_tm1_restaurant_table",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-1b968616-8ad4-4433-9568-65a3a35b7241",
+    "surface_form": "great. a lyft xl for your party will be between 40-$45 and take 22 mins to get to your destination.",
+    "mr": {
+      "uber_lyft.type.ride": "lyft xl",
+      "uber_lyft.price.estimate": "40-$45",
+      "uber_lyft.duration.estimate": "22 mins"
+    },
+    "topic": "uber_lyft",
+    "hint_map_id": "hm_tm1_uber_lyft",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-e4fe4109-40bf-48d0-bd69-80cb67635678",
+    "surface_form": "Okay, I'm ordering you an Uber Black for Friday to pick you up at the office, on the way to pick up Adrian and to drop you off at Union Square by 7pm.",
+    "mr": {
+      "uber_lyft.type.ride": "Uber Black",
+      "uber_lyft.location.from": "the office",
+      "uber_lyft.location.to": "Union Square",
+      "uber_lyft.time.dropoff": "7pm"
+    },
+    "topic": "uber_lyft",
+    "hint_map_id": "hm_tm1_uber_lyft",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-b1221571-d688-4e73-a32e-2abc321e4637",
+    "surface_form": "Ok, I have you put down for a shared ride with Lyft that will originate at the NSU HPD Building and drop you off at 1940 Madison Street.",
+    "mr": {
+      "uber_lyft.location.to": [
+        "Ok, I have you put d",
+        "1940 Madison Street."
+      ],
+      "uber_lyft.type.ride": "shared ride",
+      "uber_lyft.location.from": "NSU HPD Building"
+    },
+    "topic": "uber_lyft",
+    "hint_map_id": "hm_tm1_uber_lyft",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-37ca47a4-9e58-4eb4-b689-77bf3c765787",
+    "surface_form": "Your trip has been booked. Your driver will arrive in 4 minutes.",
+    "mr": {
+      "uber_lyft.ride_booking": "Your trip has been booked",
+      "uber_lyft.time.pickup": "4 minutes"
+    },
+    "topic": "uber_lyft",
+    "hint_map_id": "hm_tm1_uber_lyft",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-666c664e-1a01-4ac2-91ba-7cd589d22fa3",
+    "surface_form": "ok, i have scheduled an uberxl to pick you up at 9pm at JFK airport going to the yankee stadium. your receipt will be texted to you.",
+    "mr": {
+      "uber_lyft.type.ride": "uberxl",
+      "uber_lyft.time.pickup": "9pm",
+      "uber_lyft.location.from": "JFK airport",
+      "uber_lyft.location.to": "yankee stadium"
+    },
+    "topic": "uber_lyft",
+    "hint_map_id": "hm_tm1_uber_lyft",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-3edcff6b-1e88-4cc8-a5ab-ca05e29f8d0a",
+    "surface_form": "They should be there in about 6 minutes and you can check the status on your phone",
+    "mr": {
+      "uber_lyft.ride_booking": "They should be there",
+      "uber_lyft.time.pickup": "6 minutes"
+    },
+    "topic": "uber_lyft",
+    "hint_map_id": "hm_tm1_uber_lyft",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-c3970a60-6c8e-4671-b3fa-9d0b5c86e7a2",
+    "surface_form": "Just making sure. I am confirming the details : UberPool for one from Logan Intl at 6:45 p.m. to Oishii on Washington, quotes between $11 and $16",
+    "mr": {
+      "uber_lyft.type.ride": "UberPool",
+      "uber_lyft.num.people": "one",
+      "uber_lyft.location.from": "Logan Intl",
+      "uber_lyft.time.pickup": "6:45 p.m",
+      "uber_lyft.location.to": "Oishii on Washington",
+      "uber_lyft.price.estimate": "$11 and $16"
+    },
+    "topic": "uber_lyft",
+    "hint_map_id": "hm_tm1_uber_lyft",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-729d6c1b-961b-46b2-a54f-afcf0b338b8b",
+    "surface_form": "Yes, a standard will be available to pick you up in the front of Destiny USA in ten minutes if you'd like me to confirm.",
+    "mr": {
+      "uber_lyft.type.ride": "standard",
+      "uber_lyft.location.from": "Destiny USA",
+      "uber_lyft.price.estimate": "ten minutes"
+    },
+    "topic": "uber_lyft",
+    "hint_map_id": "hm_tm1_uber_lyft",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-57a934be-33cb-4a71-a69f-49fc3bbdab2c",
+    "surface_form": "The estimate for an UberXL is $19.14.",
+    "mr": {
+      "uber_lyft.type.ride": "UberXL",
+      "uber_lyft.price.estimate": "$19.14"
+    },
+    "topic": "uber_lyft",
+    "hint_map_id": "hm_tm1_uber_lyft",
+    "dataset": "unknown"
+  },
+  {
+    "conversation_id": "dlg-94575246-cc9a-484b-ba35-37d5ef85a949",
+    "surface_form": "got it. A lyft xl for 5 people to your destination will be between 10 to $12, and will take 6 mins to get there. did you want the driver to pick you up asap?",
+    "mr": {
+      "uber_lyft.type.ride": "lyft xl",
+      "uber_lyft.num.people": "5 people",
+      "uber_lyft.price.estimate": "10 to $12",
+      "uber_lyft.duration.estimate": "6 mins"
+    },
+    "topic": "uber_lyft",
+    "hint_map_id": "hm_tm1_uber_lyft",
+    "dataset": "unknown"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "name": "Superhot",
+        "released": "2016",
+        "esrb_rating": "T (for Teen)",
+        "genres": [
+          "indie",
+          "shooter",
+          "tactical"
+        ],
+        "platforms": [
+          "PlayStation",
+          "Xbox",
+          "PC"
+        ]
+      }
+    },
+    "surface_form": "Superhot is an indie tactical shooter that came out in 2016. This game is rated T (for Teen) and is available for PlayStation, Xbox, and PC.",
+    "topic": "video_games",
+    "dataset": "viggo",
+    "hint_map_id": "hm_viggo"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "name": "The Legend of Zelda: Ocarina of Time",
+        "released": "1998",
+        "developer": "Nintendo EAD",
+        "genres": [
+          "action-adventure",
+          "puzzle",
+          "role-playing"
+        ],
+        "perspective": [
+          "bird view",
+          "third person"
+        ],
+        "platforms": "Nintendo"
+      }
+    },
+    "surface_form": "The Legend of Zelda: Ocarina of Time was released by Nintendo EAD in 1998. It is an action-adventure, puzzle, role-playing game for Nintendo. You play from a bird view, in third person.",
+    "topic": "video_games",
+    "dataset": "viggo",
+    "hint_map_id": "hm_viggo"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "name": "Dance Dance Revolution Universe 3",
+        "released": "2008",
+        "genres": "music",
+        "platforms": "Xbox"
+      }
+    },
+    "surface_form": "Dance Dance Revolution Universe 3 is a music game, and it was released for Xbox in 2008.",
+    "topic": "video_games",
+    "dataset": "viggo",
+    "hint_map_id": "hm_viggo"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "name": "Payday 2",
+        "released": "2013",
+        "genres": [
+          "role-playing",
+          "shooter"
+        ],
+        "multiplayer_mode": "multiplayer"
+      }
+    },
+    "surface_form": "Payday 2 from 2013 is an RPG shooter with multiplayer.",
+    "topic": "video_games",
+    "dataset": "viggo",
+    "hint_map_id": "hm_viggo"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "name": "The Elder Scrolls V: Skyrim",
+        "released": "2011",
+        "developer": "Bethesda Game Studios",
+        "review_rating": "good",
+        "genres": [
+          "adventure",
+          "role-playing"
+        ],
+        "multiplayer_mode": "single-player",
+        "platforms": [
+          "PlayStation",
+          "Xbox",
+          "Nintendo",
+          "PC"
+        ],
+        "steam_availability": "on_steam"
+      }
+    },
+    "surface_form": "The Elder Scrolls V: Skyrim, released by Bethesda Game Studios in 2011, has been receiving positive ratings. This single-player adventure role-playing game was made for PlayStation, Xbox, Nintendo, and PC, and is available on Steam.",
+    "topic": "video_games",
+    "dataset": "viggo",
+    "hint_map_id": "hm_viggo"
+  },
+  {
+    "mr": {
+      "dact": "verify_attribute",
+      "slots": {
+        "name": "Euro Truck Simulator",
+        "review_rating": "poor",
+        "multiplayer_mode": "single-player",
+        "pc_os_support": "not_released_on_Linux"
+      }
+    },
+    "surface_form": "You said that you don't like Euro Truck Simulator. Is this the case for all games that lack multiplayer and Linux support?",
+    "topic": "video_games",
+    "dataset": "viggo",
+    "hint_map_id": "hm_viggo"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "name": "Tom Clancy's The Division",
+        "released": "2016",
+        "review_rating": "average",
+        "genres": [
+          "role-playing",
+          "shooter",
+          "tactical"
+        ],
+        "perspective": "third person"
+      }
+    },
+    "surface_form": "The 2016 role-playing, third person shooter, tactical game, Tom Clancy's The Division, got average reviews.",
+    "topic": "video_games",
+    "dataset": "viggo",
+    "hint_map_id": "hm_viggo"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "name": "Tom Clancy's Splinter Cell: Chaos Theory",
+        "released": "2005",
+        "genres": [
+          "action",
+          "tactical"
+        ],
+        "perspective": [
+          "first person",
+          "third person"
+        ]
+      }
+    },
+    "surface_form": "Tom Clancy's Splinter Cell: Chaos Theory is a first and third person action-tactical game. It came out in 2005.",
+    "topic": "video_games",
+    "dataset": "viggo",
+    "hint_map_id": "hm_viggo"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "name": "StarCraft",
+        "released": "1998",
+        "esrb_rating": "T (for Teen)",
+        "review_rating": "good",
+        "genres": "real-time strategy",
+        "perspective": "bird view",
+        "multiplayer_mode": "multiplayer"
+      }
+    },
+    "surface_form": "StarCraft, released in 1998, is a good real-time strategy in the bird view perspective. It has multiplayer capabilities and is rated T (for Teen).",
+    "topic": "video_games",
+    "dataset": "viggo",
+    "hint_map_id": "hm_viggo"
+  },
+  {
+    "mr": {
+      "dact": "inform",
+      "slots": {
+        "name": "Trivial Pursuit",
+        "released": "2009",
+        "review_rating": "poor",
+        "genres": "trivia/board game",
+        "multiplayer_mode": "multiplayer",
+        "platforms": [
+          "PlayStation",
+          "Nintendo"
+        ]
+      }
+    },
+    "surface_form": "Trivial Pursuit is a poor trivia/board game from 2009 available for PlayStation and Nintendo. It has multiplayer.",
+    "topic": "video_games",
+    "dataset": "viggo",
+    "hint_map_id": "hm_viggo"
+  }
+]

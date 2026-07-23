@@ -1,0 +1,13 @@
+{
+  "review_rating": "review rating (excellent/good/average/poor)",
+  "esrb_rating": "ESRB rating (E, E10+, T, M, AO)",
+  "perspective": "perspective (e.g., first person, third person, bird view)",
+  "multiplayer_mode": "game mode (single-player, multiplayer, both, none)",
+  "released": "release year",
+  "platforms": "platform family (PC, PlayStation, Xbox, Nintendo)",
+  "steam_availability": "Steam availability (on_steam/not_on_steam)",
+  "genres": "genres (e.g., action-adventure, shooter, indie)",
+  "developer": "developer",
+  "publisher": "publisher",
+  "name": "game title"
+}

@@ -1,0 +1,306 @@
+{
+  "flights": {
+    "flight_search": {
+      "type": "trip type (e.g., one-way, round-trip, multi-city)",
+      "destination1": "first destination city/airport (e.g., 'LAX', 'Paris')",
+      "destination2": "second destination (for multi-city), optional",
+      "origin": "origin city/airport (e.g., 'SFO', 'New York JFK')",
+      "date.depart": "departure date (e.g., 'Sep 12, 2025')",
+      "date.intermediate": "intermediate/connection date (for multi-city)",
+      "date.return": "return date (for round-trip)",
+      "time_of_day": "preferred departure window (morning/afternoon/evening/red-eye)",
+      "seating_class": "cabin class (economy, premium economy, business, first)",
+      "seat_location": "seat preference (aisle, window, middle, exit row)",
+      "stops": "number of stops (nonstop, 1 stop, 2+ stops)",
+      "price_range": "budget (e.g., '$200–300', 'under $500')",
+      "num.pax": "number of passengers (e.g., 1, 2, 3)",
+      "luggage": "bags allowance (e.g., '1 checked bag', 'carry-on only')",
+      "total_fare": "total trip price (e.g., '$648 all-in')",
+      "other_description": "constraints/preferences (e.g., airline prefs, flexible dates, avoid redeyes)"
+    },
+    "flight1_detail": {
+      "from": "departure city/airport (e.g., 'SFO')",
+      "to": "arrival city/airport (e.g., 'LAX')",
+      "airline": "airline name (e.g., 'Delta')",
+      "flight_number": "airline flight number (e.g., 'DL 123')",
+      "date": "flight date (e.g., 'Sep 12, 2025')",
+      "from.time": "scheduled departure time (e.g., '07:45')",
+      "to.time": "scheduled arrival time (e.g., '09:10')",
+      "stops": "stop count (nonstop / 1 stop / 2+)",
+      "stops.location": "stopover airport(s) (e.g., 'PHX')",
+      "seating_class": "cabin class (economy/business/first)",
+      "seat_location": "seat preference (aisle/window/middle)",
+      "fare": "price for this leg (e.g., '$219')",
+      "other_description": "extras (e.g., aircraft, wifi, basic economy restrictions)"
+    },
+    "flight2_detail": {
+      "from": "departure city/airport",
+      "to": "arrival city/airport",
+      "airline": "airline name",
+      "flight_number": "flight number",
+      "date": "flight date",
+      "from.time": "departure time",
+      "to.time": "arrival time",
+      "stops": "stop count",
+      "stops.location": "stopover airport(s)",
+      "seating_class": "cabin class",
+      "seat_location": "seat preference",
+      "fare": "price for this leg",
+      "other_description": "extras/details"
+    },
+    "flight3_detail": {
+      "from": "departure city/airport",
+      "to": "arrival city/airport",
+      "airline": "airline name",
+      "flight_number": "flight number",
+      "date": "flight date",
+      "from.time": "departure time",
+      "to.time": "arrival time",
+      "stops": "stop count",
+      "stops.location": "stopover airport(s)",
+      "seating_class": "cabin class",
+      "seat_location": "seat preference",
+      "fare": "price for this leg",
+      "other_description": "extras/details"
+    },
+    "flight4_detail": {
+      "from": "departure city/airport",
+      "to": "arrival city/airport",
+      "airline": "airline name",
+      "flight_number": "flight number",
+      "date": "flight date",
+      "from.time": "departure time",
+      "to.time": "arrival time",
+      "stops": "stop count",
+      "stops.location": "stopover airport(s)",
+      "seating_class": "cabin class",
+      "seat_location": "seat preference",
+      "fare": "price for this leg",
+      "other_description": "extras/details"
+    }
+  },
+
+  "food_ordering": {
+    "food_order": {
+      "name.item": "dish or item name (e.g., 'chicken burrito')",
+      "other_description.item": "customizations (e.g., 'no sour cream', 'extra spicy')",
+      "type.retrieval": "pickup/delivery/dine-in",
+      "name.person": "customer name (e.g., 'Maya Patel')",
+      "total_price": "order total (e.g., '$28.45')",
+      "time.pickup": "pickup time (e.g., '6:15 pm')",
+      "num.people": "serves how many people (e.g., 2)",
+      "name.restaurant": "restaurant name",
+      "type.food": "cuisine (e.g., Mexican, Chinese, Italian)",
+      "type.meal": "meal type (breakfast/lunch/dinner)",
+      "location.restaurant": "restaurant address/area",
+      "rating.restaurant": "restaurant rating (stars or adjectives)",
+      "price_range": "price level (e.g., '$$', 'cheap/moderate/expensive')",
+      "phone.restaurant": "restaurant phone",
+      "business_hours.restaurant": "opening hours (e.g., '10am–10pm')",
+      "official_description.restaurant": "official blurb/description"
+    }
+  },
+
+  "hotels": {
+    "hotel_search": {
+      "name.hotel": "hotel name (e.g., 'Hilton Midtown')",
+      "location.hotel": "city/area (e.g., 'Seattle downtown')",
+      "sub_location.hotel": "neighborhood/sub-area (e.g., 'SoMa')",
+      "star_rating": "hotel class (1–5 stars)",
+      "customer_rating": "guest rating (score or adjectives)",
+      "price_range": "budget per night (e.g., '$120–180')",
+      "amenity": "amenities list (wifi, pool, gym, breakfast, parking)",
+      "num.beds": "beds per room (e.g., 2)",
+      "type.bed": "bed type (king, queen, twin)",
+      "num.rooms": "number of rooms (e.g., 2)",
+      "check-in_date": "check-in date (e.g., 'Aug 30')",
+      "check-out_date": "check-out date (e.g., 'Sep 2')",
+      "date_range": "stay range (e.g., 'Aug 30–Sep 2')",
+      "num.guests": "total guests (e.g., 4)",
+      "type.room": "room type (standard, suite, deluxe, accessible)",
+      "other_request": "special requests (e.g., high floor, late checkout)"
+    },
+    "hotel1_detail": {
+      "name.hotel": "hotel name",
+      "star_rating": "class (1–5 stars)",
+      "customer_rating": "guest rating (e.g., '8.6/10', 'very good')",
+      "customer_review": "short review text",
+      "price_per_night": "nightly rate (e.g., '$159')",
+      "total_fare": "total price for stay",
+      "amenity": "amenities included",
+      "location": "address/neighborhood",
+      "type.room": "room type",
+      "other_detail": "other notable details"
+    },
+    "hotel2_detail": {
+      "name.hotel": "hotel name", "star_rating": "class",
+      "customer_rating": "guest rating", "customer_review": "review text",
+      "price_per_night": "nightly rate", "total_fare": "total price",
+      "amenity": "amenities", "location": "address/neighborhood",
+      "type.room": "room type", "other_detail": "other details"
+    },
+    "hotel3_detail": {
+      "name.hotel": "hotel name", "star_rating": "class",
+      "customer_rating": "guest rating", "customer_review": "review text",
+      "price_per_night": "nightly rate", "total_fare": "total price",
+      "amenity": "amenities", "location": "address/neighborhood",
+      "type.room": "room type", "other_detail": "other details"
+    },
+    "hotel4_detail": {
+      "name.hotel": "hotel name", "star_rating": "class",
+      "customer_rating": "guest rating", "customer_review": "review text",
+      "price_per_night": "nightly rate", "total_fare": "total price",
+      "amenity": "amenities", "location": "address/neighborhood",
+      "type.room": "room type", "other_detail": "other details"
+    },
+    "hotel5_detail": {
+      "name.hotel": "hotel name", "star_rating": "class",
+      "customer_rating": "guest rating", "customer_review": "review text",
+      "price_per_night": "nightly rate", "total_fare": "total price",
+      "amenity": "amenities", "location": "address/neighborhood",
+      "type.room": "room type", "other_detail": "other details"
+    }
+  },
+
+  "movies": {
+    "movie_search": {
+      "name.movie": "movie title (exact)",
+      "genre": "genre(s) (e.g., action, comedy, drama)",
+      "name.theater": "theater/cinema name",
+      "location.theater": "theater address/area",
+      "time.start": "showtime start (e.g., '7:45 pm')",
+      "time.end": "showtime end (e.g., '10:05 pm')",
+      "price.ticket": "ticket price (e.g., '$14.50')",
+      "type.screening": "format (2D, 3D, IMAX, Dolby)",
+      "audience_rating": "audience score (e.g., '88%')",
+      "critic_rating": "critic score (e.g., '75%', '3/4 stars')",
+      "movie_rating": "content rating (G/PG/PG-13/R/NC-17)",
+      "release_date": "release date (e.g., 'Mar 1, 2025')",
+      "runtime": "duration (e.g., '126 minutes')",
+      "real_person": "actor/director name mentioned",
+      "character": "character name mentioned",
+      "synopsis": "plot/description",
+      "streaming_service": "platform (e.g., Netflix, Prime Video)",
+      "other_description": "other constraints/preferences"
+    },
+    "movie_ticket": {
+      "name.movie": "movie title",
+      "name.theater": "theater name",
+      "num.tickets": "number of tickets (e.g., 2)",
+      "time.start": "showtime start",
+      "type.screening": "format (2D/3D/IMAX/Dolby)",
+      "seating": "seat selection/preference (e.g., row/seat numbers, aisle)",
+      "ticket_booking": "successfull completion of ticket booking (e.g., 'The ticket has been booked', 'Enjoy your movie')"
+    }
+  },
+
+  "music": {
+    "music": {
+      "name.track": "track/song title",
+      "name.artist": "artist name",
+      "name.album": "album title",
+      "name.genre": "genre (e.g., rock, hip hop, jazz)",
+      "type.music": "music type (song, album, playlist, live, acoustic)",
+      "describes_track": "description of the track (mood, tempo, style)",
+      "describes_artist": "description of the artist (bio, style)",
+      "describes_album": "album description (theme, era)",
+      "describes_genre": "genre description/characteristics",
+      "describes_type.music": "type description (e.g., 'live acoustic set')",
+      "technical_difficulty": "difficulty to perform/play (e.g., 'beginner', 'advanced')"
+    }
+  },
+
+  "restaurant_search": {
+    "restaurant": {
+      "name.restaurant": "restaurant name",
+      "location": "city/area",
+      "sub-location": "neighborhood/sub-area",
+      "type.food": "cuisine (e.g., Italian, Thai, fast food)",
+      "menu_item": "specific dish/item (e.g., 'Margherita pizza')",
+      "type.meal": "meal type (breakfast/lunch/dinner)",
+      "rating": "rating (stars or adjectives)",
+      "price_range": "price level (e.g., '$$', 'cheap/moderate/expensive')",
+      "business_hours": "opening hours (e.g., '10am–10pm')",
+      "other_description": "other constraints/preferences"
+    },
+    "restaurant_reservation": {
+      "name.restaurant": "restaurant name",
+      "name.reservation": "reservation holder’s name",
+      "num.guests": "party size (e.g., 4)",
+      "time.reservation": "reservation time (e.g., '7 pm')",
+      "date.reservation": "reservation date (e.g., 'Sat, Aug 30')",
+      "type.seating": "seating preference (indoor/outdoor/booth/window/bar)"
+    }
+  },
+
+  "sports": {
+    "epl": {
+      "name.team": "team/club name (e.g., 'Arsenal')",
+      "record.team": "team record (e.g., '18–5–3')",
+      "record.games_ahead": "games ahead in table",
+      "record.games_back": "games back (relative to leader)",
+      "place.team": "standing/place (e.g., '2nd in league')",
+      "result.match": "match result (win/loss/draw)",
+      "score.match": "final score (e.g., '2–1')",
+      "date.match": "match date",
+      "day.match": "match day of week",
+      "time.match": "kickoff time",
+      "name.player": "player name",
+      "position.player": "player position (e.g., 'FW', 'GK')",
+      "record.player": "player stats line (e.g., '2 goals, 1 assist')",
+      "name.non_player": "coach/manager/ref/owner name",
+      "venue": "stadium/venue",
+      "other_description.person": "other person details",
+      "other_description.team": "other team details",
+      "other_description.match": "other match info (injuries, cards, attendance)"
+    },
+    "mlb": {
+      "name.team": "team name", "record.team": "team record",
+      "record.games_ahead": "games ahead", "record.games_back": "games back",
+      "place.team": "division/league place", "result.match": "game result",
+      "score.match": "final score", "date.match": "game date",
+      "day.match": "day of week", "time.match": "first pitch time",
+      "name.player": "player name", "position.player": "player position",
+      "record.player": "player stat line", "name.non_player": "coach/manager/umpire",
+      "venue": "ballpark", "other_description.person": "other person details",
+      "other_description.team": "other team details",
+      "other_description.match": "other game info"
+    },
+    "mls": {
+      "name.team": "team name", "record.team": "team record",
+      "record.games_ahead": "games ahead", "record.games_back": "games back",
+      "place.team": "standing/place", "result.match": "match result",
+      "score.match": "final score", "date.match": "match date",
+      "day.match": "day of week", "time.match": "kickoff time",
+      "name.player": "player name", "position.player": "player position",
+      "record.player": "player stats", "name.non_player": "coach/official",
+      "venue": "stadium", "other_description.person": "other person details",
+      "other_description.team": "other team details",
+      "other_description.match": "other match info"
+    },
+    "nba": {
+      "name.team": "team name", "record.team": "team record",
+      "record.games_ahead": "games ahead", "record.games_back": "games back",
+      "place.team": "standing/place", "result.match": "game result",
+      "score.match": "final score", "date.match": "game date",
+      "day.match": "day of week", "time.match": "tip-off time",
+      "name.player": "player name", "position.player": "player position",
+      "record.player": "stat line", "name.non_player": "coach/official",
+      "venue": "arena", "other_description.person": "other person details",
+      "other_description.team": "other team details",
+      "other_description.match": "other game info"
+    },
+    "nfl": {
+      "name.team": "team name", "record.team": "team record",
+      "record.games_ahead": "games ahead", "record.games_back": "games back",
+      "place.team": "standing/place", "result.match": "game result",
+      "score.match": "final score", "date.match": "game date",
+      "day.match": "day of week", "time.match": "kickoff time",
+      "name.player": "player name", "position.player": "player position",
+      "record.player": "stat line", "name.non_player": "coach/official",
+      "venue": "stadium", "other_description.person": "other person details",
+      "other_description.team": "other team details",
+      "other_description.match": "other game info"
+    }
+  }
+}
