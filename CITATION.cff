@@ -1,0 +1,50 @@
+# This CITATION.cff lets GitHub auto-generate citation snippets.
+# After the GEM 2026 proceedings publish, replace the placeholder DOI
+# under `preferred-citation` with the real one.
+cff-version: 1.2.0
+message: >-
+  If you use this software or the released LoRA adapters in academic
+  work, please cite the GEM 2026 paper below.
+title: "xdomain-ser: Cross-Domain SER Evaluation for Meaning-to-Text Generation"
+version: 1.0.0
+license: Apache-2.0
+type: software
+authors:
+  - family-names: Harrison
+    given-names: Davan
+    affiliation: University of California, Santa Cruz
+    orcid: ""    # add when available
+  - family-names: Walker
+    given-names: Marilyn
+    affiliation: University of California, Santa Cruz
+abstract: >-
+  A learned, cross-domain Slot Error Rate (SER) metric for evaluating
+  meaning-to-text (M2T) generation. Combines a LoRA-fine-tuned
+  Llama-3.2-3B-Instruct extractor with over-generate-and-rank, an
+  NLI-based slot verification baseline, and per-example routing to
+  reach 0.868 All-acc on the multi-domain test split.
+keywords:
+  - meaning-to-text generation
+  - slot error rate
+  - data-to-text
+  - natural language generation
+  - LoRA
+  - LLM
+  - evaluation metric
+repository-code: "https://github.com/Vrindiesel/xdomain-ser"
+url: "https://github.com/Vrindiesel/xdomain-ser"
+
+preferred-citation:
+  type: conference-paper
+  title: "Cross-Domain Semantic Fidelity Evaluation for Meaning-to-Text Generation"
+  authors:
+    - family-names: Harrison
+      given-names: Davan
+      affiliation: University of California, Santa Cruz
+    - family-names: Walker
+      given-names: Marilyn
+      affiliation: University of California, Santa Cruz
+  conference:
+    name: "Generation, Evaluation, and Metrics Workshop (GEM @ ACL 2026)"
+  year: 2026
+  doi: "10.0000/PLACEHOLDER"   # replace with real DOI when proceedings publish
