@@ -5,11 +5,15 @@
 #     http://www.apache.org/licenses/LICENSE-2.0
 """Rule-based slot aligner / SER evaluator for the ViGGO video-game dataset.
 
-Re-implementation of the slot-realisation alignment logic from Juraska's
-slug2slug aligner -- see https://github.com/jjuraska/data2text-nlg. The
-algorithm (keyword matching + boolean/scalar/categorical/list/year slot
-handlers + named-entity masking) is theirs; this Python re-implementation
-is ours, structured to match the E2E and RNNLG aligners in this package.
+Port of the slot aligner shipped in Juraska's data2text-nlg repository
+(https://github.com/jjuraska/data2text-nlg, ``slot_aligner/``),
+consolidated here into a single module; the E2E and RNNLG aligners in
+this package are structured after it. The upstream code extends the
+MIT-licensed aligner first released with slug2slug
+(https://github.com/jjuraska/slug2slug): the shared core (keyword
+matching + boolean/scalar/categorical/list handlers + named-entity
+masking) is MIT-covered; the data2text-nlg extensions (e.g. the
+year-slot handler) carry no explicit upstream license.
 
 Used as the rule-based baseline for the ViGGO domain in the GEM 2026
 SER agreement comparisons.

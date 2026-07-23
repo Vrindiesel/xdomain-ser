@@ -5,15 +5,16 @@
 #     http://www.apache.org/licenses/LICENSE-2.0
 """Rule-based slot aligner / SER evaluator for the E2E NLG Challenge dataset.
 
-This is a from-scratch re-implementation of the slot-realisation alignment
-logic introduced by Dušek and collaborators for the E2E NLG Challenge --
-see Dušek & Kasner (2020), "Evaluating Semantic Accuracy of Data-to-Text
-Generation with Natural Language Inference", and the original E2E NLG
-Challenge alignment scripts at https://github.com/tuetschek/e2e-metrics.
-The algorithm (keyword matching + negation + boolean/scalar/categorical
-slot handlers) is theirs; the Python code here is ours, structured to
-match the ViGGO/RNNLG aligners in this package so the three share a
-common interface (``pack_*_nlg_mr`` + ``extract_mr`` + ``eval_compute_ser``).
+Re-implementation of the slot-realisation alignment logic introduced by
+Dušek and collaborators for the E2E NLG Challenge -- see Dušek & Kasner
+(2020), "Evaluating Semantic Accuracy of Data-to-Text Generation with
+Natural Language Inference", and the original E2E NLG Challenge
+alignment scripts at https://github.com/tuetschek/e2e-metrics (upstream
+license: BSD-2-Clause). The algorithm (keyword matching + negation +
+boolean/scalar/categorical slot handlers) is theirs; this module
+re-implements it, structured after the ViGGO aligner port in this
+package so the three aligners share a common interface
+(``pack_*_nlg_mr`` + ``extract_mr`` + ``eval_compute_ser``).
 
 Used as the rule-based baseline in the GEM 2026 SER agreement comparisons
 and in the Eval-2 personality SER pipeline (see

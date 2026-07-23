@@ -9,10 +9,11 @@ Re-implementation of the slot-realisation alignment logic from Wen et al.
 (2015), "Semantically Conditioned LSTM-based Natural Language Generation
 for Spoken Dialogue Systems" -- specifically the ERRScorer evaluator
 they shipped with the RNNLG release at
-https://github.com/shawnwun/RNNLG. The algorithm (keyword matching with
-per-domain slot dictionaries + boolean/scalar/categorical/numeric/list
-handlers) is theirs; this Python re-implementation is ours, structured
-to match the E2E and ViGGO aligners in this package.
+https://github.com/shawnwun/RNNLG (upstream license: Apache-2.0, same
+as this repository). The algorithm (keyword matching with per-domain
+slot dictionaries + boolean/scalar/categorical/numeric/list handlers)
+is theirs; this module re-implements it, structured after the ViGGO
+aligner port in this package.
 
 Supports the four RNNLG domains: hotel, laptop, restaurant, tv. Used as
 the rule-based baseline for those domains in the GEM 2026 SER agreement
