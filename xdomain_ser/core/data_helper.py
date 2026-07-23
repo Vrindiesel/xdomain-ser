@@ -9,6 +9,7 @@ Defines the MR list delimiters ``LIST_START`` / ``LIST_END`` used to wrap
 ``(slot: value); ...`` MR strings, and the dataset loaders / prompt builders
 consumed by extraction training, ranker training, and inference.
 """
+from typing import Any, Dict, Iterable, List, Optional, Tuple, Union
 import random
 import json
 from collections import defaultdict
@@ -20,13 +21,19 @@ LIST_START = "<LIST>"
 LIST_END = "</LIST>"
 
 
-def sort_by_key_length(examples, key, reverse=True):
+def sort_by_key_length(examples: List[Dict[str, Any]], key: str,
+                       reverse: bool = True) -> List[Dict[str, Any]]:
+    """Sort examples by ``len(ex[key])``, longest first, with random tiebreak."""
     exs = [(len(ex[key]), random.randint(0, 10 ** 100), ex) for ex in examples]
     exs.sort(reverse=reverse)
     return [ex[2] for ex in exs]
 
 
-def print_dataset_stats(tokenized_train_dataset):
+def print_dataset_stats(tokenized_train_dataset: Iterable[Dict[str, Any]]) -> None:
+    """Print a histogram and summary stats of tokenized example lengths.
+
+    Length is the attention-mask sum per example, i.e. non-padding tokens.
+    """
     lengths = []
     for example in tokenized_train_dataset:
         x = example["attention_mask"]
@@ -46,64 +53,18 @@ def print_dataset_stats(tokenized_train_dataset):
     print("std:", np.std(lengths))
 
 
-def select_train_examples(examples, num_exs=None, method="random"):
-    selected_examples = []
-    if method == "random":
-        prs_prompt_examples = defaultdict(list)
-        for ex in examples:
-            prs_prompt_examples[ex["personality"]].append(ex)
-        for prs, examples in prs_prompt_examples.items():
-            examples = [(len(ex["mr"]), random.randint(0, 10**100), ex)  for ex in examples]
-            examples.sort(reverse=True)
-            longest = [ex[2] for ex in examples[:len(examples) // 4]]
-            longest = [(len([v for v in ex["features"].values() if v]),
-                        random.randint(0, 10**100), ex)
-                        for ex in longest]
-            longest.sort(reverse=True)
-            longest = [ex[2] for ex in longest[:len(longest) // 4]]
-            prs_prompt_examples[prs] = random.sample(longest, k=num_exs)
-            for prs, exs in prs_prompt_examples.items():
-                selected_examples.extend(exs)
-    else:
-        raise ValueError("Invalid method")
-    return selected_examples
+def build_prompt_hint_map(mr: List[Tuple[str, str]], input_text: str,
+                          hint_map: Dict[str, Any], prompt_examples: str,
+                          make_output: bool = True) -> Tuple[Optional[str], str]:
+    """Build the hint-map-conditioned extraction prompt for one example.
 
-
-def build_finegrained_prompt_examples_lora(dataset, prompt_config):
-    prs_prompt_examples = defaultdict(list)
-    for ex in dataset:
-        prs_prompt_examples[ex["personality"]].append(ex)
-    if prompt_config["num_examples"] > 0:
-        for prs, examples in prs_prompt_examples.items():
-            examples = [(len(ex["mr"]), random.randint(0, 10**100), ex)  for ex in examples]
-            examples.sort(reverse=True)
-            longest = [ex[2] for ex in examples[:len(examples) // 4]]
-            longest = [(len([v for v in ex["features"].values() if v]),
-                        random.randint(0, 10**100), ex)
-                        for ex in longest]
-            longest.sort(reverse=True)
-            longest = [ex[2] for ex in longest[:len(longest) // 4]]
-            prs_prompt_examples[prs] = random.sample(longest, k=prompt_config["num_examples"])
-    else:
-        for prs in prs_prompt_examples:
-            prs_prompt_examples[prs] = []
-    return prs_prompt_examples
-
-
-def load_prompt_examples(prompt_examples_path):
-    prompt_examples = None
-    if prompt_examples_path is not None:
-        with open(prompt_examples_path) as fin:
-            prompt_examples = json.load(fin)
-        if isinstance(prompt_examples, list):
-            ped = defaultdict(list)
-            for ex in prompt_examples:
-                ped[ex["features"]["topic"]].append(ex)
-            prompt_examples = ped
-    return prompt_examples
-
-
-def build_prompt_hint_map(mr, input_text, hint_map, prompt_examples, make_output=True):
+    ``hint_map`` is one entry of the hint-map table (``hint_map_id`` +
+    ``hint_map`` fields); ``prompt_examples`` is the pre-formatted few-shot
+    block. Returns ``(output, prompt)`` where ``output`` is the
+    ``<LIST>(slot: value); ...</LIST>`` target built from ``mr``
+    (multi-values joined with ``;``), or None when ``make_output`` is
+    False (inference -- ``mr`` is not read).
+    """
     hm = hint_map["hint_map"]
     hm_id = hint_map["hint_map_id"]
     instruction_text = "Rewrite the input text content as a list of (attribute: value) pairs. "
@@ -123,7 +84,11 @@ def build_prompt_hint_map(mr, input_text, hint_map, prompt_examples, make_output
     return output, prompt
 
 
-def make_prompt_example(pe):
+def make_prompt_example(pe: Dict[str, Any]) -> Tuple[str, str]:
+    """Return ``(text, delimited MR string)`` for one few-shot prompt example.
+
+    Accepts both MR shapes: a plain slot dict or one nested under "slots".
+    """
     pe_mr = pe["mr"]["slots"] if "slots" in pe["mr"] else pe["mr"]
     mr_str = []
     mr_dict = defaultdict(list)
@@ -137,7 +102,14 @@ def make_prompt_example(pe):
     return text, f"{LIST_START}{mr_str}{LIST_END}"
 
 
-def select_prompt_examples(prompt_examples, ex, num_pe):
+def select_prompt_examples(prompt_examples: Dict[str, List[dict]],
+                           ex: Dict[str, Any], num_pe: int) -> str:
+    """Sample ``num_pe`` few-shot examples for ``ex``'s hint_map_id.
+
+    Resamples until enough examples with a surface form different from
+    ``ex``'s are drawn (an eval example never appears in its own prompt),
+    then formats them as the "-EXAMPLE-" block used by extraction prompts.
+    """
     hm_id = ex["hint_map_id"]
     pexs = []
     pe = random.sample(prompt_examples[hm_id], 1)
@@ -167,7 +139,8 @@ def select_prompt_examples(prompt_examples, ex, num_pe):
     return pe_list
 
 
-def make_mr_list(mr_dict):
+def make_mr_list(mr_dict: Dict[str, Any]) -> List[Tuple[str, str]]:
+    """Flatten ``{slot: value-or-list}`` into (slot, value) pairs, skipping Nones."""
     mr_lst = []
     for k, vals in mr_dict.items():
         if vals is None:
@@ -180,9 +153,22 @@ def make_mr_list(mr_dict):
     return mr_lst
 
 
-def load_build_dataset2(data_path, args, topic_slots, per_topic_max=None, num_attrs=10, do_shuffle=False,
-                        exclude_max_topics=None, do_shortening=False, return_dataset=True, min_mr_size=1,
-                        prompt_examples=None, num_pe=5, rseed=232342):
+def load_build_dataset2(data_path: str, args: Any, topic_slots: Any,
+                        per_topic_max: Optional[int] = None, num_attrs: int = 10,
+                        do_shuffle: bool = False, exclude_max_topics: Any = None,
+                        do_shortening: bool = False, return_dataset: bool = True,
+                        min_mr_size: int = 1,
+                        prompt_examples: Optional[Dict[str, List[dict]]] = None,
+                        num_pe: int = 5, rseed: int = 232342) -> Union[Dataset, List[dict]]:
+    """Load a SER dataset JSON and attach per-example few-shot prompt blocks.
+
+    Accepts a list of examples or a topic-keyed dict of lists. Normalises
+    each ``ex["mr"]`` to a (slot, value) pair list, drops examples with
+    fewer than ``min_mr_size`` pairs, skips topics absent from
+    ``prompt_examples``, caps each topic at ``per_topic_max``, and attaches
+    ``num_pe`` prompt examples per example. Returns an HF ``Dataset``
+    (default) or the plain list with ``return_dataset=False``.
+    """
     random.seed(rseed)
     with open(data_path) as fin:
         dataset = json.load(fin)
