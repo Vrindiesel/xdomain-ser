@@ -17,7 +17,7 @@ Two parallel APIs:
 ``extract_attributes_dict`` parses ``<LIST>(slot: value); ...</LIST>`` strings
 into the dict form both APIs consume.
 """
-from typing import Any, Dict, List
+from typing import Any, Dict, Iterable, List, Optional, Tuple
 import re
 from collections import defaultdict, Counter
 from string import punctuation
@@ -25,10 +25,16 @@ from string import punctuation
 from .data_helper import LIST_START
 
 
-def strip_punctuation(text):
+def strip_punctuation(text: str) -> str:
+    """Strip leading and trailing punctuation characters."""
     return text.strip(punctuation)
 
-def mr_list_to_dict(mr):
+def mr_list_to_dict(mr: Iterable[List[str]]) -> Dict[str, List[str]]:
+    """Convert ``[slot, value, ...]`` entries into ``{slot: [values]}``.
+
+    Values are de-duplicated globally: a value string already seen under
+    any slot is not added again under another.
+    """
     dict_mr = defaultdict(list)
     # remove duplicate slot/values in the ref MR
     seen_vals = set()
@@ -41,7 +47,17 @@ def mr_list_to_dict(mr):
                 seen_vals.add(v)
     return dict_mr
 
-def extract_attributes_dict(mr_str, wanted_attributes=None):
+def extract_attributes_dict(
+    mr_str: str, wanted_attributes: Optional[Iterable[str]] = None,
+) -> Dict[str, List[str]]:
+    """Parse a ``(slot: value); ...`` MR string into ``{slot: [values]}``.
+
+    Handles decoded-output framing: anything up to ``>(`` is dropped and a
+    legacy ``</List>`` or a following ``<LIST>`` bounds the right side
+    (callers strip the all-caps ``</LIST>`` first -- see test_ser.py).
+    Multi-values split on ``;``. With ``wanted_attributes``, other slots
+    are dropped from the result.
+    """
     #mr_str = mr_str.replace(LIST_START, "").replace(LIST_END, "")
     #print("\nmr_str", mr_str)
     if ">(" in mr_str:
@@ -89,8 +105,16 @@ def extract_attributes_dict(mr_str, wanted_attributes=None):
 
 
 class SlotErrorRate(object):
-    def __init__(self, target_slot_names=[], topic_name=None):
-        self.target_slot_names = target_slot_names
+    """Stateful S/D/I/repetition error tallies over a stream of examples.
+
+    ``normalize_mr`` converts pair-list MRs to the dict form the ``calc_*``
+    methods take; each ``calc_*`` call updates the running ``err_counts`` /
+    ``attr_err_counts`` tallies and prints the errors it finds. Used by the
+    rule-based baselines and older evaluation paths.
+    """
+
+    def __init__(self, target_slot_names=None, topic_name=None):
+        self.target_slot_names = [] if target_slot_names is None else target_slot_names
         self.err_counts = Counter()
         self.attr_err_counts = defaultdict(Counter)
         self.topic_name = topic_name
@@ -312,7 +336,11 @@ def compute_slot_f1(
     }
 
 
-def calc_p_r_f(fn, fp, tp):
+def calc_p_r_f(fn: int, fp: int, tp: int) -> Tuple[float, float, float]:
+    """Precision/recall/F1 from error counts, returned as ``(f1, precision, recall)``.
+
+    Note the argument order (fn, fp, tp) differs from the return order.
+    """
     precision = tp / (tp + fp) if (tp + fp) else 0.0
     recall = tp / (tp + fn) if (tp + fn) else 0.0
     f1 = 0.0 if (precision + recall) == 0 else 2 * precision * recall / (precision + recall)
