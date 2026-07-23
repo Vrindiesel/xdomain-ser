@@ -1,5 +1,9 @@
 # xdomain-ser
 
+[![CI](https://github.com/Vrindiesel/xdomain-ser/actions/workflows/ci.yml/badge.svg)](https://github.com/Vrindiesel/xdomain-ser/actions/workflows/ci.yml)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE)
+[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](INSTALL.md)
+
 A learned, cross-domain Slot Error Rate (SER) metric for evaluating
 meaning-to-text (M2T) generation. Companion code, gold annotations, and
 trained adapters for *Cross-Domain Semantic Fidelity Evaluation for
@@ -16,7 +20,7 @@ multi-domain test split — beating both methods used in isolation
 
 ## Requirements
 
-- Python 3.11 (strict — pinned in `pyproject.toml`)
+- Python 3.11 (strict)
 - CUDA-capable GPU (the LoRA + NLI inference paths assume CUDA)
 - ~24 GB system disk for the LoRA adapters + RoBERTa-MNLI cache
 
@@ -26,14 +30,16 @@ Flash Attention 2, glibc 2.31 build notes).
 ## Install
 
 ```bash
-pip install -e .
+pip install -r requirements.txt
 ```
 
-For the optional GPT-4o-based PBL extractor or the phase-0 follow-up
-experiments:
+There is no packaged install in v1.0.0 — run everything from the repo
+root, with the CLI as `python -m xdomain_ser.cli`. For the optional
+GPT-4o-based PBL extractor or the phase-0 follow-up experiments:
 
 ```bash
-pip install -e .[pbl,experimental]
+pip install -r requirements-pbl.txt
+pip install -r requirements-experimental.txt
 ```
 
 ## 30-second quickstart
@@ -41,7 +47,7 @@ pip install -e .[pbl,experimental]
 Score a single (text, MR) pair against the E2E domain hint map:
 
 ```bash
-xdomain-ser score \
+python -m xdomain_ser.cli score \
   --text "The Vaults is a cheap restaurant near the river." \
   --gold-mr '{"name":"The Vaults","priceRange":"cheap","near":"river"}' \
   --domain e2e
@@ -67,7 +73,7 @@ for writing a hint map for a new domain.
 | Layer | Where |
 |---|---|
 | Python package | `xdomain_ser/` |
-| `xdomain-ser` CLI | `xdomain_ser/cli.py` (Typer entrypoint) |
+| CLI (`python -m xdomain_ser.cli`) | `xdomain_ser/cli.py` (Typer app) |
 | LoRA MR-extraction adapter | HuggingFace Hub: [`DavanHarrison/xdomain-ser-extractor`](https://huggingface.co/DavanHarrison/xdomain-ser-extractor) |
 | LoRA ranker adapter | HuggingFace Hub: [`DavanHarrison/xdomain-ser-ranker`](https://huggingface.co/DavanHarrison/xdomain-ser-ranker) |
 | Multi-domain SER eval set | `data/multi_ser_v9/` |
@@ -123,6 +129,8 @@ preference-learning objectives.
 ## License
 
 Apache-2.0 for code and gold annotations (see [LICENSE](LICENSE)). The
+derived evaluation data under `data/` is CC BY-SA 4.0 — see
+[data/README.md](data/README.md) for provenance and attribution. The
 LoRA adapters inherit the
 [Llama 3 Community License](https://www.llama.com/llama3/license/);
 underlying PERSONAGE outputs are publicly distributed. Algorithm
@@ -134,6 +142,10 @@ RNNLG, Juraska's slug2slug for ViGGO) live in each
 
 See [CITATION.cff](CITATION.cff). A DOI will be added once the GEM
 proceedings publish.
+
+## Acknowledgments
+
+Parts of this codebase were developed with Claude Code assistance.
 
 ## Contact
 
