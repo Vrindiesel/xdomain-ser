@@ -14,6 +14,7 @@ Output: a JSON file alongside the input with per-example ``negatives``
 lists keyed by ``label`` and ``mr``, ready to feed
 ``xdomain_ser.ranking.train_ranker``.
 """
+from typing import Any, Dict, Iterable, List, Tuple
 from collections import Counter, defaultdict
 import argparse
 import json
@@ -34,6 +35,7 @@ Sampling negatives: create hard negatives by:
 DIGITS = ["0", "1", "2", "3", "4"]
 
 def build_score_prompt(text: str, mr_str: str) -> str:
+    """Format the legacy 5-grade scoring prompt for one (text, MR) pair."""
     return (
         "You are scoring how well a meaning representation (MR) matches the text.\n"
         "Return only one digit: 0=bad, 1=weak, 2=okay, 3=good, 4=excellent.\n\n"
@@ -41,7 +43,8 @@ def build_score_prompt(text: str, mr_str: str) -> str:
     )
 
 
-def bin_ser_score(s):  # s in [0, 1] like slot-F1
+def bin_ser_score(s: float) -> int:
+    """Bin SER accuracy (1 - SER) in [0, 1] into the 5-grade rubric labels 0-4."""
     if s >= 0.90: return 4
     if s >= 0.75: return 3
     if s >= 0.50: return 2
@@ -49,7 +52,8 @@ def bin_ser_score(s):  # s in [0, 1] like slot-F1
     return 0
 
 
-def bin_f1_score(s):  # s in [0, 1] like slot-F1
+def bin_f1_score(s: float) -> int:
+    """Bin a slot-F1 score in [0, 1] into the 7-grade rubric labels 0-6."""
     if s >= 0.90: return 6
     if s >= 0.80: return 5
     if s >= 0.70: return 4
@@ -59,7 +63,14 @@ def bin_f1_score(s):  # s in [0, 1] like slot-F1
     return 0
 
 
-def fetch_ser_label_mr(ref_mr, targ_labels, mr_pool, max_tries=1_000):
+def fetch_ser_label_mr(ref_mr: Dict[str, Any], targ_labels: Iterable[int],
+                       mr_pool: List[Dict[str, Any]],
+                       max_tries: int = 1_000) -> List[Tuple[int, Dict[str, Any]]]:
+    """Sample negative MRs from ``mr_pool`` hitting each target SER grade.
+
+    Shuffles the pool in place and scans until every target label is found
+    once or ``max_tries`` candidates were tried. Returns (label, mr) pairs.
+    """
     random.shuffle(mr_pool)
     found_mrs = []
     found_labels = set()
@@ -76,7 +87,13 @@ def fetch_ser_label_mr(ref_mr, targ_labels, mr_pool, max_tries=1_000):
     return found_mrs
 
 
-def fetch_f1_label_mr(ref_mr, targ_labels, mr_pool, max_tries=1_000):
+def fetch_f1_label_mr(ref_mr: Dict[str, Any], targ_labels: Iterable[int],
+                      mr_pool: List[Dict[str, Any]],
+                      max_tries: int = 1_000) -> List[Tuple[int, Dict[str, Any]]]:
+    """Sample negative MRs from ``mr_pool`` hitting each target slot-F1 grade.
+
+    Same contract as ``fetch_ser_label_mr`` with the 7-grade F1 rubric.
+    """
     random.shuffle(mr_pool)
     found_mrs = []
     found_labels = set()
@@ -93,7 +110,8 @@ def fetch_f1_label_mr(ref_mr, targ_labels, mr_pool, max_tries=1_000):
     return found_mrs
 
 
-def mr_list_2_mr_dict(mr_list):
+def mr_list_2_mr_dict(mr_list: Any) -> Dict[str, List[str]]:
+    """Convert a (slot, value) pair list to ``{slot: [values]}``; dicts pass through."""
     mr_dict = mr_list
     if isinstance(mr_list, list):
         mr_dict = defaultdict(list)

@@ -18,6 +18,7 @@ counts) plus SER MSE / MAE, both overall and per-category and per-topic.
 ``select_ranking_preds`` is the public helper used by
 ``xdomain_ser.extraction.experimental.lr_sweep``.
 """
+from typing import Any, Dict, List
 from collections import defaultdict
 import argparse
 import json
@@ -27,7 +28,15 @@ import numpy as np
 from xdomain_ser.core import ser
 
 
-def select_ranking_preds(pred_mrs, pred_scores, build_attr_dict=True, return_score=False):
+def select_ranking_preds(pred_mrs: List[Any], pred_scores: List[float],
+                         build_attr_dict: bool = True,
+                         return_score: bool = False) -> Any:
+    """Pick the highest-scoring candidate MR (score ties break to later index).
+
+    With ``build_attr_dict`` (default) candidates are parsed from strings
+    via ``ser.extract_attributes_dict`` first. Returns the winning MR, or
+    ``(mr, score)`` with ``return_score=True``.
+    """
     if build_attr_dict:
         pred_mrs = [ser.extract_attributes_dict(pmr) for pmr in pred_mrs]
     pred_mrs = [(score, i, mr) for i, (mr, score) in enumerate(zip(pred_mrs, pred_scores))]
@@ -50,7 +59,8 @@ def load_pair_scores(path):
     return {(r["ex_idx"], r["neg_idx"]): r["pred_scores"] for r in obj["records"]}
 
 
-def select_f1_scores(pred_mrs, ref_mr):
+def select_f1_scores(pred_mrs: List[str], ref_mr: List[List[str]]) -> Dict[str, List[str]]:
+    """Oracle selection: return the candidate with the best slot-F1 vs ``ref_mr``."""
     ranked_preds = []
     for j, p in enumerate(pred_mrs):
         pmr = ser.extract_attributes_dict(p)
@@ -128,7 +138,9 @@ def main():
         print_results(category_results, working_results)
 
 
-def print_results(category_results, working_results):
+def print_results(category_results: Dict[Any, Dict[str, list]],
+                  working_results: Dict[str, list]) -> None:
+    """Print overall then per-category means of the tallies (mutates both dicts)."""
 
     for name in ["S_acc", "D_acc", "I_acc", "all_acc"]:
         working_results[name] = np.mean(working_results[name])
@@ -154,7 +166,17 @@ def print_results(category_results, working_results):
         print("SER mean absolute error:", mabs_ser)
 
 
-def tally_ser(category_results, model_mr, neg_category, neg_mr, ref_mr, working_results):
+def tally_ser(category_results: Dict[Any, Dict[str, list]], model_mr: Dict[str, Any],
+              neg_category: Any, neg_mr: Dict[str, Any], ref_mr: Dict[str, Any],
+              working_results: Dict[str, list]) -> None:
+    """Append one pair's agreement stats to the running tallies.
+
+    Agreement means the model MR's S/D/I counts against ``neg_mr`` equal
+    the reference MR's counts; ``ser_error`` records the signed SER
+    difference. Appends into ``working_results`` (overall) and
+    ``category_results`` (keyed by the negative's label). Shared by the
+    ranker eval and the three rule-based baselines.
+    """
     ref_result = ser.compute_ser(ref_mr, neg_mr)
     pred_result = ser.compute_ser(model_mr, neg_mr)
     working_results["S_acc"].append(ref_result["S"] == pred_result["S"])

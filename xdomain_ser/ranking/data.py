@@ -11,6 +11,7 @@ training-dataset loader with per-label balancing, and the inference-time
 ``score_candidates`` + ``compute_probs_score`` helpers used by
 ``xdomain_ser.ranking.score`` and ``xdomain_ser.ranking.eval_ranker``.
 """
+from typing import Any, Dict, List, Optional, Tuple, Union
 from collections import defaultdict, Counter
 import json
 import random
@@ -43,7 +44,15 @@ Predicted MR:
 
 Score:"""
 
-def build_prompt(mr_extraction, extraction_text, hint_map, gold_mr, label=None):
+def build_prompt(mr_extraction: List[Tuple[str, str]], extraction_text: str,
+                 hint_map: Optional[Dict[str, str]], gold_mr: List[Tuple[str, str]],
+                 label: Optional[int] = None) -> Tuple[str, str]:
+    """Format the ranker scoring prompt for one candidate MR.
+
+    Returns ``(output, prompt)``: ``output`` is ``"\\n{label}"`` for training
+    examples and ``""`` at inference. The ``hint_map is None`` branch
+    predates the hint-map prompt and is unused by the release pipeline.
+    """
     mr_str_extraction = build_mrstring(mr_extraction)
     gold_mr_str = build_mrstring(gold_mr)
 
@@ -57,7 +66,8 @@ def build_prompt(mr_extraction, extraction_text, hint_map, gold_mr, label=None):
     return output, prompt
 
 
-def build_mrstring(mr):
+def build_mrstring(mr: List[Tuple[str, str]]) -> str:
+    """Format (slot, value) pairs as the ``(slot: v1; v2); ...`` prompt string."""
     mr_dict = defaultdict(list)
     for (a, v) in mr:
         mr_dict[a].append(v)
@@ -65,7 +75,8 @@ def build_mrstring(mr):
     return mr_str
 
 
-def mr_string_from_dictlist(mr_dict):
+def mr_string_from_dictlist(mr_dict: Dict[str, List[str]]) -> str:
+    """Format ``{slot: [values]}`` as the ``(slot: v1; v2); ...`` prompt string."""
     mr_str = []
     for a, vals in mr_dict.items():
         v = "; ".join(vals)
@@ -74,7 +85,16 @@ def mr_string_from_dictlist(mr_dict):
     return mr_str
 
 
-def load_ranking_dataset(data_path, return_dataset=True, per_topic_max=20_000, do_shuffle=True):
+def load_ranking_dataset(data_path: str, return_dataset: bool = True,
+                         per_topic_max: int = 20_000,
+                         do_shuffle: bool = True) -> Union[Dataset, List[dict]]:
+    """Load ranker training instances from a graded-negatives JSON.
+
+    Explodes each example's ``negatives`` into one instance per candidate,
+    then balances per topic: every label is downsampled to that topic's
+    label-5 count (capped at ``per_topic_max``). Returns an HF ``Dataset``
+    by default.
+    """
     with open(data_path, "r") as fin:
         data = json.load(fin)
     if do_shuffle:
@@ -128,7 +148,9 @@ def load_ranking_dataset(data_path, return_dataset=True, per_topic_max=20_000, d
 
 
 @torch.inference_mode()
-def score_candidates(model, tokenizer, candidate_prompts, device=None, batch_size=None):
+def score_candidates(model: Any, tokenizer: Any, candidate_prompts: List[str],
+                     device: Any = None,
+                     batch_size: Optional[int] = None) -> List[List[float]]:
     """Score each candidate prompt as a digit distribution over DIGITS (0..6).
 
     ``batch_size`` bounds peak GPU memory: with it set, prompts are scored in
@@ -160,7 +182,7 @@ def score_candidates(model, tokenizer, candidate_prompts, device=None, batch_siz
     return probs  # higher digits are better
 
 
-def compute_probs_score(pred_output):
+def compute_probs_score(pred_output: List[float]) -> float:
     """Probability-weighted scalar score in [0, 3].
 
     ``pred_output`` is a 7-vector of probabilities over digits 0..6. We sum
